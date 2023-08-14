@@ -1,0 +1,2255 @@
+{
+  "Module_0": {
+    "Pages": {
+      "Module0_Pages7.html.json": {
+        "content": {
+          "Active Learning on the Course": [
+            { "type": "para", "para_key": "para_2", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module0_Pages6.html.json": {
+        "content": {
+          "Accessibility Statements": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module0_Pages10.html.json": {
+        "content": {
+          "End of the Start Here Module": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module0_Pages9.html.json": {
+        "content": {
+          "Copyright & Ownership of Materials": [
+            { "type": "li", "list_idx": "ul_0", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module0_Pages4.html.json": { "content": {}, "__pre_h2__": [] },
+      "Module0_Pages0.html.json": {
+        "content": {
+          "Welcome": [{ "type": "para", "para_key": "para_1", "line_num": 0 }],
+          "Course Learning Outcomes": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module0_Pages3.html.json": { "content": {}, "__pre_h2__": [] },
+      "Module0_Pages2.html.json": {
+        "content": {
+          "Communication Tools": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_1", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module0_Pages5.html.json": {
+        "content": {
+          "Academic Misconduct": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module0_Pages1.html.json": {
+        "content": {
+          "Syllabus & Course Summary": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module0_Pages8.html.json": {
+        "content": {
+          "Getting ready to use Proctorio": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_3", "line_num": 1 },
+            { "type": "para", "para_key": "para_4", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      }
+    },
+    "Assignments": {
+      "Module0_Asg0.html.json": {
+        "content": {
+          "Instructions": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      }
+    }
+  },
+  "Module_1": {
+    "Pages": {
+      "Module1_Pages8.html.json": { "content": {}, "__pre_h2__": [] },
+      "Module1_Pages3.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 2 }
+          ],
+          "Analysis of Non-Recursive Algorithms": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "para", "para_key": "para_4", "line_num": 0 },
+            { "type": "para", "para_key": "para_5", "line_num": 1 },
+            { "type": "para", "para_key": "para_11", "line_num": 0 },
+            { "type": "para", "para_key": "para_12", "line_num": 0 },
+            { "type": "para", "para_key": "para_13", "line_num": 0 },
+            { "type": "para", "para_key": "para_14", "line_num": 0 },
+            { "type": "para", "para_key": "para_16", "line_num": 0 },
+            { "type": "para", "para_key": "para_18", "line_num": 0 },
+            { "type": "para", "para_key": "para_27", "line_num": 0 },
+            { "type": "para", "para_key": "para_28", "line_num": 0 },
+            { "type": "para", "para_key": "para_29", "line_num": 0 },
+            { "type": "para", "para_key": "para_30", "line_num": 0 },
+            { "type": "para", "para_key": "para_31", "line_num": 0 },
+            { "type": "para", "para_key": "para_32", "line_num": 0 },
+            { "type": "para", "para_key": "para_34", "line_num": 0 },
+            { "type": "para", "para_key": "para_35", "line_num": 0 },
+            { "type": "para", "para_key": "para_37", "line_num": 1 },
+            { "type": "para", "para_key": "para_42", "line_num": 0 },
+            { "type": "para", "para_key": "para_46", "line_num": 0 },
+            { "type": "para", "para_key": "para_47", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module1_Pages7.html.json": {
+        "content": {
+          "Key Take-Aways": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_2", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module1_Pages1.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 }
+          ],
+          "The Analysis Framework": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "para", "para_key": "para_4", "line_num": 0 },
+            { "type": "para", "para_key": "para_5", "line_num": 0 },
+            { "type": "para", "para_key": "para_8", "line_num": 0 },
+            { "type": "para", "para_key": "para_13", "line_num": 0 },
+            { "type": "li", "list_idx": "ul_0", "line_num": 3 }
+          ],
+          "The Efficiency of an Algorithm": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_4", "line_num": 0 },
+            { "type": "para", "para_key": "para_7", "line_num": 1 },
+            { "type": "para", "para_key": "para_10", "line_num": 0 },
+            { "type": "para", "para_key": "para_11", "line_num": 0 },
+            { "type": "para", "para_key": "para_14", "line_num": 0 },
+            { "type": "para", "para_key": "para_15", "line_num": 0 },
+            { "type": "para", "para_key": "para_16", "line_num": 0 },
+            { "type": "para", "para_key": "para_17", "line_num": 0 },
+            { "type": "para", "para_key": "para_18", "line_num": 0 },
+            { "type": "para", "para_key": "para_20", "line_num": 0 },
+            { "type": "para", "para_key": "para_24", "line_num": 0 },
+            { "type": "para", "para_key": "para_25", "line_num": 0 },
+            { "type": "para", "para_key": "para_28", "line_num": 0 },
+            { "type": "para", "para_key": "para_30", "line_num": 0 },
+            { "type": "para", "para_key": "para_31", "line_num": 2 },
+            { "type": "para", "para_key": "para_32", "line_num": 0 },
+            { "type": "para", "para_key": "para_33", "line_num": 0 },
+            { "type": "para", "para_key": "para_38", "line_num": 0 },
+            { "type": "para", "para_key": "para_39", "line_num": 0 },
+            { "type": "para", "para_key": "para_43", "line_num": 2 },
+            { "type": "para", "para_key": "para_44", "line_num": 2 },
+            { "type": "para", "para_key": "para_45", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module1_Pages5.html.json": {
+        "content": {
+          "Summations and Sequences": [
+            { "type": "para", "para_key": "para_3", "line_num": 0 },
+            { "type": "li", "list_idx": "ul_1", "line_num": 0 },
+            { "type": "li", "list_idx": "ul_3", "line_num": 0 }
+          ],
+          "Logarithms": [{ "type": "li", "list_idx": "ul_0", "line_num": 0 }],
+          "Limits": [{ "type": "li", "list_idx": "ul_1", "line_num": 0 }]
+        },
+        "__pre_h2__": []
+      },
+      "Module1_Pages0.html.json": {
+        "content": {
+          "Module Learning Outcomes": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module1_Pages6.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module1_Pages2.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_3", "line_num": 0 },
+            { "type": "para", "para_key": "para_4", "line_num": 0 }
+          ],
+          "O Notation (Big O)": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_5", "line_num": 0 },
+            { "type": "para", "para_key": "para_10", "line_num": 1 },
+            { "type": "para", "para_key": "para_11", "line_num": 0 },
+            { "type": "para", "para_key": "para_13", "line_num": 0 },
+            { "type": "para", "para_key": "para_15", "line_num": 0 },
+            { "type": "para", "para_key": "para_16", "line_num": 1 }
+          ],
+          "Ω Notation (Omega)": [
+            { "type": "para", "para_key": "para_4", "line_num": 1 },
+            { "type": "para", "para_key": "para_7", "line_num": 1 },
+            { "type": "para", "para_key": "para_9", "line_num": 0 },
+            { "type": "para", "para_key": "para_10", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module1_Pages4.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 }
+          ],
+          "Verifying an algorithm": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "para", "para_key": "para_6", "line_num": 0 },
+            { "type": "para", "para_key": "para_9", "line_num": 0 },
+            { "type": "para", "para_key": "para_11", "line_num": 1 },
+            { "type": "para", "para_key": "para_13", "line_num": 0 },
+            { "type": "para", "para_key": "para_14", "line_num": 0 },
+            { "type": "para", "para_key": "para_15", "line_num": 0 },
+            { "type": "para", "para_key": "para_22", "line_num": 0 },
+            { "type": "para", "para_key": "para_25", "line_num": 0 },
+            { "type": "para", "para_key": "para_27", "line_num": 0 },
+            { "type": "para", "para_key": "para_28", "line_num": 0 },
+            { "type": "para", "para_key": "para_29", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      }
+    },
+    "Assignments": {
+      "Module1_Asg2.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_2", "line_num": 1 }
+          ],
+          "What you must do": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ],
+          "Grading criteria": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_3", "line_num": 1 },
+            { "type": "para", "para_key": "para_4", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module1_Asg1.html.json": {
+        "content": {
+          "Instructions": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      }
+    }
+  },
+  "Module_2": {
+    "Pages": {
+      "Module2_Pages9.html.json": {
+        "content": {
+          "Homework Solution": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module2_Pages8.html.json": {
+        "content": {
+          "Key Take-Aways": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_2", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module2_Pages7.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "li", "list_idx": "ul_0", "line_num": 0 }
+          ],
+          "Divide-and-Conquer Algorithms": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_5", "line_num": 0 },
+            { "type": "para", "para_key": "para_7", "line_num": 0 },
+            { "type": "para", "para_key": "para_8", "line_num": 0 },
+            { "type": "para", "para_key": "para_9", "line_num": 0 },
+            { "type": "para", "para_key": "para_10", "line_num": 1 },
+            { "type": "para", "para_key": "para_11", "line_num": 2 },
+            { "type": "para", "para_key": "para_19", "line_num": 1 },
+            { "type": "para", "para_key": "para_22", "line_num": 0 },
+            { "type": "para", "para_key": "para_23", "line_num": 0 },
+            { "type": "li", "list_idx": "ol_0", "line_num": 1 }
+          ],
+          "Exercises": [{ "type": "li", "list_idx": "ul_0", "line_num": 0 }]
+        },
+        "__pre_h2__": []
+      },
+      "Module2_Pages6.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 }
+          ],
+          "Divide and Conquer": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_5", "line_num": 0 },
+            { "type": "para", "para_key": "para_9", "line_num": 0 },
+            { "type": "para", "para_key": "para_10", "line_num": 0 },
+            { "type": "para", "para_key": "para_11", "line_num": 0 },
+            { "type": "para", "para_key": "para_16", "line_num": 1 },
+            { "type": "para", "para_key": "para_19", "line_num": 1 },
+            { "type": "para", "para_key": "para_23", "line_num": 1 },
+            { "type": "para", "para_key": "para_27", "line_num": 1 },
+            { "type": "para", "para_key": "para_39", "line_num": 0 },
+            { "type": "para", "para_key": "para_41", "line_num": 0 },
+            { "type": "para", "para_key": "para_42", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module2_Pages5.html.json": {
+        "content": {
+          "The Master Method": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_4", "line_num": 0 },
+            { "type": "para", "para_key": "para_5", "line_num": 1 },
+            { "type": "para", "para_key": "para_11", "line_num": 0 },
+            { "type": "para", "para_key": "para_17", "line_num": 1 },
+            { "type": "para", "para_key": "para_20", "line_num": 0 },
+            { "type": "para", "para_key": "para_24", "line_num": 1 },
+            { "type": "para", "para_key": "para_25", "line_num": 1 },
+            { "type": "para", "para_key": "para_26", "line_num": 0 },
+            { "type": "para", "para_key": "para_29", "line_num": 0 },
+            { "type": "para", "para_key": "para_33", "line_num": 0 },
+            { "type": "para", "para_key": "para_34", "line_num": 0 },
+            { "type": "para", "para_key": "para_36", "line_num": 0 },
+            { "type": "para", "para_key": "para_39", "line_num": 0 },
+            { "type": "li", "list_idx": "ul_0", "line_num": 2 }
+          ],
+          "Exercises": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "para", "para_key": "para_4", "line_num": 0 }
+          ],
+          "Optional Additional Resources": [
+            { "type": "li", "list_idx": "ul_0", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module2_Pages4.html.json": {
+        "content": {
+          "Recursion-Tree": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "para", "para_key": "para_4", "line_num": 0 },
+            { "type": "para", "para_key": "para_6", "line_num": 2 },
+            { "type": "para", "para_key": "para_10", "line_num": 0 },
+            { "type": "para", "para_key": "para_15", "line_num": 0 },
+            { "type": "para", "para_key": "para_25", "line_num": 0 },
+            { "type": "para", "para_key": "para_32", "line_num": 0 },
+            { "type": "para", "para_key": "para_34", "line_num": 0 },
+            { "type": "para", "para_key": "para_36", "line_num": 0 },
+            { "type": "para", "para_key": "para_37", "line_num": 0 },
+            { "type": "para", "para_key": "para_38", "line_num": 0 },
+            { "type": "para", "para_key": "para_40", "line_num": 0 },
+            { "type": "para", "para_key": "para_41", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module2_Pages3.html.json": {
+        "content": {
+          "Substitution Method": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_3", "line_num": 0 },
+            { "type": "para", "para_key": "para_12", "line_num": 0 },
+            { "type": "para", "para_key": "para_17", "line_num": 0 },
+            { "type": "para", "para_key": "para_19", "line_num": 0 },
+            { "type": "para", "para_key": "para_20", "line_num": 0 },
+            { "type": "para", "para_key": "para_21", "line_num": 2 },
+            { "type": "para", "para_key": "para_24", "line_num": 0 },
+            { "type": "para", "para_key": "para_25", "line_num": 0 },
+            { "type": "para", "para_key": "para_33", "line_num": 0 },
+            { "type": "para", "para_key": "para_35", "line_num": 0 },
+            { "type": "para", "para_key": "para_37", "line_num": 0 },
+            { "type": "para", "para_key": "para_40", "line_num": 0 },
+            { "type": "para", "para_key": "para_41", "line_num": 0 },
+            { "type": "para", "para_key": "para_42", "line_num": 1 },
+            { "type": "para", "para_key": "para_46", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module2_Pages1.html.json": {
+        "content": {
+          "Recursion": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "para", "para_key": "para_6", "line_num": 1 },
+            { "type": "para", "para_key": "para_7", "line_num": 1 },
+            { "type": "para", "para_key": "para_12", "line_num": 1 },
+            { "type": "para", "para_key": "para_13", "line_num": 1 },
+            { "type": "para", "para_key": "para_14", "line_num": 0 },
+            { "type": "para", "para_key": "para_21", "line_num": 0 },
+            { "type": "para", "para_key": "para_27", "line_num": 0 },
+            { "type": "para", "para_key": "para_30", "line_num": 0 }
+          ],
+          "Exercises": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_5", "line_num": 0 },
+            { "type": "para", "para_key": "para_8", "line_num": 2 },
+            { "type": "para", "para_key": "para_10", "line_num": 0 },
+            { "type": "li", "list_idx": "ul_1", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module2_Pages2.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 }
+          ],
+          "Recurrence Relations": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "para", "para_key": "para_3", "line_num": 0 },
+            { "type": "para", "para_key": "para_8", "line_num": 0 },
+            { "type": "para", "para_key": "para_9", "line_num": 0 },
+            { "type": "para", "para_key": "para_10", "line_num": 0 },
+            { "type": "para", "para_key": "para_11", "line_num": 0 },
+            { "type": "para", "para_key": "para_14", "line_num": 0 },
+            { "type": "para", "para_key": "para_17", "line_num": 0 },
+            { "type": "para", "para_key": "para_18", "line_num": 0 },
+            { "type": "para", "para_key": "para_21", "line_num": 0 },
+            { "type": "para", "para_key": "para_22", "line_num": 1 },
+            { "type": "para", "para_key": "para_28", "line_num": 1 },
+            { "type": "para", "para_key": "para_34", "line_num": 0 },
+            { "type": "para", "para_key": "para_44", "line_num": 0 },
+            { "type": "para", "para_key": "para_47", "line_num": 0 },
+            { "type": "para", "para_key": "para_48", "line_num": 0 },
+            { "type": "para", "para_key": "para_49", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module2_Pages0.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_1", "line_num": 2 }
+          ],
+          "Module Learning Outcomes": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ],
+          "Explorations": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ],
+          "Task List": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      }
+    },
+    "Assignments": {
+      "Module2_Asg0.html.json": {
+        "content": {
+          "Instructions": [
+            { "type": "para", "para_key": "para_1", "line_num": 3 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module2_Asg1.html.json": {
+        "content": {
+          "What to turn in": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_3", "line_num": 0 }
+          ],
+          "Grading Criteria": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "li", "list_idx": "ol_1", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      }
+    }
+  },
+  "Module_3": {
+    "Pages": {
+      "Module3_Pages3.html.json": {
+        "content": {
+          "Where to use Dynamic Programming and Steps": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_1", "line_num": 0 }
+          ],
+          "Longest Common Subsequence": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_4", "line_num": 0 },
+            { "type": "para", "para_key": "para_6", "line_num": 0 },
+            { "type": "para", "para_key": "para_7", "line_num": 0 },
+            { "type": "para", "para_key": "para_9", "line_num": 0 },
+            { "type": "para", "para_key": "para_10", "line_num": 0 },
+            { "type": "para", "para_key": "para_15", "line_num": 0 },
+            { "type": "para", "para_key": "para_16", "line_num": 0 },
+            { "type": "para", "para_key": "para_19", "line_num": 0 },
+            { "type": "para", "para_key": "para_21", "line_num": 0 },
+            { "type": "para", "para_key": "para_22", "line_num": 0 },
+            { "type": "para", "para_key": "para_26", "line_num": 0 },
+            { "type": "para", "para_key": "para_28", "line_num": 0 },
+            { "type": "para", "para_key": "para_36", "line_num": 0 },
+            { "type": "para", "para_key": "para_37", "line_num": 0 },
+            { "type": "para", "para_key": "para_41", "line_num": 0 },
+            { "type": "para", "para_key": "para_43", "line_num": 0 }
+          ],
+          "Optional Additional Resources": [
+            { "type": "li", "list_idx": "ul_0", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module3_Pages4.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 }
+          ],
+          "Exercises": [
+            { "type": "para", "para_key": "para_8", "line_num": 0 },
+            { "type": "para", "para_key": "para_9", "line_num": 0 }
+          ],
+          "Optional Additional Resources": [
+            { "type": "li", "list_idx": "ul_0", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module3_Pages6.html.json": { "content": {}, "__pre_h2__": [] },
+      "Module3_Pages1.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 }
+          ],
+          "Dynamic Programming": [
+            { "type": "para", "para_key": "para_3", "line_num": 0 },
+            { "type": "para", "para_key": "para_7", "line_num": 1 },
+            { "type": "para", "para_key": "para_8", "line_num": 0 },
+            { "type": "para", "para_key": "para_14", "line_num": 0 },
+            { "type": "para", "para_key": "para_19", "line_num": 0 },
+            { "type": "para", "para_key": "para_22", "line_num": 4 },
+            { "type": "para", "para_key": "para_23", "line_num": 0 },
+            { "type": "para", "para_key": "para_24", "line_num": 0 },
+            { "type": "para", "para_key": "para_25", "line_num": 0 },
+            { "type": "para", "para_key": "para_26", "line_num": 0 },
+            { "type": "para", "para_key": "para_28", "line_num": 0 },
+            { "type": "para", "para_key": "para_29", "line_num": 0 },
+            { "type": "para", "para_key": "para_32", "line_num": 0 },
+            { "type": "para", "para_key": "para_34", "line_num": 0 },
+            { "type": "para", "para_key": "para_37", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module3_Pages2.html.json": {
+        "content": {
+          "Change Making Problem": [
+            { "type": "para", "para_key": "para_5", "line_num": 0 },
+            { "type": "para", "para_key": "para_12", "line_num": 0 },
+            { "type": "para", "para_key": "para_14", "line_num": 1 },
+            { "type": "para", "para_key": "para_20", "line_num": 1 },
+            { "type": "para", "para_key": "para_21", "line_num": 1 },
+            { "type": "para", "para_key": "para_24", "line_num": 0 },
+            { "type": "para", "para_key": "para_25", "line_num": 0 },
+            { "type": "para", "para_key": "para_32", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module3_Pages5.html.json": {
+        "content": {
+          "Key Take-Aways": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "li", "list_idx": "ul_0", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module3_Pages0.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 }
+          ],
+          "Module Learning Outcomes": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ],
+          "Explorations": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "li", "list_idx": "ul_0", "line_num": 0 }
+          ],
+          "Task List": [{ "type": "para", "para_key": "para_0", "line_num": 0 }]
+        },
+        "__pre_h2__": []
+      }
+    },
+    "Assignments": {
+      "Module3_Asg0.html.json": {
+        "content": {
+          "Instructions": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_1", "line_num": 2 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module3_Asg1.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ],
+          "What you must do": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ],
+          "What to turn in": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "para", "para_key": "para_3", "line_num": 0 },
+            { "type": "para", "para_key": "para_4", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      }
+    }
+  },
+  "Module_4": {
+    "Pages": {
+      "Module4_Pages6.html.json": { "content": {}, "__pre_h2__": [] },
+      "Module4_Pages1.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "li", "list_idx": "ul_0", "line_num": 1 }
+          ],
+          "Knapsack Problem": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_3", "line_num": 0 },
+            { "type": "para", "para_key": "para_17", "line_num": 0 },
+            { "type": "para", "para_key": "para_18", "line_num": 0 },
+            { "type": "para", "para_key": "para_20", "line_num": 2 },
+            { "type": "para", "para_key": "para_21", "line_num": 0 },
+            { "type": "para", "para_key": "para_24", "line_num": 0 },
+            { "type": "para", "para_key": "para_29", "line_num": 0 },
+            { "type": "para", "para_key": "para_37", "line_num": 0 },
+            { "type": "para", "para_key": "para_38", "line_num": 0 },
+            { "type": "para", "para_key": "para_39", "line_num": 0 },
+            { "type": "para", "para_key": "para_42", "line_num": 0 },
+            { "type": "para", "para_key": "para_45", "line_num": 0 },
+            { "type": "para", "para_key": "para_46", "line_num": 1 },
+            { "type": "para", "para_key": "para_48", "line_num": 0 },
+            { "type": "para", "para_key": "para_49", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module4_Pages5.html.json": {
+        "content": {
+          "Key Take-Aways": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_2", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module4_Pages3.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 2 },
+            { "type": "para", "para_key": "para_1", "line_num": 0 }
+          ],
+          "Optimal Solution": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "para", "para_key": "para_11", "line_num": 0 },
+            { "type": "para", "para_key": "para_12", "line_num": 0 },
+            { "type": "para", "para_key": "para_13", "line_num": 1 },
+            { "type": "para", "para_key": "para_14", "line_num": 0 },
+            { "type": "para", "para_key": "para_17", "line_num": 1 },
+            { "type": "para", "para_key": "para_19", "line_num": 0 },
+            { "type": "para", "para_key": "para_20", "line_num": 0 },
+            { "type": "para", "para_key": "para_22", "line_num": 1 }
+          ],
+          "Exercises": [
+            { "type": "para", "para_key": "para_3", "line_num": 0 },
+            { "type": "para", "para_key": "para_4", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module4_Pages0.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 1 }
+          ],
+          "Module Learning Outcomes": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ],
+          "Task List": [{ "type": "para", "para_key": "para_0", "line_num": 0 }]
+        },
+        "__pre_h2__": []
+      },
+      "Module4_Pages2.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "li", "list_idx": "ul_0", "line_num": 0 }
+          ],
+          "The 0-1 knapsack Problem": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_12", "line_num": 0 },
+            { "type": "para", "para_key": "para_16", "line_num": 0 },
+            { "type": "para", "para_key": "para_23", "line_num": 0 },
+            { "type": "para", "para_key": "para_24", "line_num": 0 },
+            { "type": "para", "para_key": "para_28", "line_num": 0 },
+            { "type": "para", "para_key": "para_30", "line_num": 1 },
+            { "type": "para", "para_key": "para_31", "line_num": 0 },
+            { "type": "para", "para_key": "para_33", "line_num": 0 },
+            { "type": "para", "para_key": "para_34", "line_num": 1 },
+            { "type": "para", "para_key": "para_35", "line_num": 0 },
+            { "type": "para", "para_key": "para_39", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module4_Pages4.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 }
+          ],
+          "Backtracking Technique": [
+            { "type": "para", "para_key": "para_2", "line_num": 1 },
+            { "type": "para", "para_key": "para_4", "line_num": 1 },
+            { "type": "para", "para_key": "para_6", "line_num": 0 },
+            { "type": "para", "para_key": "para_7", "line_num": 0 },
+            { "type": "para", "para_key": "para_9", "line_num": 0 }
+          ],
+          "Permutations Problem": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_3", "line_num": 0 },
+            { "type": "para", "para_key": "para_7", "line_num": 0 },
+            { "type": "para", "para_key": "para_15", "line_num": 0 },
+            { "type": "para", "para_key": "para_17", "line_num": 0 }
+          ],
+          "Exercises": [
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "para", "para_key": "para_3", "line_num": 0 },
+            { "type": "para", "para_key": "para_4", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      }
+    },
+    "Assignments": {
+      "Module4_Asg2.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 }
+          ],
+          "What you must do": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ],
+          "What to turn in": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_3", "line_num": 1 },
+            { "type": "para", "para_key": "para_4", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module4_Asg3.html.json": { "content": {}, "__pre_h2__": [] },
+      "Module4_Asg1.html.json": {
+        "content": {
+          "Getting Started": [
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "para", "para_key": "para_3", "line_num": 0 },
+            { "type": "para", "para_key": "para_4", "line_num": 0 },
+            { "type": "para", "para_key": "para_5", "line_num": 0 },
+            { "type": "para", "para_key": "para_6", "line_num": 0 },
+            { "type": "para", "para_key": "para_7", "line_num": 0 },
+            { "type": "li", "list_idx": "ol_0", "line_num": 0 }
+          ],
+          "Criteria": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_1", "line_num": 2 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "li", "list_idx": "ol_0", "line_num": 0 }
+          ],
+          "Submission Details": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ],
+          "Evaluation": [{ "type": "li", "list_idx": "ol_0", "line_num": 0 }]
+        },
+        "__pre_h2__": []
+      },
+      "Module4_Asg0.html.json": {
+        "content": {
+          "Instructions": [
+            { "type": "para", "para_key": "para_4", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      }
+    }
+  },
+  "Module_5": {
+    "Pages": {
+      "Module5_Pages1.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_1", "line_num": 0 }
+          ],
+          "N-Queens Problem": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "para", "para_key": "para_6", "line_num": 0 },
+            { "type": "para", "para_key": "para_7", "line_num": 0 },
+            { "type": "para", "para_key": "para_8", "line_num": 0 },
+            { "type": "para", "para_key": "para_9", "line_num": 0 },
+            { "type": "para", "para_key": "para_11", "line_num": 2 },
+            { "type": "para", "para_key": "para_21", "line_num": 0 },
+            { "type": "para", "para_key": "para_25", "line_num": 0 },
+            { "type": "para", "para_key": "para_27", "line_num": 1 },
+            { "type": "para", "para_key": "para_30", "line_num": 0 },
+            { "type": "para", "para_key": "para_31", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module5_Pages2.html.json": {
+        "content": {
+          "Combination Sum Problem": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_3", "line_num": 0 },
+            { "type": "para", "para_key": "para_4", "line_num": 0 },
+            { "type": "para", "para_key": "para_9", "line_num": 0 },
+            { "type": "para", "para_key": "para_11", "line_num": 0 },
+            { "type": "para", "para_key": "para_17", "line_num": 0 }
+          ],
+          "Optional Additional Resources": [
+            { "type": "li", "list_idx": "ul_0", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module5_Pages5.html.json": { "content": {}, "__pre_h2__": [] },
+      "Module5_Pages3.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "li", "list_idx": "ul_0", "line_num": 2 }
+          ],
+          "Greedy Algorithms": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "para", "para_key": "para_4", "line_num": 0 },
+            { "type": "para", "para_key": "para_5", "line_num": 0 },
+            { "type": "para", "para_key": "para_7", "line_num": 0 }
+          ],
+          "Activity Selection Problem": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_6", "line_num": 0 },
+            { "type": "para", "para_key": "para_7", "line_num": 0 },
+            { "type": "para", "para_key": "para_8", "line_num": 0 },
+            { "type": "para", "para_key": "para_9", "line_num": 0 },
+            { "type": "para", "para_key": "para_10", "line_num": 0 },
+            { "type": "para", "para_key": "para_20", "line_num": 0 },
+            { "type": "para", "para_key": "para_21", "line_num": 1 },
+            { "type": "para", "para_key": "para_22", "line_num": 0 },
+            { "type": "para", "para_key": "para_27", "line_num": 0 },
+            { "type": "para", "para_key": "para_38", "line_num": 2 }
+          ],
+          "Optional Additional Resources": [
+            { "type": "li", "list_idx": "ul_0", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module5_Pages0.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 }
+          ],
+          "Module Learning Outcomes": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ],
+          "Explorations": [{ "type": "li", "list_idx": "ul_0", "line_num": 2 }],
+          "Proctored Exam Reminder": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module5_Pages4.html.json": {
+        "content": {
+          "Key Take-Aways": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_2", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      }
+    },
+    "Assignments": {
+      "Module5_Asg0.html.json": { "content": {}, "__pre_h2__": [] },
+      "Module5_Asg1.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ],
+          "What you must do": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ],
+          "What to turn in": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "para", "para_key": "para_4", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module5_Asg2.html.json": {
+        "content": {},
+        "__pre_h2__": [{ "type": "para", "para_key": "para_0", "line_num": 1 }]
+      }
+    }
+  },
+  "Module_6": {
+    "Pages": {
+      "Module6_Pages3.html.json": {
+        "content": {
+          "Key Take-Aways": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_2", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module6_Pages0.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ],
+          "Module Learning Outcomes": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ],
+          "Explorations": [{ "type": "li", "list_idx": "ul_0", "line_num": 0 }],
+          "Proctored Exam Reminder": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module6_Pages2.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 }
+          ],
+          "Huffman Codes": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "para", "para_key": "para_3", "line_num": 7 },
+            { "type": "para", "para_key": "para_7", "line_num": 1 },
+            { "type": "para", "para_key": "para_10", "line_num": 0 }
+          ],
+          "Exercises": [{ "type": "para", "para_key": "para_0", "line_num": 0 }]
+        },
+        "__pre_h2__": []
+      },
+      "Module6_Pages1.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 }
+          ],
+          "Minimizing Lateness Problem": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 1 },
+            { "type": "para", "para_key": "para_3", "line_num": 0 },
+            { "type": "para", "para_key": "para_10", "line_num": 0 },
+            { "type": "para", "para_key": "para_12", "line_num": 0 },
+            { "type": "para", "para_key": "para_15", "line_num": 0 },
+            { "type": "para", "para_key": "para_17", "line_num": 0 },
+            { "type": "para", "para_key": "para_21", "line_num": 0 },
+            { "type": "para", "para_key": "para_22", "line_num": 1 },
+            { "type": "para", "para_key": "para_25", "line_num": 0 }
+          ],
+          "Exercises": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "li", "list_idx": "ul_0", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module6_Pages4.html.json": { "content": {}, "__pre_h2__": [] }
+    },
+    "Assignments": {
+      "Module6_Asg0.html.json": { "content": {}, "__pre_h2__": [] }
+    }
+  },
+  "Module_7": {
+    "Pages": {
+      "Module7_Pages2.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 }
+          ],
+          "Topological Sort": [
+            { "type": "para", "para_key": "para_3", "line_num": 0 },
+            { "type": "para", "para_key": "para_6", "line_num": 1 },
+            { "type": "para", "para_key": "para_9", "line_num": 0 },
+            { "type": "para", "para_key": "para_10", "line_num": 1 },
+            { "type": "para", "para_key": "para_12", "line_num": 0 },
+            { "type": "para", "para_key": "para_14", "line_num": 0 }
+          ],
+          "Optional Additional Resources": [
+            { "type": "li", "list_idx": "ul_0", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module7_Pages6.html.json": { "content": {}, "__pre_h2__": [] },
+      "Module7_Pages5.html.json": {
+        "content": {
+          "Key Take-Aways": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_2", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module7_Pages0.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 }
+          ],
+          "Module Learning Outcomes": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ],
+          "Task List": [{ "type": "para", "para_key": "para_0", "line_num": 0 }]
+        },
+        "__pre_h2__": []
+      },
+      "Module7_Pages1.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 }
+          ],
+          "Graph Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_5", "line_num": 0 },
+            { "type": "li", "list_idx": "ol_0", "line_num": 1 }
+          ],
+          "Graph Traversal": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_3", "line_num": 1 },
+            { "type": "para", "para_key": "para_4", "line_num": 1 },
+            { "type": "para", "para_key": "para_11", "line_num": 0 },
+            { "type": "para", "para_key": "para_12", "line_num": 0 },
+            { "type": "para", "para_key": "para_15", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module7_Pages3.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "li", "list_idx": "ul_0", "line_num": 1 }
+          ],
+          "The Dijkstra Algorithm": [
+            { "type": "para", "para_key": "para_11", "line_num": 0 },
+            { "type": "para", "para_key": "para_12", "line_num": 0 },
+            { "type": "para", "para_key": "para_16", "line_num": 1 },
+            { "type": "para", "para_key": "para_18", "line_num": 0 },
+            { "type": "para", "para_key": "para_22", "line_num": 0 },
+            { "type": "para", "para_key": "para_23", "line_num": 0 },
+            { "type": "para", "para_key": "para_24", "line_num": 1 },
+            { "type": "para", "para_key": "para_25", "line_num": 3 },
+            { "type": "para", "para_key": "para_27", "line_num": 0 },
+            { "type": "para", "para_key": "para_31", "line_num": 0 },
+            { "type": "para", "para_key": "para_33", "line_num": 0 },
+            { "type": "para", "para_key": "para_35", "line_num": 0 },
+            { "type": "para", "para_key": "para_40", "line_num": 0 },
+            { "type": "para", "para_key": "para_41", "line_num": 0 },
+            { "type": "para", "para_key": "para_42", "line_num": 0 }
+          ],
+          "Exercises": [{ "type": "li", "list_idx": "ul_0", "line_num": 0 }],
+          "Optional Additional Resources": [
+            { "type": "li", "list_idx": "ul_0", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module7_Pages4.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 3 },
+            { "type": "para", "para_key": "para_1", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      }
+    },
+    "Assignments": {
+      "Module7_Asg0.html.json": {
+        "content": {
+          "Instructions": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module7_Asg2.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 }
+          ],
+          "What you must do": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ],
+          "What to turn in": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_3", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module7_Asg1.html.json": {
+        "content": {
+          "Getting Started": [
+            { "type": "para", "para_key": "para_3", "line_num": 0 },
+            { "type": "para", "para_key": "para_4", "line_num": 0 },
+            { "type": "para", "para_key": "para_5", "line_num": 0 },
+            { "type": "para", "para_key": "para_6", "line_num": 0 },
+            { "type": "para", "para_key": "para_7", "line_num": 0 },
+            { "type": "li", "list_idx": "ol_0", "line_num": 0 }
+          ],
+          "Criteria": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_1", "line_num": 2 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 }
+          ],
+          "Evaluation": [{ "type": "li", "list_idx": "ol_0", "line_num": 0 }]
+        },
+        "__pre_h2__": []
+      }
+    }
+  },
+  "Module_8": {
+    "Pages": {
+      "Module8_Pages2.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 2 },
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "li", "list_idx": "ul_0", "line_num": 1 }
+          ],
+          "KRUSKAL'S ALGORITHM": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_9", "line_num": 0 },
+            { "type": "para", "para_key": "para_11", "line_num": 0 },
+            { "type": "para", "para_key": "para_15", "line_num": 1 },
+            { "type": "para", "para_key": "para_16", "line_num": 2 },
+            { "type": "para", "para_key": "para_21", "line_num": 0 },
+            { "type": "para", "para_key": "para_22", "line_num": 0 },
+            { "type": "para", "para_key": "para_23", "line_num": 0 },
+            { "type": "para", "para_key": "para_26", "line_num": 2 }
+          ],
+          "Exercises": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_3", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module8_Pages3.html.json": {
+        "content": {
+          "Key Take-Aways": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_2", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module8_Pages4.html.json": { "content": {}, "__pre_h2__": [] },
+      "Module8_Pages1.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 }
+          ],
+          "Minimum Spanning Tree": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_6", "line_num": 1 },
+            { "type": "li", "list_idx": "ol_0", "line_num": 0 }
+          ],
+          "PRIM'S ALGORITHM": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_4", "line_num": 1 },
+            { "type": "para", "para_key": "para_8", "line_num": 0 },
+            { "type": "para", "para_key": "para_10", "line_num": 4 },
+            { "type": "para", "para_key": "para_11", "line_num": 1 },
+            { "type": "para", "para_key": "para_14", "line_num": 0 },
+            { "type": "para", "para_key": "para_15", "line_num": 2 },
+            { "type": "para", "para_key": "para_16", "line_num": 0 },
+            { "type": "para", "para_key": "para_17", "line_num": 0 },
+            { "type": "para", "para_key": "para_19", "line_num": 0 }
+          ],
+          "Optional Additional Resources": [
+            { "type": "li", "list_idx": "ul_0", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module8_Pages0.html.json": {
+        "content": {
+          "Module Learning Outcomes": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ],
+          "Task List": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      }
+    },
+    "Assignments": {
+      "Module8_Asg0.html.json": {
+        "content": {
+          "Instructions": [
+            { "type": "para", "para_key": "para_1", "line_num": 2 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module8_Asg1.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 }
+          ],
+          "What you must do": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ],
+          "What to turn in": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_1", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      }
+    }
+  },
+  "Module_9": {
+    "Pages": {
+      "Module9_Pages5.html.json": {
+        "content": {
+          "Homework Solutions": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module9_Pages4.html.json": {
+        "content": {
+          "Key Take-Aways": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_2", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module9_Pages2.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_1", "line_num": 0 }
+          ],
+          "CIRCUIT SAT PROBLEM": [
+            { "type": "para", "para_key": "para_3", "line_num": 1 }
+          ],
+          "PROVING NP-COMPLETENESS": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_3", "line_num": 0 },
+            { "type": "para", "para_key": "para_4", "line_num": 1 },
+            { "type": "para", "para_key": "para_5", "line_num": 0 },
+            { "type": "li", "list_idx": "ol_0", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module9_Pages1.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 }
+          ],
+          "COMPLEXITY CLASSES": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_1", "line_num": 4 },
+            { "type": "para", "para_key": "para_4", "line_num": 0 },
+            { "type": "para", "para_key": "para_19", "line_num": 2 },
+            { "type": "para", "para_key": "para_21", "line_num": 0 },
+            { "type": "para", "para_key": "para_25", "line_num": 0 },
+            { "type": "para", "para_key": "para_28", "line_num": 0 },
+            { "type": "para", "para_key": "para_30", "line_num": 0 },
+            { "type": "para", "para_key": "para_31", "line_num": 2 },
+            { "type": "li", "list_idx": "ul_0", "line_num": 0 }
+          ],
+          "Decision Problems": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "para", "para_key": "para_7", "line_num": 1 },
+            { "type": "para", "para_key": "para_8", "line_num": 1 },
+            { "type": "para", "para_key": "para_9", "line_num": 1 },
+            { "type": "para", "para_key": "para_11", "line_num": 0 },
+            { "type": "li", "list_idx": "ul_1", "line_num": 1 },
+            { "type": "li", "list_idx": "ul_2", "line_num": 1 }
+          ],
+          "Optional Resources": [
+            { "type": "para", "para_key": "para_2", "line_num": 2 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module9_Pages0.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ],
+          "Module Learning Outcomes": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ],
+          "Explorations": [{ "type": "li", "list_idx": "ul_0", "line_num": 0 }],
+          "Task List": [{ "type": "para", "para_key": "para_0", "line_num": 0 }]
+        },
+        "__pre_h2__": []
+      },
+      "Module9_Pages3.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_2", "line_num": 0 }
+          ],
+          "Approximation Algorithms": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "para", "para_key": "para_6", "line_num": 0 },
+            { "type": "para", "para_key": "para_11", "line_num": 0 },
+            { "type": "para", "para_key": "para_18", "line_num": 0 }
+          ],
+          "Traveling Salesman Problem (TSP)": [
+            { "type": "para", "para_key": "para_0", "line_num": 2 },
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "para", "para_key": "para_4", "line_num": 0 },
+            { "type": "para", "para_key": "para_5", "line_num": 0 },
+            { "type": "para", "para_key": "para_7", "line_num": 0 },
+            { "type": "para", "para_key": "para_8", "line_num": 1 },
+            { "type": "para", "para_key": "para_10", "line_num": 0 },
+            { "type": "para", "para_key": "para_11", "line_num": 0 },
+            { "type": "para", "para_key": "para_13", "line_num": 2 },
+            { "type": "para", "para_key": "para_15", "line_num": 1 },
+            { "type": "para", "para_key": "para_17", "line_num": 0 },
+            { "type": "para", "para_key": "para_18", "line_num": 0 },
+            { "type": "para", "para_key": "para_19", "line_num": 0 },
+            { "type": "para", "para_key": "para_24", "line_num": 0 },
+            { "type": "para", "para_key": "para_31", "line_num": 2 },
+            { "type": "para", "para_key": "para_32", "line_num": 1 },
+            { "type": "li", "list_idx": "ol_0", "line_num": 1 }
+          ],
+          "Exercises": [{ "type": "li", "list_idx": "ul_0", "line_num": 0 }],
+          "Optional Additional Resources": [
+            { "type": "li", "list_idx": "ul_0", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      }
+    },
+    "Assignments": {
+      "Module9_Asg2.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ],
+          "What you must do": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module9_Asg1.html.json": {
+        "content": {
+          "Getting Started": [
+            { "type": "para", "para_key": "para_0", "line_num": 3 },
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_3", "line_num": 0 },
+            { "type": "para", "para_key": "para_7", "line_num": 0 },
+            { "type": "para", "para_key": "para_8", "line_num": 0 }
+          ],
+          "Submission Details": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module9_Asg3.html.json": { "content": {}, "__pre_h2__": [] },
+      "Module9_Asg0.html.json": {
+        "content": {
+          "Instructions": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_1", "line_num": 2 }
+          ]
+        },
+        "__pre_h2__": []
+      }
+    }
+  },
+  "Module_10": {
+    "Pages": {
+      "Module10_Pages6.html.json": {
+        "content": {
+          "Interactive mode and Repls": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages3.html.json": {
+        "content": {
+          "Course Wrap-Up": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_2", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages2.html.json": {
+        "content": {
+          "Final Exam Practice Questions": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_3", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages8.html.json": {
+        "content": {
+          "Key Take-Aways": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_2", "line_num": 1 },
+            { "type": "para", "para_key": "para_3", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages5.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 }
+          ],
+          "Design tests": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 }
+          ],
+          "Outline your approach": [
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "para", "para_key": "para_3", "line_num": 0 },
+            { "type": "para", "para_key": "para_4", "line_num": 0 },
+            { "type": "para", "para_key": "para_5", "line_num": 3 },
+            { "type": "li", "list_idx": "ul_0", "line_num": 2 }
+          ],
+          "Run your tests": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ],
+          "Reflect on your process": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages1.html.json": { "content": {}, "__pre_h2__": [] },
+      "Module10_Pages0.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 }
+          ],
+          "Task List": [{ "type": "para", "para_key": "para_0", "line_num": 0 }]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages10.html.json": {
+        "content": {
+          "Print statements": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_2", "line_num": 1 }
+          ],
+          "Types": [
+            { "type": "para", "para_key": "para_3", "line_num": 1 },
+            { "type": "para", "para_key": "para_9", "line_num": 1 },
+            { "type": "para", "para_key": "para_11", "line_num": 1 }
+          ],
+          "Now you try": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 }
+          ],
+          "Exercises": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_2", "line_num": 1 },
+            { "type": "para", "para_key": "para_3", "line_num": 1 },
+            { "type": "para", "para_key": "para_5", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages7.html.json": {
+        "content": {},
+        "__pre_h2__": [{ "type": "para", "para_key": "para_0", "line_num": 1 }]
+      },
+      "Module10_Pages4.html.json": {
+        "content": {
+          "Module Learning Outcomes": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages15.html.json": { "content": {}, "__pre_h2__": [] },
+      "Module10_Pages11.html.json": {
+        "content": {
+          "Variables & Assignment Statements": [
+            { "type": "para", "para_key": "para_6", "line_num": 1 },
+            { "type": "para", "para_key": "para_9", "line_num": 1 },
+            { "type": "para", "para_key": "para_12", "line_num": 1 }
+          ],
+          "Exercises": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_4", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages16.html.json": {
+        "content": {
+          "Tinker Lab": [
+            { "type": "para", "para_key": "para_2", "line_num": 1 },
+            { "type": "para", "para_key": "para_5", "line_num": 1 },
+            { "type": "para", "para_key": "para_10", "line_num": 1 },
+            { "type": "para", "para_key": "para_11", "line_num": 1 },
+            { "type": "para", "para_key": "para_16", "line_num": 1 },
+            { "type": "li", "list_idx": "ul_0", "line_num": 1 },
+            { "type": "li", "list_idx": "ul_1", "line_num": 1 },
+            { "type": "li", "list_idx": "ul_2", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages14.html.json": {
+        "content": {
+          "\\xa0": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "para", "para_key": "para_3", "line_num": 0 },
+            { "type": "para", "para_key": "para_4", "line_num": 0 },
+            { "type": "para", "para_key": "para_5", "line_num": 0 },
+            { "type": "para", "para_key": "para_8", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages12.html.json": {
+        "content": {
+          "Arithmetic": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_5", "line_num": 1 },
+            { "type": "para", "para_key": "para_6", "line_num": 1 },
+            { "type": "para", "para_key": "para_10", "line_num": 0 }
+          ],
+          "Exercises": [
+            { "type": "para", "para_key": "para_3", "line_num": 1 },
+            { "type": "para", "para_key": "para_5", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages30.html.json": { "content": {}, "__pre_h2__": [] },
+      "Module10_Pages13.html.json": {
+        "content": {
+          "Input Function": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "para", "para_key": "para_3", "line_num": 1 },
+            { "type": "para", "para_key": "para_10", "line_num": 0 }
+          ],
+          "Exercises": [{ "type": "para", "para_key": "para_3", "line_num": 1 }]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages29.html.json": {
+        "content": {
+          "Function calls": [
+            { "type": "para", "para_key": "para_3", "line_num": 1 },
+            { "type": "para", "para_key": "para_4", "line_num": 1 }
+          ],
+          "Function definitions": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_6", "line_num": 1 },
+            { "type": "para", "para_key": "para_9", "line_num": 1 }
+          ],
+          "Default arguments": [
+            { "type": "para", "para_key": "para_3", "line_num": 1 }
+          ],
+          "Docstrings": [
+            { "type": "para", "para_key": "para_3", "line_num": 1 }
+          ],
+          "Stack traces": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_4", "line_num": 1 }
+          ],
+          "Exercises": [{ "type": "para", "para_key": "para_0", "line_num": 1 }]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages28.html.json": {
+        "content": {
+          "Module Learning Outcomes": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 }
+          ],
+          "Task List": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "li", "list_idx": "ul_0", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages24.html.json": {
+        "content": {
+          "Tinker Lab": [
+            { "type": "para", "para_key": "para_20", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages25.html.json": {
+        "content": {
+          "Tinker Lab": [
+            { "type": "para", "para_key": "para_5", "line_num": 1 },
+            { "type": "para", "para_key": "para_24", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages19.html.json": {
+        "content": {
+          "Comparison operators": [
+            { "type": "para", "para_key": "para_2", "line_num": 1 },
+            { "type": "para", "para_key": "para_5", "line_num": 1 }
+          ],
+          "Logical operators": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_2", "line_num": 1 },
+            { "type": "para", "para_key": "para_4", "line_num": 1 }
+          ],
+          "Exercises": [
+            { "type": "para", "para_key": "para_2", "line_num": 1 },
+            { "type": "para", "para_key": "para_3", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages22.html.json": {
+        "content": {
+          "Exercise": [{ "type": "para", "para_key": "para_0", "line_num": 1 }]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages26.html.json": {
+        "content": {
+          "\\xa0": [{ "type": "para", "para_key": "para_1", "line_num": 2 }],
+          "Pseudocode": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_3", "line_num": 0 },
+            { "type": "para", "para_key": "para_5", "line_num": 1 },
+            { "type": "para", "para_key": "para_6", "line_num": 0 },
+            { "type": "para", "para_key": "para_9", "line_num": 0 },
+            { "type": "para", "para_key": "para_11", "line_num": 0 },
+            { "type": "para", "para_key": "para_13", "line_num": 0 },
+            { "type": "para", "para_key": "para_14", "line_num": 0 },
+            { "type": "para", "para_key": "para_15", "line_num": 0 },
+            { "type": "para", "para_key": "para_17", "line_num": 0 }
+          ],
+          "Flowcharts": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "li", "list_idx": "ul_0", "line_num": 4 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages23.html.json": {
+        "content": {
+          "flow of execution": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages21.html.json": {
+        "content": {
+          "Iteration": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_6", "line_num": 1 },
+            { "type": "para", "para_key": "para_9", "line_num": 1 },
+            { "type": "para", "para_key": "para_10", "line_num": 1 },
+            { "type": "para", "para_key": "para_12", "line_num": 1 },
+            { "type": "para", "para_key": "para_15", "line_num": 1 },
+            { "type": "para", "para_key": "para_16", "line_num": 1 }
+          ],
+          "Exercises": [{ "type": "para", "para_key": "para_3", "line_num": 1 }]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages27.html.json": {
+        "content": {
+          "Key Take-Aways": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages20.html.json": {
+        "content": {
+          "if statements": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_4", "line_num": 1 },
+            { "type": "para", "para_key": "para_9", "line_num": 1 }
+          ],
+          "Exercises": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_3", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages18.html.json": {
+        "content": {
+          "Module Learning Outcomes": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_1", "line_num": 0 }
+          ],
+          "Task List": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "li", "list_idx": "ul_0", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages17.html.json": {
+        "content": {
+          "Key Take-Aways": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_3", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages44.html.json": {
+        "content": {
+          "Tinker Lab": [
+            { "type": "para", "para_key": "para_13", "line_num": 1 },
+            { "type": "para", "para_key": "para_19", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages37.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_5", "line_num": 1 },
+            { "type": "para", "para_key": "para_8", "line_num": 0 },
+            { "type": "para", "para_key": "para_10", "line_num": 0 },
+            { "type": "para", "para_key": "para_12", "line_num": 0 },
+            { "type": "para", "para_key": "para_17", "line_num": 0 },
+            { "type": "para", "para_key": "para_19", "line_num": 0 },
+            { "type": "para", "para_key": "para_23", "line_num": 1 },
+            { "type": "para", "para_key": "para_24", "line_num": 0 },
+            { "type": "para", "para_key": "para_26", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages40.html.json": {
+        "content": {
+          "Module Learning Outcomes": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "li", "list_idx": "ul_0", "line_num": 0 }
+          ],
+          "Task List": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "li", "list_idx": "ul_0", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages41.html.json": {
+        "content": {
+          "find()": [{ "type": "para", "para_key": "para_1", "line_num": 1 }],
+          "Operators vs. functions vs. methods": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 }
+          ],
+          "Slicing": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_2", "line_num": 1 }
+          ],
+          "Comparison operators": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 }
+          ],
+          "Exercises": [{ "type": "para", "para_key": "para_0", "line_num": 0 }]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages45.html.json": {
+        "content": {
+          "Tinker Lab": [
+            { "type": "para", "para_key": "para_12", "line_num": 1 },
+            { "type": "para", "para_key": "para_13", "line_num": 1 },
+            { "type": "para", "para_key": "para_17", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages39.html.json": {
+        "content": {
+          "Key Take-Aways": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_3", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages38.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_3", "line_num": 0 },
+            { "type": "para", "para_key": "para_5", "line_num": 0 },
+            { "type": "para", "para_key": "para_8", "line_num": 0 },
+            { "type": "para", "para_key": "para_10", "line_num": 0 },
+            { "type": "para", "para_key": "para_12", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages43.html.json": { "content": {}, "__pre_h2__": [] },
+      "Module10_Pages42.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 }
+          ],
+          "len": [{ "type": "para", "para_key": "para_0", "line_num": 0 }],
+          "Indexing and slicing": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_1", "line_num": 1 }
+          ],
+          "in, not in": [
+            { "type": "para", "para_key": "para_2", "line_num": 0 }
+          ],
+          "Min and max, sort, sorted": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_2", "line_num": 1 }
+          ],
+          "Iterating through a list": [
+            { "type": "para", "para_key": "para_0", "line_num": 2 }
+          ],
+          "Splitting a string": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_1", "line_num": 0 }
+          ],
+          "Lists of objects": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 1 }
+          ],
+          "List comprehensions": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "para", "para_key": "para_5", "line_num": 1 }
+          ],
+          "Exercises": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_4", "line_num": 2 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages36.html.json": { "content": {}, "__pre_h2__": [] },
+      "Module10_Pages50.html.json": { "content": {}, "__pre_h2__": [] },
+      "Module10_Pages49.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_3", "line_num": 1 },
+            { "type": "para", "para_key": "para_12", "line_num": 2 },
+            { "type": "para", "para_key": "para_13", "line_num": 1 },
+            { "type": "para", "para_key": "para_16", "line_num": 0 },
+            { "type": "para", "para_key": "para_27", "line_num": 1 },
+            { "type": "para", "para_key": "para_28", "line_num": 0 },
+            { "type": "para", "para_key": "para_29", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages33.html.json": {
+        "content": {
+          "Module Learning Outcomes": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 }
+          ],
+          "Explorations": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ],
+          "Optional Resources": [
+            { "type": "li", "list_idx": "ul_0", "line_num": 1 }
+          ],
+          "Task List": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "li", "list_idx": "ul_0", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages34.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_6", "line_num": 2 }
+          ],
+          "Writing a recursive function": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "li", "list_idx": "ul_0", "line_num": 0 }
+          ],
+          "Exercises": [{ "type": "para", "para_key": "para_3", "line_num": 2 }]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages35.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_9", "line_num": 1 },
+            { "type": "para", "para_key": "para_10", "line_num": 0 }
+          ],
+          "\"Private\" class members": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "para", "para_key": "para_3", "line_num": 0 }
+          ],
+          "Printing objects of user-defined classes": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 }
+          ],
+          "Exercises": [
+            { "type": "para", "para_key": "para_1", "line_num": 3 },
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "para", "para_key": "para_3", "line_num": 0 },
+            { "type": "para", "para_key": "para_6", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages31.html.json": {
+        "content": {
+          "Tinker Lab": [
+            { "type": "para", "para_key": "para_2", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages48.html.json": {
+        "content": {
+          "Tuples": [{ "type": "para", "para_key": "para_1", "line_num": 1 }],
+          "Mutability vs. immutability": [
+            { "type": "para", "para_key": "para_2", "line_num": 0 },
+            { "type": "para", "para_key": "para_6", "line_num": 1 },
+            { "type": "para", "para_key": "para_8", "line_num": 0 },
+            { "type": "para", "para_key": "para_9", "line_num": 0 },
+            { "type": "para", "para_key": "para_10", "line_num": 3 },
+            { "type": "para", "para_key": "para_11", "line_num": 0 },
+            { "type": "para", "para_key": "para_12", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages32.html.json": {
+        "content": {
+          "Key Take-Aways": [
+            { "type": "para", "para_key": "para_2", "line_num": 1 },
+            { "type": "para", "para_key": "para_3", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages47.html.json": {
+        "content": {
+          "Module Learning Outcomes": [
+            { "type": "para", "para_key": "para_1", "line_num": 0 }
+          ],
+          "Explorations": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 }
+          ],
+          "Task List": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "li", "list_idx": "ul_0", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages46.html.json": {
+        "content": {
+          "Key Take-Aways": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_2", "line_num": 1 },
+            { "type": "para", "para_key": "para_3", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages53.html.json": {
+        "content": {
+          "Key Take-Aways": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_2", "line_num": 1 },
+            { "type": "para", "para_key": "para_3", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages55.html.json": {
+        "content": {
+          "Dictionary Data Types": [
+            { "type": "para", "para_key": "para_12", "line_num": 1 },
+            { "type": "para", "para_key": "para_15", "line_num": 1 }
+          ],
+          "Exercises": [{ "type": "para", "para_key": "para_2", "line_num": 1 }]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages51.html.json": { "content": {}, "__pre_h2__": [] },
+      "Module10_Pages56.html.json": {
+        "content": {
+          "Introduction": [
+            { "type": "para", "para_key": "para_4", "line_num": 0 },
+            { "type": "para", "para_key": "para_8", "line_num": 0 },
+            { "type": "para", "para_key": "para_11", "line_num": 2 },
+            { "type": "para", "para_key": "para_13", "line_num": 0 },
+            { "type": "para", "para_key": "para_15", "line_num": 0 },
+            { "type": "para", "para_key": "para_17", "line_num": 0 },
+            { "type": "para", "para_key": "para_19", "line_num": 0 },
+            { "type": "para", "para_key": "para_21", "line_num": 0 },
+            { "type": "para", "para_key": "para_23", "line_num": 0 }
+          ],
+          "Exercises": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_2", "line_num": 3 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages52.html.json": {
+        "content": {
+          "Tinker Lab": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages57.html.json": { "content": {}, "__pre_h2__": [] },
+      "Module10_Pages54.html.json": {
+        "content": {
+          "Module Learning Outcomes": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "para", "para_key": "para_1", "line_num": 0 },
+            { "type": "li", "list_idx": "ul_0", "line_num": 0 }
+          ],
+          "Task List": [
+            { "type": "para", "para_key": "para_0", "line_num": 0 },
+            { "type": "li", "list_idx": "ul_0", "line_num": 0 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages64.html.json": {
+        "content": {
+          "Creating objects of one class inside another class' method": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_5", "line_num": 1 }
+          ],
+          "Where to use in real life?": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 }
+          ],
+          "Using objects of one class inside another class' method": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 }
+          ],
+          "Using another object of the same class inside a method of the same class": [
+            { "type": "para", "para_key": "para_5", "line_num": 1 },
+            { "type": "para", "para_key": "para_6", "line_num": 1 },
+            { "type": "para", "para_key": "para_7", "line_num": 1 },
+            { "type": "para", "para_key": "para_8", "line_num": 1 }
+          ],
+          "Exercises": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_4", "line_num": 1 },
+            { "type": "para", "para_key": "para_10", "line_num": 1 },
+            { "type": "para", "para_key": "para_12", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages58.html.json": {
+        "content": {
+          "Tinker Lab": [
+            { "type": "para", "para_key": "para_6", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages63.html.json": {
+        "content": {
+          "Passing objects as arguments to methods\\xa0": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_2", "line_num": 1 },
+            { "type": "para", "para_key": "para_7", "line_num": 1 },
+            { "type": "para", "para_key": "para_9", "line_num": 1 }
+          ],
+          "Summary and Syntax": [
+            { "type": "para", "para_key": "para_2", "line_num": 1 },
+            { "type": "para", "para_key": "para_3", "line_num": 1 }
+          ],
+          "Exercises": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_8", "line_num": 1 },
+            { "type": "para", "para_key": "para_13", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages61.html.json": { "content": {}, "__pre_h2__": [] },
+      "Module10_Pages62.html.json": {
+        "content": {
+          "The __init__ method (initializer method)": [
+            { "type": "para", "para_key": "para_5", "line_num": 1 }
+          ],
+          "What is self?": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 },
+            { "type": "para", "para_key": "para_2", "line_num": 1 }
+          ],
+          "Summary and Syntax": [
+            { "type": "para", "para_key": "para_0", "line_num": 1 }
+          ],
+          "Real Life Usage": [
+            { "type": "para", "para_key": "para_2", "line_num": 1 }
+          ],
+          "Exercises": [
+            { "type": "para", "para_key": "para_4", "line_num": 1 },
+            { "type": "para", "para_key": "para_7", "line_num": 1 },
+            { "type": "para", "para_key": "para_9", "line_num": 1 },
+            { "type": "para", "para_key": "para_10", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages59.html.json": {
+        "content": {
+          "Tinker Lab": [
+            { "type": "para", "para_key": "para_4", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      },
+      "Module10_Pages60.html.json": {
+        "content": {
+          "Key Take-Aways": [
+            { "type": "para", "para_key": "para_1", "line_num": 1 },
+            { "type": "para", "para_key": "para_2", "line_num": 1 }
+          ]
+        },
+        "__pre_h2__": []
+      }
+    },
+    "Assignments": {
+      "Module10_Asg1.html.json": { "content": {}, "__pre_h2__": [] },
+      "Module0_Asg0.html.json": {
+        "content": {
+          "\\xa0": [{ "type": "para", "para_key": "para_0", "line_num": 1 }]
+        },
+        "__pre_h2__": []
+      }
+    }
+  }
+}

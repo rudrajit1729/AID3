@@ -1,0 +1,10 @@
+Learning outcome,
+Learning objective,
+Educational objective, 
+Educational outcome,
+Educational purpose,
+Learning goal, 
+Learning aim, 
+Objective of learning,
+Instructional outcome, 
+Instructional purpose
