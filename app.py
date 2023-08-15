@@ -127,7 +127,7 @@ def course_results(course_name):
                         results=pkg_results,
                         page=page,
                         per_page=per_page,
-                        pagination=pagination,
+                        pagination=pagination
                         )
 
 if __name__ == '__main__':
