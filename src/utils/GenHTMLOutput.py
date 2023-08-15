@@ -48,10 +48,10 @@ def generate_HTML_output(page_type, page_violations, html_dir, module_name, body
                                                 para_text = sibling.text.split(".")
                                                 new_text = "<p>"
                                                 for idx, text in enumerate(para_text):
-                                                    if idx == line_num:
-                                                        new_text = new_text + "<span style=\"background-color:yellow;\">" + text + "." + "</span>"
+                                                    if idx == line_num and len(text) >5:
+                                                        new_text = new_text + "<span style=\"background-color:yellow;\">" + text + "</span>"
                                                     else:
-                                                        new_text = new_text + text + ". "
+                                                        new_text = new_text + text + "."
                                                 new_text = new_text + "</p>"
                                                 new_soup = bs4.BeautifulSoup(new_text, features="html.parser")
                                                 sibling.replace_with(new_soup.p)
@@ -67,7 +67,7 @@ def generate_HTML_output(page_type, page_violations, html_dir, module_name, body
 
                                                 text = violation_li.text
                                                 new_text = "<li>"
-                                                new_text = new_text + "<span style=\"background-color:yellow;\">" + text + "." + "</span>" + "</li>"
+                                                new_text = new_text + "<span style=\"background-color:yellow;\">" + text + "</span>" + "</li>"
                                                 new_soup = bs4.BeautifulSoup(new_text, features="html.parser")
                                                 violation_li.replace_with(new_soup.li)
                                             ul_idx = ul_idx + 1
@@ -80,7 +80,7 @@ def generate_HTML_output(page_type, page_violations, html_dir, module_name, body
 
                                                 text = violation_li.text
                                                 new_text = "<li>"
-                                                new_text = new_text + "<span style=\"background-color:yellow;\">" + text + "." + "</span>" + "</li>"
+                                                new_text = new_text + "<span style=\"background-color:yellow;\">" + text + "</span>" + "</li>"
                                                 new_soup = bs4.BeautifulSoup(new_text, features="html.parser")
                                                 violation_li.replace_with(new_soup.li)
                                             ol_idx = ol_idx + 1
@@ -101,10 +101,10 @@ def generate_HTML_output(page_type, page_violations, html_dir, module_name, body
                                         para_text = anchor_point.text.split(".")
                                         new_text = "<p>"
                                         for idx, text in enumerate(para_text):
-                                            if idx == line_num:
-                                                new_text = new_text + "<span style=\"background-color:yellow;\">" + text + "." + "</span>"
+                                            if idx == line_num and len(text) > 5:
+                                                new_text = new_text + "<span style=\"background-color:yellow;\">" + text + "</span>"
                                             else:
-                                                new_text = new_text + text + ". "
+                                                new_text = new_text + text + "."
                                         new_soup = bs4.BeautifulSoup(new_text, features="html.parser")
                                         anchor_point.replace_with(new_soup.p)
 

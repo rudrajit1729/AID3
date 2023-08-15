@@ -31,7 +31,7 @@ def get_all_links_and_results(results, course_name):
         # page_num = re.sub('[^0-9]+', ' ', page_type).strip()
         page_type = re.sub('[^A-Za-z]+', ' ', page_type).strip().split(" ")[0]
         
-        if results[page_name]['rule1'] == False:
+        if results[page_name]['rule1'] == False and (results[page_name]['rule2'] == True or results[page_name]['rule3'] == True):
             if page_type == "Pages":
                 page_path = os.path.join(html_path, "HTML_DATA", course_name, f"Module_{module_num}", "Pages", page_name)
             else:

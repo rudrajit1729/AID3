@@ -1,8 +1,8 @@
 {
-  "Module0_Asg0.html": { "rule1": true, "rule2": false, "rule3": false },
+  "Module0_Asg0.html": { "rule1": false, "rule2": false, "rule3": false },
   "Module0_Pages0.html": { "rule1": false, "rule2": false, "rule3": false },
   "Module0_Pages1.html": { "rule1": true, "rule2": false, "rule3": false },
-  "Module0_Pages2.html": { "rule1": true, "rule2": false, "rule3": false },
+  "Module0_Pages2.html": { "rule1": false, "rule2": false, "rule3": false },
   "Module0_Pages6.html": { "rule1": true, "rule2": false, "rule3": false },
   "Module10_Pages39.html": { "rule1": true, "rule2": false, "rule3": false },
   "Module10_Pages44.html": { "rule1": true, "rule2": false, "rule3": false },
