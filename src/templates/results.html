@@ -127,6 +127,13 @@
   <div class="container d-flex justify-content-center">
     {{ pagination.links }}
   </div>
+  <script>
+    // Listen for the 'popstate' event
+    window.addEventListener('popstate', function(event) {
+        // Reload the page
+        location.reload(true);
+    });
+</script>
 </body>
 
 </html>
