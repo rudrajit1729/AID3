@@ -391,13 +391,13 @@
 <div style="width: 98%; max-width: 1000px; margin-bottom: 24px;"><img alt="Exploration Icon" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1921502/files/95339838" data-api-returntype="File" data-decorative="true" data-id="95339838" height="74" src="https://canvas.oregonstate.edu/courses/1921502/files/95339838/download?wrap=1" style="padding-left: 10px; float: right;" width="75"/>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 0px; margin-bottom: 18px; margin-right: 85px;">Introduction</h2>
 <p>A list is an ordered collection of objects of any type. You can have lists of floats, strings, objects made from classes you've defined, etc. You can even have lists contain other lists. You're allowed to mix the types of objects in a list, for example you can have a list that contains both integers and strings.</p>
-<p>Most lists contain multiple values, but we can have lists of one or zero values, which can be useful. Here are a few lists for you to interact with.</p>
+<p>Most lists contain multiple values, but we can have lists of one or zero values, which can be useful.<span style="background-color:yellow;"> Here are a few lists for you to interact with</span>.</p>
 <p><iframe allowfullscreen="allowfullscreen" height="400px" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" src="https://repl.it/@coeCS161/Lists-1?lite=true" width="100%"></iframe></p>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 18px; margin-bottom: 18px;">len</h2>
-<p>With lists, len() returns the number of elements in the list:</p>
+<p><span style="background-color:yellow;">With lists, len() returns the number of elements in the list:</span></p>
 <pre>&gt; len(["Mary","had","a","little","lamb"])<br/>&gt; count = [1,2,3,4,5]<br/>&gt; len(count)</pre>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 18px; margin-bottom: 18px;">Indexing and slicing</h2>
-<p>Indexing and slicing work the same with lists as they do with strings. For example, try entering these commands by typing them to the right of the little red arrow above. (Enter one line at a time.)</p>
+<p>Indexing and slicing work the same with lists as they do with strings.<span style="background-color:yellow;"> For example, try entering these commands by typing them to the right of the little red arrow above</span> (Enter one line at a time.).</p>
 <pre>&gt; some_primes[0]<br/>&gt; some_primes[0:10:2]<span class="s1"><br/>&gt; some_names[::-2]</span><span class="s1"><br/></span></pre>
 <p>When you index into a nested list to get a sublist, you can then index into that list.<span style="background-color:yellow;"> Try entering the following to get the list within some_stuff, then the item 'Tollbooth' within that sublist, and then its first character:</span></p>
 <pre><span class="s1">&gt; some_stuff[3]<br/>&gt; some_stuff[3][1]<br/></span><span class="s1">&gt; some_stuff[3][1][0]<br/></span></pre>
@@ -414,25 +414,25 @@
 <pre>&gt; evens.sort()<br/>&gt; palindromes.sort()</pre>
 <p>You'll notice that nothing prints out when you try those.<span style="background-color:yellow;"> But now look at the lists again:</span></p>
 <pre>&gt; evens<br/>&gt; palindromes</pre>
-<p>The sort function also wouldn't make sense for some_stuff - again because Python doesn't know how to compare the different types in that list.<span style="background-color:yellow;"> (Try it and see!)</span></p>
-<p><span style="background-color:yellow;">There's also a function called sorted()</span> Unlike the sort() method, the sorted() function returns a sorted copy without changing the original list:.</p>
+<p>The sort function also wouldn't make sense for <em>some_stuff</em> - again because Python doesn't know how to compare the different types in that list. (Try it and see!)</p>
+<p>There's also a function called sorted(). Unlike the sort() method, the sorted() function <strong>returns</strong> a sorted copy without changing the original list:</p>
 <pre>&gt; sorted_odds = sorted(odds)</pre>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 18px; margin-bottom: 18px;">Concatenation</h2>
-<p><span style="background-color:yellow;">We can concatenate lists with the + operator</span>.</p>
+<p>We can concatenate lists with the + operator.</p>
 <pre>&gt; evens + odds</pre>
 <p>Here's one more list example for us to practice on.</p>
 <p><iframe allowfullscreen="allowfullscreen" height="400px" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" src="https://repl.it/@coeCS161/Lists-3?lite=true" width="100%"></iframe></p>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 18px; margin-bottom: 18px;">Iterating through a list</h2>
-<p>Lists are iterable, so we can use a for loop to access each element. For example, try this loop (you'll have to use the <em>tab</em> key after you hit <em>enter</em>. You'll see 3 dots , which means it will wait for you to press <em>enter</em> again before executing your code).</p>
+<p>Lists are iterable, so we can use a for loop to access each element. For example, try this loop (you'll have to use the tab key after you hit enter.<span style="background-color:yellow;"> You'll see 3 dots , which means it will wait for you to press enter again before executing your code)</span>.</p>
 <pre>&gt; for number in fun_floats:<br/>&gt; print(number)</pre>
 <p>The following loop prints out the total of the values in the list:</p>
 <pre>&gt; total = 0<br/>&gt; for number in fun_floats:<br/>&gt; total += number<br/>&gt; print(total)</pre>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 18px; margin-bottom: 18px;">Splitting a string</h2>
-<p><span style="background-color:yellow;">You can split a string into a list of tokens using the string split() method</span> For example:.</p>
+<p>You can split a string into a list of tokens using the string split() method.<span style="background-color:yellow;"> For example:</span></p>
 <pre>&gt; sentence = "Not the comfy chair!"<br/>&gt; word_list = sentence.split()</pre>
-<p>word_list is now this list: ["Not", "the", "comfy", "chair!"]. The default is that white space (spaces, tabs, and newlines) is the separator, but you can specify other separators:</p>
+<p><span style="background-color:yellow;">word_list is now this list: ["Not", "the", "comfy", "chair!"]</span> The default is that white space (spaces, tabs, and newlines) is the separator, but you can specify other separators:.</p>
 <pre>&gt; sentence = "The cat, a stray tabby, climbed in the window, tail twitching."<br/>&gt; word_list = sentence.split(", ")</pre>
-<p>Now word_list is: ["The cat", "a stray tabby", "climbed in the window", "tail twitching."].</p>
+<p>Now word_list is: ["The cat", "a stray tabby", "climbed in the window", "tail twitching."]</p>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 18px; margin-bottom: 18px;">Lists of objects</h2>
 <p>We can make a list of BankAccount objects (which we defined in Module 5) like this:</p>
 <pre>account_1 = BankAccount("235349", 730.29)<br/>account_2 = BankAccount("783848", 240.89)<br/>account_3 = BankAccount("732005", 1390.20)<br/>account_list = [account_1,account_2,account_3]</pre>
@@ -449,16 +449,16 @@
 <p>In this example, the original iterable was a range. If a value in that range is odd (the remainder of dividing by 2 is 1), then we apply the transformation (multiplying by 2). Note that values are filtered out <strong>before</strong> the transformation is applied. If we had doubled the numbers and then filtered out the even ones, then the new list would have been empty.</p>
 <p>We can also use a list comprehension to filter without applying a transformation:</p>
 <pre class="p1"><span class="s1">&gt; nums = [1,2,3,4,5,6,7,8,9]</span><br/><span class="s1">&gt; [x for x in nums if x % 3 == 0]</span></pre>
-<p>Don't let this new use of the <strong>for</strong> and <strong>if</strong> keywords confuse you. List comprehensions are a separate thing from for loops and if statements.</p>
+<p>Don't let this new use of the for and if keywords confuse you.<span style="background-color:yellow;"> List comprehensions are a separate thing from for loops and if statements</span>.</p>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 18px; margin-bottom: 18px;">Exercises</h2>
-<p><span>(See the module overview for a link to example solutions.)</span></p>
+<p><span style="background-color:yellow;">(See the module overview for a link to example solutions</span>).</p>
 <p>1. Write a function named <em>every_other</em> that takes as a parameter a list and returns a list that only contains every other element starting with the first one. For example, if the original list is [7, "joe", "apple", 9.81, False], then the new list should be [7, "apple", False]. Use slicing.</p>
 <pre>Sample input: ["parsley", "sage", "rosemary", "thyme"]<br/>Expected output: ["parsley", "rosemary"]</pre>
 <p>2. Write a function named <em>array_sum</em> that takes as a parameter a list of strings and returns the total number of characters in all the strings.</p>
 <pre>Sample input: ["Wayne", "Katie", "Daryl", "Dan"]<br/>Expected output: 18</pre>
 <p>3. Write a function named rev_string_list that takes as a parameter a list of strings and returns a list that contains the reverse of each of those strings. Use a list comprehension.</p>
 <pre>Sample input: ["Wayne", "Katie", "Daryl", "Dan"]<br/>Expected output: ['enyaW', 'eitaK', 'lyraD', 'naD']</pre>
-<p>4. Write a function named <em>contain_string</em> that takes as a parameter a list of strings and the target string, and returns a list of the strings from the original list that contain the target string. Use a list comprehension. </p>
+<p>4. Write a function named contain_string that takes as a parameter a list of strings and the target string, and returns a list of the strings from the original list that contain the target string.<span style="background-color:yellow;"> Use a list comprehension</span> .</p>
 <pre>Sample input: ['cats', 'tacks', 'scat', 'stack'], 'cat'<br/>Expected output: ['cats', 'scat']</pre>
 </div>
 </div>

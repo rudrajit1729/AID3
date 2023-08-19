@@ -48,7 +48,7 @@ def generate_HTML_output(page_type, page_violations, html_dir, module_name, body
                                                 para_text = sibling.text.split(".")
                                                 new_text = "<p>"
                                                 for idx, text in enumerate(para_text):
-                                                    if idx == line_num and len(text) >5:
+                                                    if idx == line_num and len(text) >10:
                                                         new_text = new_text + "<span style=\"background-color:yellow;\">" + text + "</span>"
                                                     else:
                                                         new_text = new_text + text + "."
@@ -101,7 +101,7 @@ def generate_HTML_output(page_type, page_violations, html_dir, module_name, body
                                         para_text = anchor_point.text.split(".")
                                         new_text = "<p>"
                                         for idx, text in enumerate(para_text):
-                                            if idx == line_num and len(text) > 5:
+                                            if idx == line_num and len(text) > 10:
                                                 new_text = new_text + "<span style=\"background-color:yellow;\">" + text + "</span>"
                                             else:
                                                 new_text = new_text + text + "."
