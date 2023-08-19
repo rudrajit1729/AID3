@@ -1,0 +1,9 @@
+Include
+Lib
+Scripts
+./pyvenv.cfg
+share
+ML_Workflow
+.vscode
+Course_HTML
+temp
