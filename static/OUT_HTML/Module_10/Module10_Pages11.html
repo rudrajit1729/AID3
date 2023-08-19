@@ -392,7 +392,7 @@
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 0px; margin-bottom: 18px; margin-right: 85px;">Variables &amp; Assignment Statements</h2>
 <p>A variable is a name that refers to a particular value. It's called a <em>variable</em> because the value it refers to can change. An assignment statement assigns a value to a variable. If a variable of that name doesn't yet exist, then one is created. Assignment statements look like this:</p>
 <iframe allowfullscreen="allowfullscreen" height="400px" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" src="https://repl.it/@coeCS161/Variables-and-Assignment-1?lite=true" width="100%"></iframe>
-<p>Each of these statements causes the variable on the left side to refer to the value on the right side.<span style="background-color:yellow;"> It's also possible to have a variable on the right side of an assignment statement, in which case the variable on the left side will now refer to the same value as the variable on the right side</span> After the statement below, num_1 and num_2 will both refer to the value 12..</p>
+<p>Each of these statements causes the variable on the left side to refer to the value on the right side. It's also possible to have a variable on the right side of an assignment statement, in which case the variable on the left side will now refer to the same value as the variable on the right side. After the statement below, num_1 and num_2 will both refer to the value 12.</p>
 <pre>&gt; num_2 = num_1</pre>
 <p>You can print the value that a variable refers to like so:</p>
 <pre>&gt; print(radius)<br/>&gt; print(first_name)<br/>&gt; print("The value of is_even is", is_even)</pre>
@@ -404,30 +404,30 @@ and del global not with
 as elif if or yield
 assert else import pass
 break except in raise</pre>
-<p>In some computer languages, you cannot change what type of value a variable refers to, but in Python you can.<span style="background-color:yellow;"> For example, you can assign an integer to a variable and then later assign a string to that same variable</span> You can use the type function to see what type of value a variable currently refers to..</p>
+<p>In some computer languages, you cannot change what type of value a variable refers to, but in Python you can. For example, you can assign an integer to a variable and then later assign a string to that same variable. You can use the type function to see what type of value a variable currently refers to.</p>
 <iframe allowfullscreen="allowfullscreen" height="400px" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" src="https://repl.it/@coeCS161/Variables-and-Assignment-2?lite=true" width="100%"></iframe>
 <h3 style="border-bottom: 1px solid #e6e7e8; font-size: 14pt; margin-top: 18px; margin-bottom: 18px;">Literals</h3>
 <p>Literal values like 212, or -17.8, or "Wichita", or <em>True</em>, are often referred to simply as <strong>literals</strong>.</p>
 <h3 style="border-bottom: 1px solid #e6e7e8; font-size: 14pt; margin-top: 18px; margin-bottom: 18px;">Constants</h3>
-<p>If there are literal values that appear in your code, it can be a good idea to replace them with <strong>constants</strong>. In Python, a constant behaves just like a variable does, but by convention, the name of a constant is in all caps, for example MAX_CAPACITY or EARTH_GRAVITY. A constant is assigned a value once and then that value should never change during the program's execution. Python doesn't enforce this, because it has a philosophy of "we're all adults here", so you <em>could</em> change the value of a constant, but just don't. Declaring a constant gives a name to a literal value, making it easier to recognize or remember the value's purpose, so that you don't have "magic numbers" in your code.</p>
+<p>If there are literal values that appear in your code, it can be a good idea to replace them with constants.<span style="background-color:yellow;"> In Python, a constant behaves just like a variable does, but by convention, the name of a constant is in all caps, for example MAX_CAPACITY or EARTH_GRAVITY</span> A constant is assigned a value once and then that value should never change during the program's execution. Python doesn't enforce this, because it has a philosophy of "we're all adults here", so you could change the value of a constant, but just don't. Declaring a constant gives a name to a literal value, making it easier to recognize or remember the value's purpose, so that you don't have "magic numbers" in your code..</p>
 <p>Examples:</p>
 <pre>MAX_CAPACITY = 312  # maximum number of persons that can attend an event at this venue<br/>EARTH_GRAVITY = 9.81  # acceleration due to gravity at the Earth's surface, in m/s^2</pre>
 <h3 style="border-bottom: 1px solid #e6e7e8; font-size: 14pt; margin-top: 18px; margin-bottom: 18px;">Printing string literals filled in with the values of variables (or constants)</h3>
 <p>Something that often comes up for the output of a program is printing out specific text, but with the values of certain variables or constants filled in. There are a few different ways of doing this in Python. Here's one example:</p>
 <pre>print("Your dog is", dog_age, "years old.")</pre>
-<p>In this print statement the two strings are separated from the variable by commas, and each of the commas will cause a space in the output (but the spaces that aren't part of the strings will not cause spaces in the output). Here's an example that uses string concatenation, which will be mentioned in the next exploration:</p>
+<p>In this print statement the two strings are separated from the variable by commas, and each of the commas will cause a space in the output (but the spaces that aren't part of the strings will not cause spaces in the output).<span style="background-color:yellow;"> Here's an example that uses string concatenation, which will be mentioned in the next exploration:</span></p>
 <pre>print("Your dog is " + str(dog_age) + " years old.")</pre>
 <p>In this print statement the value of dog_age is converted to a string, and the strings are then joined with the + operator. In this version, a space was added at the end of the first string and the beginning of the last string, since there are no commas causing spaces in the output. Here's one more example, using something called an f-string (because of the 'f' at the beginning):</p>
 <pre>print(f"Your dog is {dog_age} years old.")</pre>
 <p>In this print statement there's just a single string, and the values of any variables in curly braces are filled in.</p>
-<p>All three of these approaches will work, so feel free to use any of them.</p>
+<p>All three of these approaches will work, so feel free to use any of them..</p>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 18px; margin-bottom: 18px;">Exercises</h2>
 <p><span>(See the module overview for a link to example solutions.)</span></p>
-<p>1. Assign the value 3.14159 to a variable named <em>pi</em>, and then print out the value of that variable.</p>
+<p>1.<span style="background-color:yellow;"> Assign the value 3</span>14159 to a variable named pi, and then print out the value of that variable..</p>
 <pre>Sample input: NA<br/>Expected Output: 3.14159</pre>
-<p>2.<span style="background-color:yellow;"> Assign the value "Smith" to a variable named last_name, and then print out the value of that variable</span>.</p>
+<p>2. Assign the value "Smith" to a variable named <em>last_name</em>, and then print out the value of that variable.</p>
 <pre>Sample input: NA<br/>Expected Output: "Smith"</pre>
-<p>3.<span style="background-color:yellow;"> Assign the value 19</span>3 to a variable named length_in_inches, and then print out the type of the value that variable refers to..</p>
+<p>3. Assign the value 19.3 to a variable named <em>length_in_inches</em>, and then print out the type of the value that variable refers to.</p>
 <pre>Sample input: NA<br/>Expected Output: &lt;class 'float'&gt;</pre>
 <p>4.<span style="background-color:yellow;"> Assign the value "haberdashery" to a variable named occupation, and the print out the type of the value that variable refers to</span>.</p>
 <pre>Sample input: NA<br/>Expected Output: &lt;class 'str'&gt;</pre>

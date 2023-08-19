@@ -390,7 +390,7 @@
 </button></h1>
 <div style="width: 98%; max-width: 1000px; margin-bottom: 24px;"><img alt="Exploration Icon" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1921502/files/95339838" data-api-returntype="File" data-decorative="true" data-id="95339838" height="74" src="https://canvas.oregonstate.edu/courses/1921502/files/95339838/download?wrap=1" style="padding-left: 10px; float: right;" width="75"/>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 0px; margin-bottom: 18px; margin-right: 85px;">Input Function</h2>
-<p>The input() function reads typed input from the user. You can use it in a couple of ways. For example, if you want to ask the user for their name, you can do this:</p>
+<p>The input() function reads typed input from the user.<span style="background-color:yellow;"> You can use it in a couple of ways</span> For example, if you want to ask the user for their name, you can do this:.</p>
 <iframe allowfullscreen="allowfullscreen" height="400px" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" src="https://repl.it/@coeCS161/Input-and-Casting-1?lite=true" width="100%"></iframe>
 <p><span style="background-color:yellow;">Or you can do this:</span></p>
 <pre>name = input("Please enter your name: ")</pre>
@@ -399,15 +399,15 @@
 <pre>&gt; age = int(input("Please enter your age: "))<br/>&gt; height_in_meters = float(input("Please enter your height in meters: "))</pre>
 <p>Each of the lines above combines two functions. First the input function gets a string from the user. Next the int() or float() function casts that string to a numeric value. That value is then assigned to the variable. We can call those functions on separate lines if we want:</p>
 <pre>&gt; str_age = input("Please enter your age: ") # str_age will refer to a string value<br/>&gt; int_age = int(str_age) # int_age will refer to an int value</pre>
-<p>If the user enters a string that cannot be cast to the specified type, that causes an error.<span style="background-color:yellow;"> For example, if for height in meters we try to enter "hi", what happens?</span></p>
+<p>If the user enters a string that cannot be cast to the specified type, that causes an error. For example, if for height in meters we try to enter "hi", what happens?</p>
 <p> </p>
-<p><span style="background-color:yellow;">Here's an example that asks the user for two numbers and prints out their sum:</span></p>
+<p>Here's an example that asks the user for two numbers and prints out their sum:</p>
 <iframe allowfullscreen="allowfullscreen" height="400px" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" src="https://repl.it/@coeCS161/Input-and-Casting-2?lite=true" width="100%"></iframe>
 <p>You can also cast an int to a float:</p>
 <pre>&gt; float(18) </pre>
 <p>Or a float to an int, which truncates everything after the decimal point:</p>
 <pre>&gt; int(3.25) </pre>
-<p>You can also cast values to strings with str().</p>
+<p><span style="background-color:yellow;">You can also cast values to strings with str()</span>.</p>
 <pre>&gt; str(-9.4) <br/>&gt; str(43) </pre>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 18px; margin-bottom: 18px;">Exercises</h2>
 <p><span>(See the module overview for a link to example solutions.)</span></p>

@@ -390,11 +390,11 @@
 </button></h1>
 <div style="width: 98%; max-width: 1000px; margin-bottom: 24px;"><img alt="Exploration Icon" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1921502/files/95339838" data-api-returntype="File" data-decorative="true" data-id="95339838" height="74" src="https://canvas.oregonstate.edu/courses/1921502/files/95339838/download?wrap=1" style="padding-left: 10px; float: right;" width="75"/>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 0px; margin-bottom: 18px; margin-right: 85px;">Comparison operators</h2>
-<p>We often need to compare two values.<span style="background-color:yellow;"> Python has the following comparison operators:</span></p>
+<p>We often need to compare two values. Python has the following comparison operators:</p>
 <pre>num_1 == num_2 # num_1 equals num_2<br/>num_1 != num_2 # num_1 does not equal num_2<br/>num_1 &gt; num_2 # num_1 is greater than num_2<br/>num_1 &lt; num_2 # num_1 is less than num_2<br/>num_1 &gt;= num_2 # num_1 is greater than or equal to num_2<br/>num_1 &lt;= num_2 # num_1 is less than or equal to num_2</pre>
-<p>Each of the above conditions is either True or False, so if you print out the type of the comparison, you'll see that it's a bool.<span style="background-color:yellow;"> For example:</span></p>
+<p>Each of the above <strong>conditions</strong> is either True or False, so if you print out the type of the comparison, you'll see that it's a bool. For example:</p>
 <pre>17 &lt; 5 # False<br/>3 != 12 # True</pre>
-<p>Don't mix up the assignment operator (=) and the equality operator (==). It's a common mistake that can be hard to see.</p>
+<p>Don't mix up the assignment operator (=) and the equality operator (==).<span style="background-color:yellow;"> It's a common mistake that can be hard to see</span>.</p>
 <p><strong>You shouldn't test two floats for exact equality because of possible lack of precision or round-off errors.</strong>  Instead, if you need to compare float values for equality, you can do it like this:</p>
 <pre>abs(num_1 - num_2) &lt; 0.000001</pre>
 <p>This takes the absolute value of the difference between the two numbers and checks whether it's less than a very small value.  <strong>In this course, whenever an assignment requires you to compute a float value, your result will not be tested for exact equality to the expected result - just for equality to within 7 decimal places.</strong></p>
@@ -408,20 +408,20 @@
 <pre>bool_1 and bool_2                  # Both bool_1 and bool_2 equal True<br/>bool_1 or bool_2                   # At least one of bool_1 and bool_2 equals True<br/>not bool_1 # bool_1 equals False   # Flips the value of bool_1</pre>
 <p>Each of these conditions is also either True or False..</p>
 <pre>17 &gt;= 10 and 5 % 2 == 0   # True and False, which equals False<br/>17 &gt;= 10 or 5 % 2 == 0    # True or False, which equals True<br/>not 17 &gt;= 10              # not True, which equals False</pre>
-<p>Assume that P and Q represent two conditions. <strong>P and Q</strong> is only true if P is true <strong>and</strong> Q is true. <strong>P or Q</strong> is true if <strong>either</strong> P is true <strong>or</strong> Q is true (or both). The <strong>not</strong> operator just flips the value from true to false or vice-versa.  So if P is false, then <strong>not P</strong> is true, but if P is true, then <strong>not P</strong> is false.</p>
+<p>Assume that P and Q represent two conditions.<span style="background-color:yellow;"> P and Q is only true if P is true and Q is true</span> P or Q is true if either P is true or Q is true (or both). The not operator just flips the value from true to false or vice-versa.  So if P is false, then not P is true, but if P is true, then not P is false..</p>
 <p>To check if num_x and num_y are both equal to 5, it is <strong>not</strong> correct to do the following:</p>
 <pre>num_x and num_y == 5  # wrong</pre>
-<p>since that would check whether x is True and y==5 is True.  Instead, you would need to do this:</p>
+<p>since that would check whether x is True and y==5 is True.<span style="background-color:yellow;">  Instead, you would need to do this:</span></p>
 <pre>num_x == 5 and num_y == 5</pre>
 <p>or since we know we can chain comparisons:</p>
 <pre>num_x == num_y == 5</pre>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 18px; margin-bottom: 18px;">Exercises</h2>
-<p>(See the module overview for a link to example solutions.).</p>
+<p><span>(See the module overview for a link to example solutions.)</span></p>
 <p>1. Print the value of 17 &lt; 5.</p>
 <pre>Sample input: NA<br/>Expected Output: False</pre>
 <p>2.<span style="background-color:yellow;"> Write code that reads a number from the user, assigns it to a variable, and then prints True if that value is greater than 10, but prints False otherwise</span>.</p>
 <pre>Sample input: 175<br/>Expected Output: True</pre>
-<p>3. Write code that reads a number from the user, assigns it to a variable, and then prints True if that value is between 50 and 100 (inclusive), but prints False otherwise.</p>
+<p>3.<span style="background-color:yellow;"> Write code that reads a number from the user, assigns it to a variable, and then prints True if that value is between 50 and 100 (inclusive), but prints False otherwise</span>.</p>
 <pre>Sample input: 50<br/>Expected Output: True</pre>
 </div>
 </div>
