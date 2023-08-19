@@ -79,7 +79,7 @@
         <div class="card">
           <div class="card-body">
             <div class="container">
-              <iframe title="Homepage Iframes" src={{ result.link }} sandbox="allow-scripts" width="100%" style="height: 290px;">
+              <iframe title="Homepage Iframes" src={{ result.link }} sandbox="" width="100%" style="height: 290px;">
                 <p>iframes are not supported by this browser.</p>
               </iframe>
             </div>
@@ -129,11 +129,11 @@
   </div>
   <script>
     // Listen for the 'popstate' event
-    window.addEventListener('popstate', function(event) {
-        // Reload the page
-        location.reload(true);
+    window.addEventListener('popstate', function (event) {
+      // Reload the page
+      location.reload(true);
     });
-</script>
+  </script>
 </body>
 
 </html>
