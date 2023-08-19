@@ -92,29 +92,29 @@
             <h3>RESULTS</h3>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">
+            
               {% if result.rule1 == True %}
+              <li class="list-group-item">
               <p class="success"><strong>Rule 1(<span style="color: yellow">■</span>):</strong> Violated</p>
-              {% else %}
-              <p><strong>Rule 1(<span style="color: yellow">■</span>):</strong> Not violated</p>
+              </li>
               {% endif %}
-            </li>
+            
 
-            <li class="list-group-item">
+            
               {% if result.rule2 == True %}
+              <li class="list-group-item">
               <p class="success"><strong>Rule 2:</strong> Violated</p>
-              {% else %}
-              <p><strong>Rule 2:</strong> Not violated</p>
+              </li>
               {% endif %}
-            </li>
+            
 
-            <li class="list-group-item">
+            
               {% if result.rule3 == True %}
+              <li class="list-group-item">
               <p class="success"><strong>Rule 3:</strong> Violated</p>
-              {% else %}
-              <p><strong>Rule 3:</strong> Not violated</p>
-              {% endif %}
             </li>
+              {% endif %}
+            
           </ul>
         </div>
       </div>

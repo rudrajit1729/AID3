@@ -405,7 +405,7 @@
 <p>We didn't assign a value to <em>phrase</em> before trying to print it.</p>
 <h3 style="border-bottom: 1px solid #e6e7e8; font-size: 14pt; margin-top: 18px; margin-bottom: 18px;">SyntaxError</h3>
 <pre>&gt; 32 = age<span class="s1"></span></pre>
-<p>We have to have a variable on the left side of an assignment statement, not a literal value.</p>
+<p><span style="background-color:yellow;">We have to have a variable on the left side of an assignment statement, not a literal value</span>.</p>
 <h3 style="border-bottom: 1px solid #e6e7e8; font-size: 14pt; margin-top: 18px; margin-bottom: 18px;">TypeError</h3>
 <p><iframe allowfullscreen="allowfullscreen" height="400px" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" src="https://repl.it/@coeCS161/Example-Error-Messages-2?lite=true" width="100%"></iframe><span class="s1"></span></p>
 <p>We didn't cast the input strings to numbers before trying to do math with them - the ** operator isn't defined for strings. Notice that if we change the operator from ** to +, we don't get an error message, just a result we may not expect:</p>
