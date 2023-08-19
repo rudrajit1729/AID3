@@ -62,6 +62,15 @@ def package_results(links, rule1, rule2, rule3):
         })
     return result
 
+def package_results_rule(links, rule):
+    result = []
+    for i in range(len(links)):
+        result.append({
+            "link": links[i],
+            "rule": rule[i]
+        })
+    return result
+
 @app.route("/")
 def home():
     global count
@@ -125,10 +134,51 @@ def course_results(course_name):
                             css_framework='bootstrap5')
     
     return render_template('results.html',
+                        course_name=course_name,
                         results=pkg_results,
                         page=page,
                         per_page=per_page,
                         pagination=pagination
+                        )
+
+@app.route("/results/CS161/3", methods=['GET', 'POST'])
+def course_rule_results():
+    course_name = "CS161"
+    rule = "3"
+    global count
+    global results_dict
+    if count == 0:
+        # check_rules(course_name)
+        generate_HTML(course_name)
+        count = count + 1
+    
+    results_dict = json.load(open(f"./static/{course_name}/AllViolations.json"))
+    print(course_name, results_dict)
+    links, rule1, rule2, rule3 = get_all_links_and_results(results_dict, course_name)
+    page, per_page, offset = get_page_args(page_parameter='page',
+                                        per_page_parameter='per_page')
+    # per_page = 5
+    total = len(links)
+    pagination_links = pagenate_result(links, offset=offset, per_page=per_page)
+    if rule == "1":
+        render_results = pagenate_result(rule1, offset=offset, per_page=per_page)
+    elif rule == "2":
+        render_results = pagenate_result(rule2, offset=offset, per_page=per_page)
+    else:
+        render_results = pagenate_result(rule3, offset=offset, per_page=per_page)
+
+    pkg_results = package_results_rule(pagination_links, 
+                                  render_results)
+
+    pagination = Pagination(page=page, per_page=per_page, total=total,
+                            css_framework='bootstrap5')
+    
+    return render_template('results_rule.html',
+                        results=pkg_results,
+                        page=page,
+                        per_page=per_page,
+                        pagination=pagination,
+                        rule_number=rule
                         )
 
 if __name__ == '__main__':
