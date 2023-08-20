@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../static/style_home.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      {% if rule_num == "1" %}
+      <a class="navbar-brand" href="#"><strong>RULE 1</strong></a>
+      <p class="mb-0" style="color: white;"><strong>Description:</strong> While brief instructions may suit some
+        learners like Tim, who are
+        comfortable with
+        tinkering and exploring independently, the inclusion of subinstructions supports learners like Abi, who
+        prefer a step-by-step learning approach.
+      </p>
+      {% elif rule_num == "2" %}
+      <a class="navbar-brand" href="#"><strong>RULE 2</strong></a>
+      <p class="mb-0" style="color: white;">
+        <strong>Description:</strong> Abi, who prioritizes tasks aligned with their interests and relies on
+        technologies, may be disproportionately affected by tasks lacking clear purposes. Explicit purpose
+        behind tasks enables learners like Abi to assess the task's relevance and decide on its usefulness.
+      </p>
+      {% else%}
+      <a class="navbar-brand" href="#"><strong>RULE 3</strong></a>
+      <p class="mb-0" style="color: white;">
+        <strong>Description:</strong> Linking tasks to prior knowledge empowers Abi by providing a structured
+        approach to complete the task, utilizing familiar step-by-step processes from tutorials, how-to videos,
+        and wizards.
+      </p>
+      {% endif %}
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  {% for result in results %}
+  <div class="container mt-3 mb-2">
+    <div class="row h-100">
+      <div class="col-sm-9">
+        <div class="card">
+          <div class="card-body">
+            <div class="container">
+              <iframe title="Homepage Iframes" src={{ result.link }} sandbox="" width="100%" style="height: 290px;">
+                <p>iframes are not supported by this browser.</p>
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card" style="width: 18rem;">
+          <div class="card-header">
+            <h3>RESULTS</h3>
+          </div>
+          <ul class="list-group list-group-flush">
+            {% if rule_num == "1" %}
+            <li class="list-group-item">
+              <p class="success"><strong>Rule 1(<span style="color: yellow">■</span>):</strong> Violated</p>
+            </li>
+            {% endif %}
+
+            {% if rule_num == "2" %}
+            <li class="list-group-item">
+              <p class="success"><strong>Rule 2:</strong> Violated</p>
+            </li>
+            {% endif %}
+
+            {% if rule_num == "3" %}
+            <li class="list-group-item">
+              <p class="success"><strong>Rule 3:</strong> Violated</p>
+            </li>
+            {% endif %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container d-flex justify-content-center">
+    <hr width="100%" size="6" color="gray">
+  </div>
+  {% endfor %}
+  <div class="container d-flex justify-content-center">
+    {{ pagination.links }}
+  </div>
+  <script>
+    // Listen for the 'popstate' event
+    window.addEventListener('popstate', function (event) {
+      // Reload the page
+      location.reload(true);
+    });
+  </script>
+</body>
+
+</html>
