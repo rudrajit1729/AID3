@@ -28,7 +28,6 @@ def get_all_links_and_results(results, course_name):
         module_name = page_name.split("_")[0]
         module_num = re.sub('[^0-9]+', ' ', module_name).strip()
         page_type = page_name.split("_")[1].replace(".html.json", "")
-        # page_num = re.sub('[^0-9]+', ' ', page_type).strip()
         page_type = re.sub('[^A-Za-z]+', ' ', page_type).strip().split(" ")[0]
         if results[page_name]['rule1'] == False and results[page_name]['rule2'] == False and results[page_name]['rule3'] == False:
             continue
@@ -59,6 +58,15 @@ def package_results(links, rule1, rule2, rule3):
             "rule1": rule1[i],
             "rule2": rule2[i],
             "rule3": rule3[i],
+        })
+    return result
+
+def package_results_filter(links, rule):
+    result = []
+    for i in range(len(links)):
+        result.append({
+            "link": links[i],
+            "rule": rule[i],
         })
     return result
 
@@ -128,7 +136,47 @@ def course_results(course_name):
                         results=pkg_results,
                         page=page,
                         per_page=per_page,
-                        pagination=pagination
+                        pagination=pagination,
+                        course_name=course_name,
+                        )
+
+@app.route("/results/filter", methods=['GET'])
+def course_results_filter():
+    course_name = request.args.get("course_name")
+    rule_num = request.args.get("rule")
+    
+    results_dict = json.load(open(f"./static/{course_name}/AllViolations.json"))
+    links, rule1, rule2, rule3 = get_all_links_and_results(results_dict, course_name)
+    print("LINKS: ", len(links))
+    print("RULE1:", len(rule1))
+    page, per_page, offset = get_page_args(page_parameter='page',
+                                        per_page_parameter='per_page')
+    # per_page = 5
+
+    if rule_num == "1":
+        render_results = pagenate_result(rule1, offset=offset, per_page=per_page)
+        links = [links[i] for i in range(len(rule1)) if rule1[i]]
+    elif rule_num == "2":
+        render_results = pagenate_result(rule2, offset=offset, per_page=per_page)
+        links = [links[i] for i in range(len(rule2)) if rule2[i]]
+    else:
+        render_results = pagenate_result(rule3, offset=offset, per_page=per_page)
+        links = [links[i] for i in range(len(rule3)) if rule3[i]]
+
+    total = len(links)
+    pagination_links = pagenate_result(links, offset=offset, per_page=per_page)
+    pkg_results = package_results_filter(pagination_links, render_results)
+
+    pagination = Pagination(page=page, per_page=per_page, total=total,
+                            css_framework='bootstrap5')
+    
+    return render_template('results_filtered.html',
+                        results=pkg_results,
+                        page=page,
+                        per_page=per_page,
+                        pagination=pagination,
+                        course_name=course_name,
+                        rule_num = rule_num
                         )
 
 if __name__ == '__main__':
