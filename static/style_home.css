@@ -1,3 +1,19 @@
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+footer{
+  margin-top: auto;
+  background: #1A1E25;
+  color: #868c96;
+}  
+
+footer p {
+  padding: 10px 0;
+  text-align: center;
+}
+
 .back {
     background: #e2e2e2;
     width: 100%;
@@ -27,4 +43,8 @@
   div.content {
     display: table-cell;
     vertical-align: middle;
+  }
+
+  ul {
+    list-style-type: none;
   }
