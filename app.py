@@ -147,8 +147,6 @@ def course_results_filter():
     
     results_dict = json.load(open(f"./static/{course_name}/AllViolations.json"))
     links, rule1, rule2, rule3 = get_all_links_and_results(results_dict, course_name)
-    print("LINKS: ", len(links))
-    print("RULE1:", len(rule1))
     page, per_page, offset = get_page_args(page_parameter='page',
                                         per_page_parameter='per_page')
     # per_page = 5

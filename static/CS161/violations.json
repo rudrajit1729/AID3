@@ -112,11 +112,7 @@
         "__pre_h2__": []
       },
       "Module10_Pages44.html.json": {
-        "content": {
-          "Tinker Lab": [
-            { "type": "para", "para_key": "para_13", "line_num": 1 }
-          ]
-        },
+        "content": {},
         "__pre_h2__": []
       },
       "Module10_Pages39.html.json": {
@@ -216,7 +212,6 @@
             { "type": "para", "para_key": "para_0", "line_num": 1 }
           ],
           "What is self?": [
-            { "type": "para", "para_key": "para_2", "line_num": 1 },
             { "type": "para", "para_key": "para_5", "line_num": 1 }
           ],
           "Summary and Syntax": [
@@ -347,12 +342,7 @@
         "__pre_h2__": []
       },
       "Module10_Pages60.html.json": {
-        "content": {
-          "Key Take-Aways": [
-            { "type": "para", "para_key": "para_0", "line_num": 1 },
-            { "type": "para", "para_key": "para_3", "line_num": 1 }
-          ]
-        },
+        "content": {},
         "__pre_h2__": []
       },
       "Module10_Pages45.html.json": {
@@ -379,12 +369,7 @@
         "__pre_h2__": []
       },
       "Module10_Pages53.html.json": {
-        "content": {
-          "Key Take-Aways": [
-            { "type": "para", "para_key": "para_0", "line_num": 1 },
-            { "type": "para", "para_key": "para_3", "line_num": 1 }
-          ]
-        },
+        "content": {},
         "__pre_h2__": []
       },
       "Module10_Pages49.html.json": {
@@ -513,11 +498,7 @@
         "__pre_h2__": []
       },
       "Module10_Pages25.html.json": {
-        "content": {
-          "Tinker Lab": [
-            { "type": "para", "para_key": "para_24", "line_num": 1 }
-          ]
-        },
+        "content": {},
         "__pre_h2__": []
       },
       "Module10_Pages26.html.json": {
@@ -624,18 +605,11 @@
         "__pre_h2__": []
       },
       "Module10_Pages32.html.json": {
-        "content": {
-          "Key Take-Aways": [
-            { "type": "para", "para_key": "para_0", "line_num": 1 },
-            { "type": "para", "para_key": "para_3", "line_num": 1 }
-          ]
-        },
+        "content": {},
         "__pre_h2__": []
       },
       "Module10_Pages22.html.json": {
-        "content": {
-          "Exercise": [{ "type": "para", "para_key": "para_0", "line_num": 1 }]
-        },
+        "content": {},
         "__pre_h2__": []
       },
       "Module10_Pages10.html.json": {
@@ -681,9 +655,7 @@
         "__pre_h2__": []
       },
       "Module10_Pages0.html.json": {
-        "content": {
-          "Module 5": [{ "type": "li", "list_idx": "ul_0", "line_num": 3 }]
-        },
+        "content": {},
         "__pre_h2__": []
       },
       "Module10_Pages13.html.json": {
