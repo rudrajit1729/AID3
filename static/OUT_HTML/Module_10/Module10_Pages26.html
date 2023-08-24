@@ -391,29 +391,29 @@
 <div style="width: 98%; max-width: 1000px; margin-bottom: 24px;">
 <img alt="Exploration Icon" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1921502/files/95339838" data-api-returntype="File" data-decorative="true" data-id="95339838" height="74" src="https://canvas.oregonstate.edu/courses/1921502/files/95339838/download?wrap=1" style="padding-left: 10px; float: right;" width="75"/>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 0px; margin-bottom: 18px; margin-right: 85px;"> </h2>
-<p><em>Adapted from John Dalbey, Bob Roggio and Farshad Barahimi (CS 165).</em></p>
+<p><span style="background-color:yellow;">Adapted from John Dalbey, Bob Roggio and Farshad Barahimi (CS 165)</span>.</p>
 <p>Pseudocode and flowcharts allow the designer to focus on the logic of the algorithm without being distracted by details of language syntax. At the same time, the pseudocode or flowchart needs to be complete. It describes the entire logic of the algorithm so that implementation becomes a matter of translating from the pseudocode or flowchart into source code.</p>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 0px; margin-bottom: 18px; margin-right: 85px;">Pseudocode</h2>
 <p>In general the vocabulary used in the pseudocode should be the vocabulary of the problem domain, not of the implementation domain. The pseudocode is a narrative for someone who knows the requirements (problem domain) and is trying to learn how the solution can be organized. That is, someone who is a non-programmer should be able to read and understand your pseudocode. For example:</p>
-<p><span style="background-color:yellow;">Extract the next word from the line (good) Set word to get next token (poor)</span></p>
-<p>Append the file extension to the name (good) <br/>Name = name + extension (poor)</p>
+<p>Extract the next word from the line (good) <br/>Set word to get next token (poor)</p>
+<p><span style="background-color:yellow;">Append the file extension to the name (good) Name = name + extension (poor)</span></p>
 <p><span style="background-color:yellow;">For every character in the name (good) For character = first to last (poor)</span></p>
 <p>Note that the logic must be decomposed to the level of a single loop or decision. Thus "Search the list and find the customer with highest balance" is too vague because it takes a loop <strong>and</strong> a nested decision to implement it.</p>
 <p>Each textbook and each individual designer may have their own personal style of pseudocode.<span style="background-color:yellow;"> Pseudocode is not a rigorous notation, since it is read by other people, not by the computer, but this is the style you should follow for this class</span>.</p>
 <h3 style="border-bottom: 1px solid #e6e7e8; font-size: 14pt; margin-top: 18px; margin-bottom: 18px;">Examples:</h3>
-<p><span style="background-color:yellow;">Get student's grade from user</span></p>
+<p>Get student's grade from user</p>
 <p>If student's grade &gt;= 60</p>
-<p style="text-indent: 12px;">Print "passed"</p>
+<p><span style="background-color:yellow;">Print "passed"</span></p>
 <p>else.</p>
 <p style="text-indent: 12px;">Print "failed"</p>
-<p><span style="background-color:yellow;">Set total to 0</span></p>
-<p>Set grade counter to 1</p>
+<p>Set total to 0</p>
+<p><span style="background-color:yellow;">Set grade counter to 1</span></p>
 <p><span style="background-color:yellow;">While grade counter &lt;= 10</span></p>
 <p><span style="background-color:yellow;">Input the next grade</span></p>
 <p><span style="background-color:yellow;">Add the grade to the total</span></p>
-<p style="text-indent: 12px;">Add 1 to the grade counter</p>
+<p><span style="background-color:yellow;">Add 1 to the grade counter</span></p>
 <p><span style="background-color:yellow;">Set the class average to the total divided by 10</span></p>
-<p>Print the class average</p>
+<p><span style="background-color:yellow;">Print the class average</span></p>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 0px; margin-bottom: 18px; margin-right: 85px;">Flowcharts</h2>
 <p>A flowchart depicts an algorithm in a graphical format.<span style="background-color:yellow;"> Here are descriptions of the most common symbols:</span></p>
 <ul>
@@ -429,9 +429,9 @@
 <li>
 <p>Parallelogram: Used for getting <strong>input</strong> from user or sending <strong>output</strong> to user.</p>
 </li>
-<li><span style="background-color:yellow;">
-Diamond: Used for conditional flow control where a program has to decide which way to go, for example: if X is divisible by 2 do this thing; if not, do this other thing. Without conditional flow control, a program would have just one path from start to end, but with it there may be many different paths from start to end.
-</span></li>
+<li>
+<p><strong><span>Diamond</span></strong>: Used for conditional flow control where a program has to decide which way to go, for example: if X is divisible by 2 do this thing; if not, do this other thing. Without conditional flow control, a program would have just one path from start to end, but with it there may be many different paths from start to end.</p>
+</li>
 </ul>
 <h3 style="border-bottom: 1px solid #e6e7e8; font-size: 14pt; margin-top: 18px; margin-bottom: 18px;">Examples:</h3>
 <p><img alt="flowchart example 1" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1921502/files/95339821" data-api-returntype="File" data-id="95339821" src="https://canvas.oregonstate.edu/courses/1921502/files/95339821/download?wrap=1"/></p>

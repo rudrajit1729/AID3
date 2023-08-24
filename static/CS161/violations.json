@@ -25,22 +25,7 @@
         "__pre_h2__": []
       },
       "Module0_Pages5.html.json": { "content": {}, "__pre_h2__": [] },
-      "Module0_Pages2.html.json": {
-        "content": {
-          "Contact Information": [
-            { "type": "para", "para_key": "para_0", "line_num": 1 },
-            { "type": "para", "para_key": "para_2", "line_num": 1 },
-            { "type": "para", "para_key": "para_3", "line_num": 1 },
-            { "type": "para", "para_key": "para_4", "line_num": 1 },
-            { "type": "para", "para_key": "para_6", "line_num": 1 },
-            { "type": "para", "para_key": "para_7", "line_num": 1 },
-            { "type": "para", "para_key": "para_8", "line_num": 1 },
-            { "type": "para", "para_key": "para_11", "line_num": 1 },
-            { "type": "para", "para_key": "para_13", "line_num": 1 }
-          ]
-        },
-        "__pre_h2__": []
-      }
+      "Module0_Pages2.html.json": { "content": {}, "__pre_h2__": [] }
     },
     "Assignments": {
       "Module0_Asg0.html.json": {

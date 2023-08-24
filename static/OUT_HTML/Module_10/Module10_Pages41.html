@@ -396,7 +396,7 @@
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 18px; margin-bottom: 18px;">find()</h2>
 <p>If you need to know where a string occurs inside another string, you can use the find() method, which returns the leftmost index of the substring within the other string:</p>
 <pre>&gt; animal = "elephant"<br/>&gt; index = animal.find("ant")  #index would now equal 5</pre>
-<p>If the string does not appear as a substring of the other word, then find() returns -1.<span style="background-color:yellow;"> You can also search within a specified section of the string:</span></p>
+<p>If the string does not appear as a substring of the other word, then find() returns -1. You can also search within a specified section of the string:</p>
 <pre>&gt; animal = "elephan"<br/>&gt; index = animal.find("ant", 2, 7) #index now equals -1, since "ant" doesn't occur in "ephan"</pre>
 <p>The end index works the same as for ranges - the section being searched extends up to, but does not include, the end index.</p>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 18px; margin-bottom: 18px;">len()</h2>
@@ -407,7 +407,7 @@
 <pre>&gt; "slithy".upper()<br/>&gt; var = "TOVES"<br/>&gt; var.lower()</pre>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 18px; margin-bottom: 18px;">Operators vs. functions vs. methods</h2>
 <p>Notice the different syntax we've used for <em>in</em> and <em>not in</em>, <i>len</i>, and <em>upper</em> and <em>lower</em>. The <em>in</em> and <em>not in</em> <strong>operators</strong> are used between two values (the operands) in a format similar to arithmetic operators, like * and /. These arithmetic operators each have two numeric operands. However in the examples for <em>in</em> and <em>not in</em>, we used strings for both operands.</p>
-<p>The len function is called in the same way we've called other functions - we first give the name of the function, and then list inside parentheses any values we're passing to the function.<span style="background-color:yellow;"> In this case we're passing a string to the function</span>.</p>
+<p>The <em>len</em> <strong>function</strong> is called in the same way we've called other functions - we first give the name of the function, and then list inside parentheses any values we're passing to the function. In this case we're passing a string to the function.</p>
 <p><span>The </span><em>find</em><span>, </span><em>upper,</em><span> and </span><em>lower</em><span> </span><strong>methods</strong><span> are called using the dot notation syntax that we use with objects. That's because strings (like everything else in Python) are objects that have certain methods defined for them. In this case, we don't have to pass the string as an argument. You can think of it as politely asking the string if it would be so kind as to carry out the requested operation. (The string is implicitly passed to the method as the </span><em>self</em><span> argument.)</span></p>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 18px; margin-bottom: 18px;">Indexing</h2>
 <p>We can get the character at a certain position, or <strong>index</strong>, in a string by indexing into the string. Imagine numbering the letters of a string in order, <strong>starting with zero</strong>. So in the string "onyx", the "o" is at index zero, the "n" is at index 1, the "y" is at index 2, and the "x" is at index 3. <strong>Notice that the index of the last character is the length of the string minus 1.</strong> We index into a string by following it with square brackets containing the index that we want to access.</p>
@@ -418,14 +418,14 @@
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 18px; margin-bottom: 18px;">Slicing</h2>
 <p>"Slicing" a string gives you back part of that string, based on the indices for the start and end of the part you want.</p>
 <pre>&gt; fruit[2:5]</pre>
-<p>Notice that the substring you get back starts at the first index, and goes up to, but does not include the second index (similar to making a range).<span style="background-color:yellow;"> If you omit the first index, the substring starts at the first character</span> If you omit the second index, the substring ends at the last character..</p>
+<p>Notice that the substring you get back starts at the first index, and goes up to, <strong>but does not include</strong> the second index (similar to making a range). If you omit the first index, the substring starts at the first character. If you omit the second index, the substring ends at the last character.</p>
 <pre>&gt; hero[:6]<br/>&gt; hero[6:]</pre>
 <p>The character at index 6 (the seventh character) doesn't get included in the first slice, but does in the second slice.<span style="background-color:yellow;"> If you omit both indices:</span></p>
 <pre>&gt; hero[:]</pre>
-<p>then you get a copy of the whole string.</p>
+<p><span style="background-color:yellow;">then you get a copy of the whole string</span>.</p>
 <p>We can also specify the "stride" for a slice, which allows us to get a slice that has every other character (a stride of 2), every third character (a stride of 3), etc.</p>
 <pre>&gt; poem[::2]</pre>
-<p>Because the first and second index were omitted, they default to the start and end of the string, respectively. The stride of 2 makes it so only every 2<sup>nd</sup> letter is included. The stride can also be negative, which makes us count backwards in the string, in which case the first index needs to be larger than the second. We can reverse a string like this (when the stride is negative, the first index will default to the end of the string and the second index will default to the beginning):</p>
+<p>Because the first and second index were omitted, they default to the start and end of the string, respectively. The stride of 2 makes it so only every 2nd letter is included.<span style="background-color:yellow;"> The stride can also be negative, which makes us count backwards in the string, in which case the first index needs to be larger than the second</span> We can reverse a string like this (when the stride is negative, the first index will default to the end of the string and the second index will default to the beginning):.</p>
 <pre>&gt; poem[::-1]</pre>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 18px; margin-bottom: 18px;">Comparison operators</h2>
 <p><span style="background-color:yellow;">We can use the normal comparison operators with strings, where if it's true that A &lt; B, then that means A comes before B in lexicographic order (dictionary order)</span>.</p>
@@ -435,14 +435,14 @@
 <p><span style="background-color:yellow;">One way to handle this is to convert the strings to upper-case (or lower-case) before comparing them</span>.</p>
 <pre>&gt; "Zebra".upper() &gt; "aardvark".upper()</pre>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 18px; margin-bottom: 18px;">Exercises</h2>
-<p><span style="background-color:yellow;">(See the module overview for a link to example solutions</span>).</p>
+<p><span>(See the module overview for a link to example solutions.)</span></p>
 <p>1. Write a function called <em>last_char </em>that takes a string parameter and returns the last letter of that string.</p>
 <pre>Sample input: "Understand well as I may, my comprehension can only be an infinitesimal fraction of all I want to understand"<br/>Expected output: "d"</pre>
 <p>2. Write a function called <em>midstring</em> that takes a string parameter and returns a copy of that string minus its first and last letters. If the string passed in has only has 1 or 2 letters, the function should return the empty string "".</p>
 <pre>Sample input: "Understand well as I may my comprehension can only be an infinitesimal fraction of all I want to understand"<br/>Expected output: "nderstand well as I may, my comprehension can only be an infinitesimal fraction of all I want to understan"</pre>
-<p>3. Write a function called <em>sort_two_strings</em> that takes two string parameters and returns a single string of both of them in dictionary order, ignoring case. For example, if the strings "aardvark" and "Zebra" are passed, it should return "aardvark Zebra".</p>
+<p>3. Write a function called sort_two_strings that takes two string parameters and returns a single string of both of them in dictionary order, ignoring case.<span style="background-color:yellow;"> For example, if the strings "aardvark" and "Zebra" are passed, it should return "aardvark Zebra"</span>.</p>
 <pre>Sample input: "Lovelace", "Byron"<br/>Expected output: "Byron Lovelace"</pre>
-<p>4. A palindrome is a string that reads the same forward or backward. Write a function called <em>is_pal</em> that takes a string parameter and returns True if that string is a palindrome, but returns False otherwise.</p>
+<p>4.<span style="background-color:yellow;"> A palindrome is a string that reads the same forward or backward</span> Write a function called is_pal that takes a string parameter and returns True if that string is a palindrome, but returns False otherwise..</p>
 <pre>Sample input: tacocat<br/>Expected output: True</pre>
 </div>
 </div>

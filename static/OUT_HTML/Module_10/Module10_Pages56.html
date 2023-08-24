@@ -397,34 +397,34 @@
 <pre>my_new_set = {1,2,3}<br/>my_new_set = set((1,2,3))  # This passes a tuple, but could pass a different iterable type, such as a list</pre>
 <p><span style="background-color:yellow;">However, to create a new empty set, you must use the second syntax, since Python will interpret an empty pair of curly braces as an empty dictionary, not an empty set</span>.</p>
 <p>You cannot index or slice sets.</p>
-<p>You can use <em>in</em> and <em>not in</em> to check whether a value is in the set:</p>
+<p><span style="background-color:yellow;">You can use in and not in to check whether a value is in the set:</span></p>
 <pre>&gt; -7 in some_ints<br/>&gt; -7 not in some_ints</pre>
-<p>You can <em>add</em> elements to a set or <em>remove</em> elements from a set:</p>
+<p><span style="background-color:yellow;">You can add elements to a set or remove elements from a set:</span></p>
 <pre>&gt; some_ints.remove(1)<br/>&gt; some_ints<br/><span class="s1">&gt; some_ints.add(1)<br/>&gt; some_ints</span><span class="s1"><br/></span></pre>
-<p><span style="background-color:yellow;">If you add an element that is already in the set, nothing happens</span>.</p>
+<p>If you add an element that is already in the set, nothing happens.</p>
 <p>The len function tells you how many elements are in a set:</p>
 <pre>&gt; len(some_elements)</pre>
 <p>The clear method empties a set:</p>
 <pre>&gt; some_elements.clear()<br/>&gt; len(some_elements)</pre>
 <h3 style="border-bottom: 1px solid #e6e7e8; font-size: 14pt; margin-top: 18px; margin-bottom: 18px;">Set Operations</h3>
-<p>Python has operators for performing various set operations. The most common set operations are union, intersection, difference, and symmetric difference.<span style="background-color:yellow;"> Each of these operations produces a new set and leaves the original sets unchanged</span>.</p>
+<p>Python has operators for performing various set operations. The most common set operations are <em>union</em>, <em>intersection</em>, <em>difference</em>, and <em>symmetric difference</em>. Each of these operations produces a new set and leaves the original sets unchanged.</p>
 <p><iframe allowfullscreen="allowfullscreen" height="400px" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" src="https://repl.it/@coeCS161/Sets-2?lite=true" width="100%"></iframe></p>
-<p><span style="background-color:yellow;">The intersection of two sets is a new set that contains every element that is in both sets</span>.</p>
+<p>The intersection of two sets is a new set that contains every element that is in <strong>both</strong> sets.</p>
 <p><img alt="Set Intersection Image" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1921502/files/95339819" data-api-returntype="File" data-id="95339819" height="126" src="https://canvas.oregonstate.edu/courses/1921502/files/95339819/preview" width="200"/></p>
 <pre>&gt; set_A &amp; set_B</pre>
 <p><span style="background-color:yellow;">The union of two sets is a new set that contains every element that is in either set</span>.</p>
 <p><img alt="Set Union Example" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1921502/files/95339814" data-api-returntype="File" data-id="95339814" height="126" src="https://canvas.oregonstate.edu/courses/1921502/files/95339814/preview" width="200"/></p>
 <pre>&gt; set_A | set_B # the union operator is the vertical bar symbol</pre>
-<p><span style="background-color:yellow;">The difference of two sets is a new set that contains every element that is in the first set except for the elements that are also in the second set</span> This operation is not symmetric..</p>
+<p>The difference of two sets is a new set that contains every element that is in the first set <strong>except for</strong> the elements that are also in the second set. This operation is not symmetric.</p>
 <p><img alt="Set Difference Example" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1921502/files/95339831" data-api-returntype="File" data-id="95339831" height="138" src="https://canvas.oregonstate.edu/courses/1921502/files/95339831/preview" width="400"/></p>
 <pre>&gt; set_A - set_B<br/>&gt; set_B - set_A</pre>
-<p><span style="background-color:yellow;">The symmetric difference of two sets is a new set that contains every element that is in either set except the elements that are in both sets</span> This is the same as the union minus the intersection..</p>
+<p>The symmetric difference of two sets is a new set that contains every element that is in either set except the elements that are in both sets.<span style="background-color:yellow;"> This is the same as the union minus the intersection</span>.</p>
 <p><img alt="Symmetric Difference Example" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1921502/files/95339795" data-api-returntype="File" data-id="95339795" height="127" src="https://canvas.oregonstate.edu/courses/1921502/files/95339795/preview" width="200"/></p>
 <pre>&gt; set_A ^ set_B<br/>&gt; (set_A | set_B) - (set_A &amp; set_B)</pre>
 <p><span style="background-color:yellow;">We can iterate through a set with a for loop:</span></p>
 <pre>for el in set_B:<br/> print(el * 2)</pre>
 <h3 style="border-bottom: 1px solid #e6e7e8; font-size: 14pt; margin-top: 18px; margin-bottom: 18px;">Lists vs. sets</h3>
-<p>How do you know when to use a list and when to use a set?</p>
+<p><span style="background-color:yellow;">How do you know when to use a list and when to use a set?</span></p>
 <ol>
 <li>A set cannot contain duplicate elements, but a list can.</li>
 <li>A set can only contain values that are immutable, but lists can contain mutable values.</li>
@@ -432,16 +432,16 @@
 <li>Checking whether a certain value is in a list takes time proportional to the length of the list, but doing so in a set is very fast, regardless of the size of the set.</li>
 </ol>
 <h3 style="border-bottom: 1px solid #e6e7e8; font-size: 14pt; margin-top: 18px; margin-bottom: 18px;">Set comprehensions</h3>
-<p><span style="background-color:yellow;">A set comprehension looks just like a list comprehension except it uses curly braces instead of square brackets</span>  For example, if you have a list of names that possibly contains duplicates, and you would like to filter out any names that aren't palindromes (ignoring case) and get rid of duplicates at the same time, you could create a set like so:.</p>
+<p>A set comprehension looks just like a list comprehension except it uses curly braces instead of square brackets.  For example, if you have a list of names that possibly contains duplicates, and you would like to filter out any names that aren't palindromes (ignoring case) and get rid of duplicates at the same time, you could create a set like so:</p>
 <pre>{name for name in li if name.lower() == name.lower()[::-1]}</pre>
 <p> Checking for equality to the reverse slice checks for palindromes. Using lower() takes care of ignoring case.  The curly braces mean it creates a set, which will automatically exclude any duplicates.</p>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 18px; margin-bottom: 18px;">Exercises</h2>
 <p><span style="background-color:yellow;">(See the module overview for a link to example solutions</span>).</p>
-<p>1.<span style="background-color:yellow;"> Write your own function called "unionize" for finding the union of two sets</span> Your function should take as parameters two sets, and return a new set that is the union of those two sets. Do not use Python's built-in union functionality..</p>
+<p>1. Write your own function called "unionize" for finding the union of two sets. Your function should take as parameters two sets, and return a new set that is the union of those two sets. Do not use Python's built-in union functionality.</p>
 <pre>Sample input: {4, 3, 100}, {1, 100}<br/>Expected output: {4, 3, 1, 100}</pre>
-<p>2. Write your own function called "intersect" for finding the intersection of two sets. Your function should take as parameters two sets, and return a new set that is the intersection of those two sets.<span style="background-color:yellow;"> Do not use Python's built-in intersection functionality</span>.</p>
+<p>2. Write your own function called "intersect" for finding the intersection of two sets. Your function should take as parameters two sets, and return a new set that is the intersection of those two sets. Do not use Python's built-in intersection functionality.</p>
 <pre>Sample input: {4, 3, 100}, {1, 100}<br/>Expected output: {100}</pre>
-<p>3. Write your own function called "sym_diff" for finding the symmetric difference of two sets.  Your function should take as parameters two sets, and return a new set that is the symmetric difference of those two sets.  Do not use Python's built-in symmetric difference functionality.</p>
+<p>3. Write your own function called "sym_diff" for finding the symmetric difference of two sets.  Your function should take as parameters two sets, and return a new set that is the symmetric difference of those two sets.<span style="background-color:yellow;">  Do not use Python's built-in symmetric difference functionality</span>.</p>
 <pre>Sample input: {4, 3, 100}, {1, 100}<br/>Expected output: {4, 3, 1}</pre>
 </div>
 </div>

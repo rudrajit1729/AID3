@@ -393,9 +393,9 @@
 <p>The print() function can be used to print out values.<span style="background-color:yellow;"> You just put the value you want to print inside the parentheses</span> Here's an example that prints "Hello world.".</p>
 <iframe allowfullscreen="allowfullscreen" height="400px" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" src="https://repl.it/@coeCS161/Print-Statements-and-Types-1?lite=true" width="100%"></iframe>Try it yourself by typing the following into the Repl:
 <pre>&gt; print(135.682)</pre>
-<p>A print statement can print more than one value - you just need to separate them with commas. By default, a space will be inserted between the values. Try this and see:</p>
+<p>A print statement can print more than one value - you just need to separate them with commas.<span style="background-color:yellow;"> By default, a space will be inserted between the values</span> Try this and see:.</p>
 <pre>&gt; print("pi =", 3.14159)</pre>
-<p>The two values in that print statement are different types - the first one is a string, the second one is a floating-point number..</p>
+<p><span style="font-style: normal;">The two values in that print statement are different <strong>types</strong> - the first one is a <em>string</em>, the second one is a <em>floating-point number</em>.</span></p>
 <p><span style="font-style: normal;">We can produce the exact same output like this (give it a try!):</span></p>
 <pre><span style="font-style: normal;">&gt; print("pi = 3.14159")<br/></span></pre>
 <p><span style="font-style: normal;">In this case we're printing a single string value, not a string value and a floating-point value.</span></p>
@@ -404,7 +404,7 @@
 <h3 style="border-bottom: 1px solid #e6e7e8; font-size: 14pt; margin-top: 18px; margin-bottom: 18px;">Integers</h3>
 <p>Integers are numeric values that don't contain a decimal point. In Python 3 integers can be as long as you want (within the limits of your computer's memory).</p>
 <div><iframe allowfullscreen="allowfullscreen" height="400px" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" src="https://repl.it/@coeCS161/Print-Statements-and-Types-2?lite=true" width="100%"></iframe> <span style="font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14pt;">Floating-point numbers</span></div>
-<p>Floating-point numbers are numeric values that do contain a decimal point. In mathematics, these are called <em>real</em> numbers. Integers are a subset of the real numbers. The value 4 is an integer, but the value 4.0 is a floating-point number.</p>
+<p>Floating-point numbers are numeric values that do contain a decimal point.<span style="background-color:yellow;"> In mathematics, these are called real numbers</span> Integers are a subset of the real numbers. The value 4 is an integer, but the value 4.0 is a floating-point number..</p>
 <pre>&gt; print(3.14159)<br/>&gt; print(-12.572)<br/>&gt; print(2.0)</pre>
 <p>Floats can also be written using scientific notation, using either e or E followed by a positive or negative integer (the exponent)..</p>
 <pre>&gt; print(1.2e7)<br/>&gt; print(-3.27E12)<br/>&gt; print(1.2e-5)</pre>
@@ -412,15 +412,15 @@
 <h3 style="border-bottom: 1px solid #e6e7e8; font-size: 14pt; margin-top: 18px; margin-bottom: 18px;">Strings</h3>
 <p>Strings are zero or more characters between a pair of quotation marks. You can use either single quotes or double quotes. The length of a string is only limited by your computer's memory.</p>
 <p><iframe allowfullscreen="allowfullscreen" height="400px" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" src="https://repl.it/@coeCS161/Print-Statements-and-Types-3?lite=true" width="100%"></iframe></p>
-<p>If you want to have a quotation mark be part of a string, there are two ways. One way is that if the string contains a double quote, you can use single quotes to mark the ends of the string (or vice-versa).</p>
+<p>If you want to have a quotation mark be part of a string, there are two ways.<span style="background-color:yellow;"> One way is that if the string contains a double quote, you can use single quotes to mark the ends of the string (or vice-versa)</span>.</p>
 <pre>&gt; print('She explained, "Mae fy hofrenfad yn llawn llyswennod."')</pre>
 <p>Another way is to put a backslash character in front of the quotation marks that are part of the string.</p>
 <pre>&gt; print("She explained, \"Mae fy hofrenfad yn llawn llyswennod.\"")</pre>
-<p>The backslash is an "escape character", because it escapes the normal significance of the following character.<span style="background-color:yellow;"> Because of that, if you want to have a backslash be part of a string, you need to put two of them in a row (the first one escapes the normal significance of the second one)</span>.</p>
+<p>The backslash is an "escape character", because it escapes the normal significance of the following character. Because of that, if you want to have a backslash be part of a string, you need to put two of them in a row (the first one escapes the normal significance of the second one).</p>
 <pre>&gt; print("Here is a backslash: \\")</pre>
 <p>Normal strings cannot be split across multiple lines. Later we'll see a special kind of string (called a docstring) that can be.</p>
 <h3 style="border-bottom: 1px solid #e6e7e8; font-size: 14pt; margin-top: 18px; margin-bottom: 18px;">Booleans</h3>
-<p>There are only two Boolean values - True and False.<span style="background-color:yellow;"> The first letter of those values must be capitalized</span>.</p>
+<p>There are only two Boolean values - True and False. The first letter of those values must be capitalized.</p>
 <pre>&gt; print(False)<br/>&gt; print(True)</pre>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 18px; margin-bottom: 18px;">Determining type</h2>
 <p>We can use the type() function to tell us what the type of a particular value is. Try these examples to find out the type of the values in the parentheses.</p>
@@ -429,12 +429,12 @@
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 18px; margin-bottom: 18px;">Now you try</h2>
 <p>Now try doing the following exercises.<span style="background-color:yellow;"> Remember that this isn't part of your grade - it's here to reinforce your learning</span>.</p>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 18px; margin-bottom: 18px;">Exercises</h2>
-<p><span>(See the module overview for a link to example solutions.)</span></p>
+<p>(See the module overview for a link to example solutions.).</p>
 <p>1.<span style="background-color:yellow;"> Write a statement that prints out the float value 290</span>73..</p>
 <pre>Sample input: NA<br/>Expected Output: 290.73</pre>
-<p>2.<span style="background-color:yellow;"> Write a statement that prints out the string value "He replied, "Never mind", and shut the door</span>".</p>
+<p>2. Write a statement that prints out the string value "He replied, "Never mind", and shut the door."</p>
 <pre>Sample input: NA<br/>Expected Output: "He replied, "Never mind", and shut the door."</pre>
-<p>3.<span style="background-color:yellow;"> Write a statement that prints out the bool value True (not the string value "True")</span>.</p>
+<p>3. Write a statement that prints out the bool value True (not the string value "True").</p>
 <pre>Sample input: NA<br/>Expected Output: True</pre>
 <p>4. Write a statement that prints out the result of using the type command on the value 99.</p>
 <pre>Sample input: NA<br/>Expected Output: &lt;class 'int'&gt;</pre>

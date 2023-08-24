@@ -390,7 +390,7 @@
 </button></h1>
 <div style="width: 98%; max-width: 1000px; margin-bottom: 24px;"><img alt="Exploration Icon" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1921502/files/95339838" data-api-returntype="File" data-decorative="true" data-id="95339838" height="74" src="https://canvas.oregonstate.edu/courses/1921502/files/95339838/download?wrap=1" style="padding-left: 10px; float: right;" width="75"/>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 0px; margin-bottom: 18px; margin-right: 85px;">Dictionary Data Types</h2>
-<p>Another data type that's built-in to Python is called a dictionary. A dictionary is a way of storing key-value pairs. For example:</p>
+<p>Another data type that's built-in to Python is called a dictionary.<span style="background-color:yellow;"> A dictionary is a way of storing key-value pairs</span> For example:.</p>
 <p><iframe allowfullscreen="allowfullscreen" height="400px" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" src="https://repl.it/@coeCS161/Dictionaries-1?lite=true" width="100%"></iframe></p>
 <p>The first column has the keys and the second column has their associated values (I added extra spaces to align the columns and colons just for ease of reading - it's not required). Each key can only have one value, but the same value can be used for multiple keys. Dictionaries, like lists, are <strong>mutable</strong>. However, unlike lists, you cannot index into a dictionary by the position of an element. You still use the square bracket notation, but instead of a positional index, you give the key that you want the associated value of.</p>
 <pre>&gt; state_capitals["Idaho"]<br/>&gt; state_capitals["Washington"]</pre>
@@ -410,17 +410,17 @@
 <pre>&gt; "classification" in capybara<br/>&gt; "genus" in capybara</pre>
 <p>You can use <em>len</em> to get the number of key-value pairs in a dictionary:</p>
 <pre>&gt; len(capybara)</pre>
-<p>You can use a for loop to iterate through the keys of a dictionary..</p>
+<p>You can use a for loop to iterate through the keys of a dictionary.</p>
 <pre>for attribute in capybara:<br/> print(attribute)</pre>
-<p>Through Python 3.6, dictionaries were not guaranteed to preserve a particular ordering. As of Python 3.7, dictionaries are guaranteed to preserve insertion order.</p>
+<p>Through Python 3.<span style="background-color:yellow;">6, dictionaries were not guaranteed to preserve a particular ordering</span> As of Python 3.7, dictionaries are guaranteed to preserve insertion order..</p>
 <p>The <em>clear</em> method makes a dictionary empty:</p>
 <pre>&gt; capybara.clear()<br/>&gt; len(capybara)</pre>
-<p>As with lists, there are other operators, functions and methods available for working with dictionaries..</p>
+<p>As with lists, there are other operators, functions and methods available for working with dictionaries.</p>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 18px; margin-bottom: 18px;">Exercises</h2>
-<p><span>(See the module overview for a link to example solutions.)</span></p>
+<p>(See the module overview for a link to example solutions.).</p>
 <p>1. Make a dictionary called "eng_to_span" where the keys are the English words "one" through "ten", and the corresponding values are their Spanish translations.</p>
 <pre>Sample input: NA<br/>Expected output: NA</pre>
-<p>2.<span style="background-color:yellow;"> Using the dictionary from #1, write a loop that prints out both the key and value of each key-value pair, for example the first iteration of the loop should print 'one' 'uno'</span>.</p>
+<p>2. Using the dictionary from #1, write a loop that prints out both the key and value of each key-value pair, for example the first iteration of the loop should print 'one' 'uno'.</p>
 <pre>Sample input: NA<br/>Expected output: <br/>    'one', 'uno'<br/>    'two', 'dos'<br/>    'three', 'tres'<br/>    'four', 'quatro'<br/>    'five', 'cinco'<br/>    'six', 'seis'<br/>    'seven', 'siete'<br/>    'eight, 'ocho'<br/>    'nine', 'nueve'<br/>    'ten', 'diez'</pre>
 <p>3. Write a function named <em>some_squares</em> that takes a positive integer parameter and returns a dictionary where the keys are the integers from 1 through the value of the parameter, and the corresponding values are the squares of those integers. </p>
 <pre>Sample input: 3<br/>Expected output: {1: 1, 2: 4, 3: 9}</pre>
