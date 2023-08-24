@@ -622,7 +622,7 @@ class rules:
             if not isExist:
                 os.mkdir(module_dir)
         
-        generate_HTML(self.course_name)
+        # generate_HTML(self.course_name)
     
     def check_rule_2(self):
         modules = self.get_module_names()
@@ -678,11 +678,13 @@ class rules:
             asg_list = os.listdir(asg_path)
             page_list = os.listdir(page_path)
 
-            for asg in asg_list:
-                self.check_link_title(asg_path, asg)
+            if len(asg_list) > 0:
+                for asg in asg_list:
+                    self.check_link_title(asg_path, asg)
             
-            for page in page_list:
-                self.check_link_title(page_path, page)
+            if len(page_list) > 0:
+                for page in page_list:
+                    self.check_link_title(page_path, page)
 
     def check_all_rules(self):
         modules = self.get_module_names()
