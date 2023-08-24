@@ -7,7 +7,7 @@ from src.utils.AsgToJSON import assignment_to_json
 def scrape_all_pages(course_name):
 
     parent_dir = Path(__file__).parents[2]
-    html_path = os.path.join(parent_dir, "HTML_DATA", course_name)
+    html_path = os.path.join(parent_dir, "static", "HTML_DATA", course_name)
     json_path = os.path.join(parent_dir, "HTML_extracted_lines")
 
     isExists = os.path.exists(json_path)

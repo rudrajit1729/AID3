@@ -1,5 +1,4 @@
 import os
-import bs4
 import re
 import math
 import json
@@ -9,6 +8,7 @@ import pandas as pd
 from nltk import pos_tag
 from pathlib import Path
 from rake_nltk import Rake
+from bs4 import BeautifulSoup
 from nltk.corpus import stopwords
 from collections import defaultdict
 from nltk.corpus import wordnet as wn
@@ -19,7 +19,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 class rules:
     def __init__(self, 
-                 JSON_DIR, 
+                 JSON_DIR,
+                 HTML_DIR, 
                  MODEL_NAME,
                  COURSE_NAME,
                  NLTK_CORPUS_NAME="Corpus.csv",
@@ -30,6 +31,7 @@ class rules:
         self.tokenizer_eval = None
         self.analyzed_pages = []
         self.JSON_DIR = JSON_DIR
+        self.HTML_DIR = HTML_DIR
         self.RESULTS = {}
         self.course_name = COURSE_NAME
         
@@ -571,6 +573,18 @@ class rules:
             self.RESULTS[result_asg_name]['keywords'] = all_page_keywords
             print(f"Matched Keywords: {matched_keywords}")
 
+    ###################################################
+    ########### Helper functions for Rule 4 ###########
+    ###################################################
+    def check_link_title(self, html_dir, name):
+        with open(os.path.join(html_dir, name), "r", encoding="utf-8") as f:
+            html = f.read()
+        soup = BeautifulSoup(html, 'html.parser')
+
+        if len(soup.findAll('a')) != len(soup.find_all('a', attrs={'title': True})):
+            print(f"{name} ==> Rule 4 violated")
+            self.RESULTS[name]['rule4'] = True 
+
     ########################################
     ########### Driver functions ###########
     ########################################
@@ -650,7 +664,26 @@ class rules:
                                      asg_list, 
                                      page_path, 
                                      asg_path, 
-                                     keyword_match_fraction = 1.0)  
+                                     keyword_match_fraction = 1.0)
+    def check_rule_4(self):
+        modules = self.get_module_names()
+        self.analyzed_pages = []
+        for module in modules:
+            print("*"*20)
+            print(module)
+            print("*"*20)
+
+            asg_path = os.path.join(self.HTML_DIR, module, "Assignments")
+            page_path = os.path.join(self.HTML_DIR, module, "Pages")
+            asg_list = os.listdir(asg_path)
+            page_list = os.listdir(page_path)
+
+            for asg in asg_list:
+                self.check_link_title(asg_path, asg)
+            
+            for page in page_list:
+                self.check_link_title(page_path, page)
+
     def check_all_rules(self):
         modules = self.get_module_names()
         print(modules)
@@ -663,20 +696,21 @@ class rules:
             if len(asg_list) > 0:
                 for asg_name in asg_list:
                     asg_name = asg_name.replace(".json", "")
-                    self.RESULTS[asg_name] = {"rule1":False, "rule2":False, "rule3":False}
+                    self.RESULTS[asg_name] = {"rule1":False, "rule2":False, "rule3":False, "rule4":False}
 
             if len(page_list) > 0:
                 for page_name in page_list:
                     page_name = page_name.replace(".json", "")
-                    self.RESULTS[page_name] = {"rule1":False, "rule2":False, "rule3":False}
+                    self.RESULTS[page_name] = {"rule1":False, "rule2":False, "rule3":False, "rule4":False}
 
         self.check_rule_1()
         self.check_rule_2()
         self.check_rule_3()
+        self.check_rule_4()
 
         temp_dict = {}
         for key, data in self.RESULTS.items():
-            if data["rule1"] == False and data["rule2"] == False and data["rule3"] == False:
+            if data["rule1"] == False and data["rule2"] == False and data["rule3"] == False and data["rule4"] == False:
                 continue
             else:
                 temp_dict[key] = data

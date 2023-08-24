@@ -109,7 +109,7 @@ def course_results(course_name):
     global count
     global results_dict
     if count == 0:
-        # check_rules(course_name)
+        check_rules(course_name)
         generate_HTML(course_name)
         count = count + 1
     
