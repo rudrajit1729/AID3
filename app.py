@@ -23,6 +23,7 @@ def get_all_links_and_results(results, course_name):
     rule_1 = []
     rule_2 = []
     rule_3 = []
+    rule_4 = []
 
     for page_name in all_pages:
         module_name = page_name.split("_")[0]
@@ -43,14 +44,15 @@ def get_all_links_and_results(results, course_name):
         rule_1.append(results[page_name]['rule1'])
         rule_2.append(results[page_name]['rule2'])
         rule_3.append(results[page_name]['rule3'])
+        rule_4.append(results[page_name]['rule4'])
 
-    return page_render_list, rule_1, rule_2, rule_3
+    return page_render_list, rule_1, rule_2, rule_3, rule_4
 
 
 def pagenate_result(iterable, offset=0, per_page=5):
     return iterable[offset: offset + per_page]
 
-def package_results(links, rule1, rule2, rule3):
+def package_results(links, rule1, rule2, rule3, rule4):
     result = []
     for i in range(len(links)):
         result.append({
@@ -58,6 +60,7 @@ def package_results(links, rule1, rule2, rule3):
             "rule1": rule1[i],
             "rule2": rule2[i],
             "rule3": rule3[i],
+            "rule4": rule4[i]
         })
     return result
 
@@ -114,7 +117,7 @@ def course_results(course_name):
         count = count + 1
     
     results_dict = json.load(open(f"./static/{course_name}/AllViolations.json"))
-    links, rule1, rule2, rule3 = get_all_links_and_results(results_dict, course_name)
+    links, rule1, rule2, rule3, rule4 = get_all_links_and_results(results_dict, course_name)
     page, per_page, offset = get_page_args(page_parameter='page',
                                         per_page_parameter='per_page')
     # per_page = 5
@@ -123,11 +126,13 @@ def course_results(course_name):
     render_results_rule1 = pagenate_result(rule1, offset=offset, per_page=per_page)
     render_results_rule2 = pagenate_result(rule2, offset=offset, per_page=per_page)
     render_results_rule3 = pagenate_result(rule3, offset=offset, per_page=per_page)
+    render_results_rule4 = pagenate_result(rule4, offset=offset, per_page=per_page)
 
     pkg_results = package_results(pagination_links, 
                                   render_results_rule1, 
                                   render_results_rule2, 
-                                  render_results_rule3)
+                                  render_results_rule3,
+                                  render_results_rule4)
 
     pagination = Pagination(page=page, per_page=per_page, total=total,
                             css_framework='bootstrap5')
@@ -146,7 +151,7 @@ def course_results_filter():
     rule_num = request.args.get("rule")
     
     results_dict = json.load(open(f"./static/{course_name}/AllViolations.json"))
-    links, rule1, rule2, rule3 = get_all_links_and_results(results_dict, course_name)
+    links, rule1, rule2, rule3, rule4 = get_all_links_and_results(results_dict, course_name)
     page, per_page, offset = get_page_args(page_parameter='page',
                                         per_page_parameter='per_page')
     # per_page = 5
@@ -157,9 +162,12 @@ def course_results_filter():
     elif rule_num == "2":
         render_results = pagenate_result(rule2, offset=offset, per_page=per_page)
         links = [links[i] for i in range(len(rule2)) if rule2[i]]
-    else:
+    elif rule_num == "3":
         render_results = pagenate_result(rule3, offset=offset, per_page=per_page)
         links = [links[i] for i in range(len(rule3)) if rule3[i]]
+    else:
+        render_results = pagenate_result(rule4, offset=offset, per_page=per_page)
+        links = [links[i] for i in range(len(rule4)) if rule4[i]]
 
     total = len(links)
     pagination_links = pagenate_result(links, offset=offset, per_page=per_page)
