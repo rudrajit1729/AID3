@@ -176,6 +176,16 @@ def course_results_filter():
     pagination = Pagination(page=page, per_page=per_page, total=total,
                             css_framework='bootstrap5')
     
+    if total == 0:
+        return render_template('no_violations.html',
+                        results=pkg_results,
+                        page=page,
+                        per_page=per_page,
+                        pagination=pagination,
+                        course_name=course_name,
+                        rule_num = rule_num
+                        )    
+    
     return render_template('results_filtered.html',
                         results=pkg_results,
                         page=page,

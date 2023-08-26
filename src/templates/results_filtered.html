@@ -16,6 +16,8 @@
 <body>
   <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
+      <a class="navbar-brand" href="/">Home</a>
+      <a class="navbar-brand" href="/results/{{course_name}}">All Violations</a>
       {% if rule_num == "1" %}
       <a class="navbar-brand" href="#"><strong>RULE 1</strong></a>
       <p class="mb-0" style="color: white;"><strong>Description:</strong> While brief instructions may suit some
@@ -39,7 +41,7 @@
         and wizards.
       </p>
       {% else %}
-      <a class="navbar-brand" href="#"><strong>RULE 3</strong></a>
+      <a class="navbar-brand" href="#"><strong>RULE 4</strong></a>
       <p class="mb-0" style="color: white;">
         <strong>Description:</strong> Users like Abi click on a link only after gathering enough information and
         planning their next

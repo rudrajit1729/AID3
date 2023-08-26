@@ -576,12 +576,34 @@ class rules:
     ###################################################
     ########### Helper functions for Rule 4 ###########
     ###################################################
-    def check_link_title(self, html_dir, name):
+    def check_link_title(self, html_dir, name, page_type):
+        body_html_dict_page = {"class": "show-content"}
+        body_html_dict_asg = {'class': 'description'}
         with open(os.path.join(html_dir, name), "r", encoding="utf-8") as f:
             html = f.read()
         soup = BeautifulSoup(html, 'html.parser')
 
-        if len(soup.findAll('a')) != len(soup.find_all('a', attrs={'title': True})):
+        if page_type == "Asg":
+            try:
+                body_html = soup.find('div', body_html_dict_asg).find("div")
+            except AttributeError:
+                return
+            
+            if not body_html:
+                body_html = soup.find('div', body_html_dict_asg)
+        else:
+            try:
+                body_html = soup.find('div', body_html_dict_page).find("div")
+            except AttributeError:
+                return
+            if not body_html:
+                body_html = soup.find('div', body_html_dict_page)
+
+            body_html = soup.find('div', body_html_dict_page)
+            if body_html.find('div') != None:
+                body_html = soup.find('div', body_html_dict_page).find('div')
+
+        if len(body_html.findAll('a')) != len(body_html.find_all('a', attrs={'title': True})):
             print(f"{name} ==> Rule 4 violated")
             self.RESULTS[name]['rule4'] = True 
 
@@ -680,11 +702,11 @@ class rules:
 
             if len(asg_list) > 0:
                 for asg in asg_list:
-                    self.check_link_title(asg_path, asg)
+                    self.check_link_title(asg_path, asg, "Asg")
             
             if len(page_list) > 0:
                 for page in page_list:
-                    self.check_link_title(page_path, page)
+                    self.check_link_title(page_path, page, "Page")
 
     def check_all_rules(self):
         modules = self.get_module_names()

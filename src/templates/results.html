@@ -16,7 +16,38 @@
 <body>
   <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Results</a>
+      <a class="navbar-brand" href="/">Home</a>
+      <a class="navbar-brand" href="/results/{{course_name}}">All Violations</a>
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Filter
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="nav-link" href="/results/filter?course_name={{course_name}}&rule=1" target="_blank"
+              role="button" aria-expanded="false" title="Supporting learning by process using sub-instructions">
+              Rule 1
+            </a></li>
+          <li><a class="nav-link" href="/results/filter?course_name={{course_name}}&rule=2" target="_blank"
+              role="button" aria-expanded="false" title="Clear purpose behind tasks">
+              Rule 2
+            </a></li>
+          <li><a class="nav-link" href="/results/filter?course_name={{course_name}}&rule=3" target="_blank"
+              role="button" aria-expanded="false" title="Drawing on prior knowledge for task guidance">
+              Rule 3
+            </a></li>
+          <li><a class="nav-link" href="/results/filter?course_name={{course_name}}&rule=4" target="_blank"
+              role="button" aria-expanded="false" title="Information link navigation">
+              Rule 4
+            </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Home</a>
+      <a class="navbar-brand" href="/results/{{course_name}}">All Results</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -50,9 +81,13 @@
             </a>
           </li>
         </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
       </div>
     </div>
-  </nav>
+  </nav> -->
   {% for result in results %}
   <div class="container mt-3 mb-2">
     <div class="row h-100">
