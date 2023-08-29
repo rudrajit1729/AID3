@@ -94,7 +94,7 @@
       <div class="col-sm-9">
         <div class="card">
           <div class="card-body">
-            <div class="container">
+            <div class="container shadow-lg p-3 mb-5 bg-white rounded">
               <iframe title="Homepage Iframes" src={{ result.link }} sandbox="allow-scripts" width="100%"
                 style="height: 290px;">
                 <p>iframes are not supported by this browser.</p>
@@ -129,7 +129,7 @@
 
             {% if result.rule4 == True %}
             <li class="list-group-item">
-              <p class="success"><strong>Rule 4:</strong> Violated</p>
+              <p class="success"><strong>Rule 4(<span style="color: aqua">■</span>):</strong> Violated</p>
             </li>
             {% endif %}
           </ul>

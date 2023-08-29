@@ -576,14 +576,15 @@ class rules:
     ###################################################
     ########### Helper functions for Rule 4 ###########
     ###################################################
-    def check_link_title(self, html_dir, name, page_type):
+    def check_link_title(self, html_dir, module_name, name, page_type):
+        out_dir = Path(__file__).parents[2]
         body_html_dict_page = {"class": "show-content"}
         body_html_dict_asg = {'class': 'description'}
         with open(os.path.join(html_dir, name), "r", encoding="utf-8") as f:
             html = f.read()
         soup = BeautifulSoup(html, 'html.parser')
 
-        if page_type == "Asg":
+        if page_type == "Asgignments":
             try:
                 body_html = soup.find('div', body_html_dict_asg).find("div")
             except AttributeError:
@@ -603,9 +604,19 @@ class rules:
             if body_html.find('div') != None:
                 body_html = soup.find('div', body_html_dict_page).find('div')
 
-        if len(body_html.findAll('a')) != len(body_html.find_all('a', attrs={'title': True})):
-            print(f"{name} ==> Rule 4 violated")
-            self.RESULTS[name]['rule4'] = True 
+        # if len(body_html.findAll('a')) != len(body_html.find_all('a', attrs={'title': True})):
+        #     print(f"{name} ==> Rule 4 violated")
+        #     self.RESULTS[name]['rule4'] = True
+
+        links = body_html.findAll('a')
+        for link in links:
+            if "title" not in list(link.attrs.keys()):
+                link['style'] = "background-color: aqua;"
+                print(f"{name} ==> Rule 4 violated")
+                self.RESULTS[name]['rule4'] = True
+        
+        with open(os.path.join(out_dir, "static", "HTML_DATA", self.course_name, module_name, page_type, f"{name}"), "w", encoding="utf-8") as file:
+            file.write(str(soup))
 
     ########################################
     ########### Driver functions ###########
@@ -702,11 +713,11 @@ class rules:
 
             if len(asg_list) > 0:
                 for asg in asg_list:
-                    self.check_link_title(asg_path, asg, "Asg")
+                    self.check_link_title(asg_path, module, asg, "Assignments")
             
             if len(page_list) > 0:
                 for page in page_list:
-                    self.check_link_title(page_path, page, "Page")
+                    self.check_link_title(page_path, module, page, "Pages")
 
     def check_all_rules(self):
         modules = self.get_module_names()
@@ -727,10 +738,10 @@ class rules:
                     page_name = page_name.replace(".json", "")
                     self.RESULTS[page_name] = {"rule1":False, "rule2":False, "rule3":False, "rule4":False}
 
+        self.check_rule_4()
         self.check_rule_1()
         self.check_rule_2()
         self.check_rule_3()
-        self.check_rule_4()
 
         temp_dict = {}
         for key, data in self.RESULTS.items():

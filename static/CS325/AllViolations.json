@@ -182,7 +182,7 @@
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true,
+    "rule4": false,
     "keywords": []
   },
   "Module3_Pages0.html": {
@@ -242,13 +242,6 @@
     "rule4": false,
     "keywords": []
   },
-  "Module4_Asg3.html": {
-    "rule1": false,
-    "rule2": false,
-    "rule3": false,
-    "rule4": true,
-    "keywords": []
-  },
   "Module4_Pages0.html": {
     "rule1": true,
     "rule2": false,
@@ -296,7 +289,7 @@
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true,
+    "rule4": false,
     "keywords": []
   },
   "Module5_Asg2.html": {
@@ -335,13 +328,6 @@
     "rule2": false,
     "rule3": false,
     "rule4": true
-  },
-  "Module6_Asg0.html": {
-    "rule1": false,
-    "rule2": false,
-    "rule3": false,
-    "rule4": true,
-    "keywords": []
   },
   "Module6_Pages0.html": {
     "rule1": true,
@@ -506,13 +492,6 @@
     "rule2": false,
     "rule3": false,
     "rule4": true
-  },
-  "Module10_Asg1.html": {
-    "rule1": false,
-    "rule2": false,
-    "rule3": false,
-    "rule4": true,
-    "keywords": []
   },
   "Module10_Pages0.html": {
     "rule1": true,
