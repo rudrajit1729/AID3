@@ -107,7 +107,7 @@ def home():
 @app.route("/results", methods=['GET', 'POST'])
 def results():
     course_name = request.form.get("course_name")
-    if course_name == "Choose":
+    if course_name == "Choose" or course_name == "New_Course":
         return render_template("index.html")
     
     else:
