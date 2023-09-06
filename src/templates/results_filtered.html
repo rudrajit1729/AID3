@@ -78,7 +78,8 @@
           <ul class="list-group list-group-flush">
             {% if rule_num == "1" %}
             <li class="list-group-item">
-              <p class="success"><strong>Rule 1(<span style="color: yellow">■</span>):</strong> Violated</p>
+              <p class="success"><strong>Rule 1(<span style="color: yellow">■</span>):</strong> Violated : Count = {{
+                result.rule_1_violations_count }}</p>
             </li>
             {% endif %}
 
@@ -96,7 +97,8 @@
 
             {% if rule_num == "4" %}
             <li class="list-group-item">
-              <p class="success"><strong>Rule 4(<span style="color: aqua">■</span>):</strong> Violated</p>
+              <p class="success"><strong>Rule 4(<span style="color: aqua">■</span>):</strong> Violated : Count = {{
+                result.rule_4_violations_count }}</p>
             </li>
             {% endif %}
           </ul>

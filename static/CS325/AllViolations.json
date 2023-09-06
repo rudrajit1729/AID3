@@ -3,15 +3,9 @@
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module0_Pages2.html": {
-    "rule1": false,
-    "rule2": false,
-    "rule3": false,
-    "rule4": true
-  },
-  "Module0_Pages3.html": {
     "rule1": false,
     "rule2": false,
     "rule3": false,
@@ -24,12 +18,6 @@
     "rule4": true
   },
   "Module0_Pages6.html": {
-    "rule1": false,
-    "rule2": false,
-    "rule3": false,
-    "rule4": true
-  },
-  "Module0_Pages8.html": {
     "rule1": false,
     "rule2": false,
     "rule3": false,
@@ -59,13 +47,13 @@
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module1_Pages1.html": {
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module1_Pages2.html": {
     "rule1": true,
@@ -95,7 +83,7 @@
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module1_Pages8.html": {
     "rule1": true,
@@ -121,13 +109,13 @@
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module2_Pages1.html": {
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module2_Pages2.html": {
     "rule1": true,
@@ -157,7 +145,7 @@
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module2_Pages7.html": {
     "rule1": true,
@@ -189,13 +177,13 @@
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module3_Pages1.html": {
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module3_Pages2.html": {
     "rule1": true,
@@ -213,7 +201,7 @@
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module3_Pages6.html": {
     "rule1": false,
@@ -246,7 +234,7 @@
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module4_Pages1.html": {
     "rule1": true,
@@ -303,7 +291,7 @@
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module5_Pages1.html": {
     "rule1": true,
@@ -315,7 +303,7 @@
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module5_Pages3.html": {
     "rule1": true,
@@ -333,13 +321,13 @@
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module6_Pages1.html": {
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module6_Pages2.html": {
     "rule1": true,
@@ -372,19 +360,19 @@
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module7_Pages1.html": {
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module7_Pages2.html": {
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module7_Pages3.html": {
     "rule1": true,
@@ -422,7 +410,7 @@
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module8_Pages1.html": {
     "rule1": true,
@@ -434,7 +422,7 @@
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module8_Pages4.html": {
     "rule1": true,
@@ -467,13 +455,13 @@
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module9_Pages1.html": {
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module9_Pages2.html": {
     "rule1": true,
@@ -497,7 +485,7 @@
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module10_Pages1.html": {
     "rule1": false,
@@ -533,17 +521,11 @@
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module10_Pages2.html": {
     "rule1": false,
     "rule2": true,
-    "rule3": false,
-    "rule4": true
-  },
-  "Module10_Pages22.html": {
-    "rule1": false,
-    "rule2": false,
     "rule3": false,
     "rule4": true
   },
@@ -569,7 +551,7 @@
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module10_Pages3.html": {
     "rule1": false,
@@ -587,13 +569,13 @@
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module10_Pages34.html": {
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module10_Pages35.html": {
     "rule1": true,
@@ -623,13 +605,13 @@
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module10_Pages40.html": {
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module10_Pages41.html": {
     "rule1": true,
@@ -653,7 +635,7 @@
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module10_Pages48.html": {
     "rule1": true,
@@ -683,7 +665,7 @@
     "rule1": true,
     "rule2": false,
     "rule3": false,
-    "rule4": true
+    "rule4": false
   },
   "Module10_Pages56.html": {
     "rule1": true,
@@ -720,24 +702,6 @@
     "rule2": true,
     "rule3": false,
     "rule4": false
-  },
-  "Module10_Pages62.html": {
-    "rule1": false,
-    "rule2": false,
-    "rule3": false,
-    "rule4": true
-  },
-  "Module10_Pages63.html": {
-    "rule1": false,
-    "rule2": false,
-    "rule3": false,
-    "rule4": true
-  },
-  "Module10_Pages64.html": {
-    "rule1": false,
-    "rule2": false,
-    "rule3": false,
-    "rule4": true
   },
   "Module10_Pages7.html": {
     "rule1": false,

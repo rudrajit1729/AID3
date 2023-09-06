@@ -577,6 +577,7 @@ class rules:
     ########### Helper functions for Rule 4 ###########
     ###################################################
     def check_link_title(self, html_dir, module_name, name, page_type):
+        violation_count = 0
         out_dir = Path(__file__).parents[2]
         body_html_dict_page = {"class": "show-content"}
         body_html_dict_asg = {'class': 'description'}
@@ -604,19 +605,21 @@ class rules:
             if body_html.find('div') != None:
                 body_html = soup.find('div', body_html_dict_page).find('div')
 
-        # if len(body_html.findAll('a')) != len(body_html.find_all('a', attrs={'title': True})):
-        #     print(f"{name} ==> Rule 4 violated")
-        #     self.RESULTS[name]['rule4'] = True
-
         links = body_html.findAll('a')
         for link in links:
             if "title" not in list(link.attrs.keys()):
-                link['style'] = "background-color: aqua;"
-                print(f"{name} ==> Rule 4 violated")
-                self.RESULTS[name]['rule4'] = True
-        
+                if 'span' not in [i.name for i in link.findChildren()]:
+                    # span_text = link.find('span').text
+                    # if len(span_text) == 0:
+                    link['style'] = "background-color: aqua;"
+                    print(f"{name} ==> Rule 4 violated")
+                    self.RESULTS[name]['rule4'] = True
+                    violation_count = violation_count + 1
+
         with open(os.path.join(out_dir, "static", "HTML_DATA", self.course_name, module_name, page_type, f"{name}"), "w", encoding="utf-8") as file:
             file.write(str(soup))
+        
+        return violation_count
 
     ########################################
     ########### Driver functions ###########
@@ -642,8 +645,9 @@ class rules:
                 "Assignments": all_asg_violations
             }
         
-        json.dump(all_module_violations, 
-                  open(os.path.join(self.JSON_DIR, "violations.json"), "w"))
+        # base_dir = Path(__file__).parents[2]
+        # json.dump(all_module_violations, 
+        #           open(os.path.join(base_dir, "static", self.course_name, "violations.json"), "w"))
         
         HTML_gen_dir = os.path.join(self.base_dir, "static", "OUT_HTML")
         isExist = os.path.exists(HTML_gen_dir)
@@ -713,11 +717,13 @@ class rules:
 
             if len(asg_list) > 0:
                 for asg in asg_list:
-                    self.check_link_title(asg_path, module, asg, "Assignments")
+                    violation_count = self.check_link_title(asg_path, module, asg, "Assignments")
+                    self.RESULTS[asg]['rule4_violation_count'] = violation_count
             
             if len(page_list) > 0:
                 for page in page_list:
-                    self.check_link_title(page_path, module, page, "Pages")
+                    violation_count = self.check_link_title(page_path, module, page, "Pages")
+                    self.RESULTS[page]['rule4_violation_count'] = violation_count
 
     def check_all_rules(self):
         modules = self.get_module_names()

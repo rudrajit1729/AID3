@@ -11,11 +11,21 @@ def create_dir(all_violations, out_dir):
         if not isExists:
             os.makedirs(path)
 
-def generate_HTML_output(page_type, page_violations, html_dir, module_name, body_html_dict, out_dir):
+def generate_HTML_output(page_type, page_violations, html_dir, module_name, body_html_dict, out_dir, violations_json, course_name):
     if bool(page_violations):
         for page_name, violation in page_violations.items():
+            violation_count = 0
             content_violations = violation["content"]
             pre_h2_violations = violation["__pre_h2__"]
+
+            # if bool(content_violations):
+            #     for key, val in content_violations.items():
+            #         violation_count = violation_count + len(content_violations[key])
+            
+            # violation_count = violation_count + len(pre_h2_violations)
+            # if page_name == "Module10_Pages26.html.json":
+            #     print(violation_count)
+                
 
             page_name = page_name.replace(".json", "") 
             dir = os.path.join(html_dir, module_name, page_type, page_name)
@@ -46,10 +56,12 @@ def generate_HTML_output(page_type, page_violations, html_dir, module_name, body
                                         line_num = violation_coords["line_num"]
                                         if para_idx == para_key:
                                             para_text = sibling.text.split(".")
+                                            # para_text = str(sibling).split(".")
                                             new_text = "<p>"
                                             for idx, text in enumerate(para_text):
                                                 if idx == line_num and len(text) >10:
                                                     new_text = new_text + "<span style=\"background-color:yellow;\">" + text + "</span>"
+                                                    violation_count = violation_count + 1
                                                 else:
                                                     new_text = new_text + text + "."
                                             new_text = new_text + "</p>"
@@ -66,8 +78,10 @@ def generate_HTML_output(page_type, page_violations, html_dir, module_name, body
                                             violation_li = sibling.findAll("li")[line_num]
 
                                             text = violation_li.text
+                                            # text = str(violation_li)
                                             new_text = "<li>"
                                             new_text = new_text + "<span style=\"background-color:yellow;\">" + text + "</span>" + "</li>"
+                                            violation_count = violation_count + 1
                                             new_soup = bs4.BeautifulSoup(new_text, features="html.parser")
                                             violation_li.replace_with(new_soup.li)
                                         ul_idx = ul_idx + 1
@@ -79,8 +93,11 @@ def generate_HTML_output(page_type, page_violations, html_dir, module_name, body
                                             violation_li = sibling.findAll("li")[line_num]
 
                                             text = violation_li.text
+                                            # text = str(violation_li)
                                             new_text = "<li>"
                                             new_text = new_text + "<span style=\"background-color:yellow;\">" + text + "</span>" + "</li>"
+                                            violation_count = violation_count + 1
+
                                             new_soup = bs4.BeautifulSoup(new_text, features="html.parser")
                                             violation_li.replace_with(new_soup.li)
                                         ol_idx = ol_idx + 1
@@ -99,22 +116,28 @@ def generate_HTML_output(page_type, page_violations, html_dir, module_name, body
                             if anchor_point.name == "p":
                                 if pre_h2_para_idx == para_key:
                                     para_text = anchor_point.text.split(".")
+                                    # para_text = str(anchor_point).split(".")
                                     new_text = "<p>"
                                     for idx, text in enumerate(para_text):
                                         if idx == line_num and len(text) > 10:
                                             new_text = new_text + "<span style=\"background-color:yellow;\">" + text + "</span>"
+                                            violation_count = violation_count + 1
                                         else:
                                             new_text = new_text + text + "."
                                     new_soup = bs4.BeautifulSoup(new_text, features="html.parser")
                                     anchor_point.replace_with(new_soup.p)
 
                                 pre_h2_para_idx = pre_h2_para_idx + 1
-
-                    elif pre_h2_violation["type"] == "li":
-                        pass
-
+            
+            if page_name in list(violations_json.keys()):
+                violations_json[page_name]["rule1_violation_count"] = violation_count
+            
             with open(os.path.join(out_dir, module_name, f"{page_name}"), "w", encoding="utf-8") as file:
                 file.write(str(soup))
+        
+        parent_dir = Path(__file__).parents[2]
+        out_file_path = os.path.join(parent_dir, 'static', course_name)
+        json.dump(violations_json, open(os.path.join(out_file_path, "AllViolations.json"), "w"))
 
 def generate_HTML(course_name):
     parent_dir = Path(__file__).parents[2]
@@ -125,11 +148,12 @@ def generate_HTML(course_name):
     out_dir = os.path.join(html_static_dir, "static", "OUT_HTML")
 
     body_html_dict = {"class": "show-content"}
-    all_violations = json.load(open(os.path.join(json_dir, "violations.json")))
+    violations_json = json.load(open(os.path.join(json_dir, "violations.json")))
+    all_violations = json.load(open(os.path.join(json_dir, "AllViolations.json")))
 
-    create_dir(all_violations, out_dir)
+    create_dir(violations_json, out_dir)
 
-    for module_name, module_violations in all_violations.items():
+    for module_name, module_violations in violations_json.items():
         page_type = "Pages"
         body_html_dict = {"class": "show-content"}
         page_violations = module_violations[page_type]
@@ -138,7 +162,9 @@ def generate_HTML(course_name):
                              html_dir, 
                              module_name, 
                              body_html_dict, 
-                             out_dir)
+                             out_dir,
+                             all_violations,
+                             course_name)
         
         page_type = "Assignments"
         body_html_dict = {'class': 'description'}
@@ -148,4 +174,6 @@ def generate_HTML(course_name):
                              html_dir, 
                              module_name, 
                              body_html_dict, 
-                             out_dir)
+                             out_dir,
+                             all_violations,
+                             course_name)
