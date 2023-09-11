@@ -16,7 +16,38 @@
 <body>
   <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Results</a>
+      <a class="navbar-brand" href="/">Home</a>
+      <a class="navbar-brand" href="/results/{{course_name}}">All Violations</a>
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Filter
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="nav-link" href="/results/filter?course_name={{course_name}}&rule=1" target="_blank"
+              role="button" aria-expanded="false" title="Supporting learning by process using sub-instructions">
+              Rule 1
+            </a></li>
+          <li><a class="nav-link" href="/results/filter?course_name={{course_name}}&rule=2" target="_blank"
+              role="button" aria-expanded="false" title="Clear purpose behind tasks">
+              Rule 2
+            </a></li>
+          <li><a class="nav-link" href="/results/filter?course_name={{course_name}}&rule=3" target="_blank"
+              role="button" aria-expanded="false" title="Drawing on prior knowledge for task guidance">
+              Rule 3
+            </a></li>
+          <li><a class="nav-link" href="/results/filter?course_name={{course_name}}&rule=4" target="_blank"
+              role="button" aria-expanded="false" title="Information link navigation">
+              Rule 4
+            </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Home</a>
+      <a class="navbar-brand" href="/results/{{course_name}}">All Results</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,36 +56,47 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="/results/filter?course_name={{course_name}}&rule=1" target="_blank" role="button"
-              aria-expanded="false">
+              aria-expanded="false" title="Supporting learning by process using sub-instructions">
               Rule 1
             </a>
           </li>
 
           <li class="nav-item">
             <a class="nav-link" href="/results/filter?course_name={{course_name}}&rule=2" target="_blank" role="button"
-              aria-expanded="false">
+              aria-expanded="false" title="Clear purpose behind tasks">
               Rule 2
             </a>
           </li>
 
           <li class="nav-item">
             <a class="nav-link" href="/results/filter?course_name={{course_name}}&rule=3" target="_blank" role="button"
-              aria-expanded="false">
+              aria-expanded="false" title="Drawing on prior knowledge for task guidance">
               Rule 3
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/results/filter?course_name={{course_name}}&rule=4" target="_blank" role="button"
+              aria-expanded="false" title="Information link navigation">
+              Rule 4
+            </a>
+          </li>
         </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
       </div>
     </div>
-  </nav>
+  </nav> -->
   {% for result in results %}
   <div class="container mt-3 mb-2">
     <div class="row h-100">
       <div class="col-sm-9">
         <div class="card">
           <div class="card-body">
-            <div class="container">
-              <iframe title="Homepage Iframes" src={{ result.link }} sandbox="" width="100%" style="height: 290px;">
+            <div class="container shadow-lg p-3 mb-5 bg-white rounded">
+              <iframe title="Homepage Iframes" src={{ result.link }} sandbox="allow-scripts" width="100%"
+                style="height: 290px;">
                 <p>iframes are not supported by this browser.</p>
               </iframe>
             </div>
@@ -69,7 +111,8 @@
           <ul class="list-group list-group-flush">
             {% if result.rule1 == True %}
             <li class="list-group-item">
-              <p class="success"><strong>Rule 1(<span style="color: yellow">■</span>):</strong> Violated</p>
+              <p class="success"><strong>Rule 1(<span style="color: yellow">■</span>):</strong> Violated : Count = {{
+                result.rule_1_violations_count }}</p>
             </li>
             {% endif %}
 
@@ -82,6 +125,13 @@
             {% if result.rule3 == True %}
             <li class="list-group-item">
               <p class="success"><strong>Rule 3:</strong> Violated</p>
+            </li>
+            {% endif %}
+
+            {% if result.rule4 == True %}
+            <li class="list-group-item">
+              <p class="success"><strong>Rule 4(<span style="color: aqua">■</span>):</strong> Violated : Count = {{
+                result.rule_4_violations_count }}</p>
             </li>
             {% endif %}
           </ul>

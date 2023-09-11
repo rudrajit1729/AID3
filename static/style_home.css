@@ -1,7 +1,25 @@
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #e2e2e2;
+}
+footer{
+  margin-top: auto;
+  background: #1A1E25;
+  color: #868c96;
+}  
+
+footer p {
+  padding: 10px 0;
+  text-align: center;
+}
+
 .back {
     background: #e2e2e2;
     width: 100%;
     position: absolute;
+    min-height: 100vh;
     top: 0;
     bottom: 0;
   }
@@ -17,14 +35,19 @@
     bottom: 0;
     margin: auto;
     max-width: 100%;
-    max-height: 100%;
+    max-height: 100vh;
     overflow: auto;
     padding: 1em 2em;
     border-bottom: 2px solid #ccc;
     display: table;
+    margin-top: 7%;
   }
   
   div.content {
     display: table-cell;
     vertical-align: middle;
+  }
+
+  ul {
+    list-style-type: none;
   }

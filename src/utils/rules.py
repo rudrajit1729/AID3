@@ -1,5 +1,4 @@
 import os
-import bs4
 import re
 import math
 import json
@@ -9,6 +8,7 @@ import pandas as pd
 from nltk import pos_tag
 from pathlib import Path
 from rake_nltk import Rake
+from bs4 import BeautifulSoup
 from nltk.corpus import stopwords
 from collections import defaultdict
 from nltk.corpus import wordnet as wn
@@ -19,7 +19,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 class rules:
     def __init__(self, 
-                 JSON_DIR, 
+                 JSON_DIR,
+                 HTML_DIR, 
                  MODEL_NAME,
                  COURSE_NAME,
                  NLTK_CORPUS_NAME="Corpus.csv",
@@ -30,6 +31,7 @@ class rules:
         self.tokenizer_eval = None
         self.analyzed_pages = []
         self.JSON_DIR = JSON_DIR
+        self.HTML_DIR = HTML_DIR
         self.RESULTS = {}
         self.course_name = COURSE_NAME
         
@@ -571,6 +573,54 @@ class rules:
             self.RESULTS[result_asg_name]['keywords'] = all_page_keywords
             print(f"Matched Keywords: {matched_keywords}")
 
+    ###################################################
+    ########### Helper functions for Rule 4 ###########
+    ###################################################
+    def check_link_title(self, html_dir, module_name, name, page_type):
+        violation_count = 0
+        out_dir = Path(__file__).parents[2]
+        body_html_dict_page = {"class": "show-content"}
+        body_html_dict_asg = {'class': 'description'}
+        with open(os.path.join(html_dir, name), "r", encoding="utf-8") as f:
+            html = f.read()
+        soup = BeautifulSoup(html, 'html.parser')
+
+        if page_type == "Asgignments":
+            try:
+                body_html = soup.find('div', body_html_dict_asg).find("div")
+            except AttributeError:
+                return
+            
+            if not body_html:
+                body_html = soup.find('div', body_html_dict_asg)
+        else:
+            try:
+                body_html = soup.find('div', body_html_dict_page).find("div")
+            except AttributeError:
+                return
+            if not body_html:
+                body_html = soup.find('div', body_html_dict_page)
+
+            body_html = soup.find('div', body_html_dict_page)
+            if body_html.find('div') != None:
+                body_html = soup.find('div', body_html_dict_page).find('div')
+
+        links = body_html.findAll('a')
+        for link in links:
+            if "title" not in list(link.attrs.keys()):
+                if 'span' not in [i.name for i in link.findChildren()]:
+                    # span_text = link.find('span').text
+                    # if len(span_text) == 0:
+                    link['style'] = "background-color: aqua;"
+                    print(f"{name} ==> Rule 4 violated")
+                    self.RESULTS[name]['rule4'] = True
+                    violation_count = violation_count + 1
+
+        with open(os.path.join(out_dir, "static", "HTML_DATA", self.course_name, module_name, page_type, f"{name}"), "w", encoding="utf-8") as file:
+            file.write(str(soup))
+        
+        return violation_count
+
     ########################################
     ########### Driver functions ###########
     ########################################
@@ -595,8 +645,9 @@ class rules:
                 "Assignments": all_asg_violations
             }
         
-        json.dump(all_module_violations, 
-                  open(os.path.join(self.JSON_DIR, "violations.json"), "w"))
+        # base_dir = Path(__file__).parents[2]
+        # json.dump(all_module_violations, 
+        #           open(os.path.join(base_dir, "static", self.course_name, "violations.json"), "w"))
         
         HTML_gen_dir = os.path.join(self.base_dir, "static", "OUT_HTML")
         isExist = os.path.exists(HTML_gen_dir)
@@ -608,7 +659,7 @@ class rules:
             if not isExist:
                 os.mkdir(module_dir)
         
-        generate_HTML(self.course_name)
+        # generate_HTML(self.course_name)
     
     def check_rule_2(self):
         modules = self.get_module_names()
@@ -650,7 +701,30 @@ class rules:
                                      asg_list, 
                                      page_path, 
                                      asg_path, 
-                                     keyword_match_fraction = 1.0)  
+                                     keyword_match_fraction = 1.0)
+    def check_rule_4(self):
+        modules = self.get_module_names()
+        self.analyzed_pages = []
+        for module in modules:
+            print("*"*20)
+            print(module)
+            print("*"*20)
+
+            asg_path = os.path.join(self.HTML_DIR, module, "Assignments")
+            page_path = os.path.join(self.HTML_DIR, module, "Pages")
+            asg_list = os.listdir(asg_path)
+            page_list = os.listdir(page_path)
+
+            if len(asg_list) > 0:
+                for asg in asg_list:
+                    violation_count = self.check_link_title(asg_path, module, asg, "Assignments")
+                    self.RESULTS[asg]['rule4_violation_count'] = violation_count
+            
+            if len(page_list) > 0:
+                for page in page_list:
+                    violation_count = self.check_link_title(page_path, module, page, "Pages")
+                    self.RESULTS[page]['rule4_violation_count'] = violation_count
+
     def check_all_rules(self):
         modules = self.get_module_names()
         print(modules)
@@ -663,20 +737,21 @@ class rules:
             if len(asg_list) > 0:
                 for asg_name in asg_list:
                     asg_name = asg_name.replace(".json", "")
-                    self.RESULTS[asg_name] = {"rule1":False, "rule2":False, "rule3":False}
+                    self.RESULTS[asg_name] = {"rule1":False, "rule2":False, "rule3":False, "rule4":False}
 
             if len(page_list) > 0:
                 for page_name in page_list:
                     page_name = page_name.replace(".json", "")
-                    self.RESULTS[page_name] = {"rule1":False, "rule2":False, "rule3":False}
+                    self.RESULTS[page_name] = {"rule1":False, "rule2":False, "rule3":False, "rule4":False}
 
+        self.check_rule_4()
         self.check_rule_1()
         self.check_rule_2()
         self.check_rule_3()
 
         temp_dict = {}
         for key, data in self.RESULTS.items():
-            if data["rule1"] == False and data["rule2"] == False and data["rule3"] == False:
+            if data["rule1"] == False and data["rule2"] == False and data["rule3"] == False and data["rule4"] == False:
                 continue
             else:
                 temp_dict[key] = data

@@ -2243,13 +2243,7 @@
       }
     },
     "Assignments": {
-      "Module10_Asg1.html.json": { "content": {}, "__pre_h2__": [] },
-      "Module0_Asg0.html.json": {
-        "content": {
-          "\\xa0": [{ "type": "para", "para_key": "para_0", "line_num": 1 }]
-        },
-        "__pre_h2__": []
-      }
+      "Module10_Asg1.html.json": { "content": {}, "__pre_h2__": [] }
     }
   }
 }

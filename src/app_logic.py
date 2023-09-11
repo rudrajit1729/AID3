@@ -43,9 +43,11 @@ def check_rules(course_name):
     if not isExists:
         os.mkdir(ext_json_dir)
 
+    base_html_dir = os.path.join(parent_dir, "HTML_DATA", course_name)
     scrape_pages(course_name)
     rule = rules(JSON_DIR = json_dir,
                 COURSE_NAME = course_name,
+                HTML_DIR = base_html_dir,
                 MODEL_NAME="svm_model.sav",
                 NLTK_CORPUS_NAME="Corpus.csv",
                 OBJ_CORPUS_NAME="Objective_corpus.json",
