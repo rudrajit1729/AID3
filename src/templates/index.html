@@ -4,11 +4,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Automated Inclusivity Detector</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../static/style_home.css">
 </head>
@@ -18,7 +27,7 @@
     <div class="back">
       <div class="div-center w-75">
         <div class="content">
-          <h1 class="text-center">Inclusivity Tool</h1>
+          <h1 class="text-center">Automated Inclusivity Detector</h1>
           <br />
           <form method="post" , enctype="multipart/form-data" action="/results">
             <p class="text-center">Select a course from the drop-down menu to view inclusivity bugs based on Cognitive
@@ -27,60 +36,88 @@
               <div class="d-flex justify-content-center">
                 <select name="course_name" class="form-select" id="inputGroupSelect04"
                   aria-label="Example select with button addon">
-                  <option selected>Choose</option>
+                  <option selected>Choose a course</option>
                   <option value="CS161">CS 161 review material (ORG_6743)</option>
                   <option value="CS325">CS 325 ANALYSIS OF ALGORITHMS</option>
-                  <option value="New_Course"><a href="" class="font-weight-bold">Add new course +</a></option>
+                  <option value="New_Course" data-toggle="tooltip" data-placement="top"
+                    title="This feature is currently being developed"><a href="" class="font-weight-bold">Add new
+                      course +</a></option>
                 </select>
                 <input class="btn btn-primary" type="submit">
               </div>
               <br>
               <p class="text-center">On choosing a course, this tool checks for three decision rules, as detailed below:
               </p>
-              <div class="container d-flex justify-content-center">
-                <ul>
-                  <li>
-                    <details>
-                      <summary>Supporting learning by process using sub-instructions</summary>
-                      <p>While brief instructions may suit some learners like Tim, who are
-                        comfortable
-                        with tinkering and exploring independently, the inclusion of subinstructions supports learners
-                        like
-                        Abi,
-                        who prefer a step-by-step learning approach.
-                      </p>
-                    </details>
-                  </li>
-                  <li>
-                    <details>
-                      <summary>Clear purpose behind tasks</summary>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Supporting learning by process using sub-instructions
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>While brief instructions may suit some learners like Tim, who are comfortable with tinkering
+                        and exploring independently, the inclusion of subinstructions supports learners like Abi, who
+                        prefer a step-by-step learning approach.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Clear purpose behind tasks
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
                       <p>Abi, who prioritizes tasks aligned with their interests and relies on
                         technologies, may be disproportionately affected by tasks lacking clear purposes. Explicit
                         purpose
                         behind tasks enables learners like Abi to assess the task's relevance and decide on its
                         usefulness.
                       </p>
-                    </details>
-                  </li>
-                  <li>
-                    <details>
-                      <summary>Drawing on prior knowledge for task guidance</summary>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Drawing on prior knowledge for task guidance
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
                       <p>Linking tasks to prior knowledge empowers Abi by providing a structured
                         approach to complete the task, utilizing familiar step-by-step processes from tutorials, how-to
                         videos,
                         and wizards.
                       </p>
-                    </details>
-                  </li>
-                  <li>
-                    <details>
-                      <summary>Information link navigation</summary>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Information link navigation
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
                       <p>Users like Abi click on a link only after gathering enough information and planning their next
                         step. Labeled and descriptive links provide Abi with information about the webpage they are
                         supposed to visit.</p>
-                    </details>
-                  </li>
-                </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </form>
@@ -110,6 +147,11 @@
         window.location.reload();
       }
     });
+  </script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
   </script>
 </body>
 

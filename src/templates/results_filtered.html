@@ -10,49 +10,28 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../static/style_home.css">
-  <title>Document</title>
+  <title>Automated Inclusivity Detector</title>
 </head>
 
 <body>
   <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">Home</a>
-      <a class="navbar-brand" href="/results/{{course_name}}">All Violations</a>
-      {% if rule_num == "1" %}
-      <a class="navbar-brand" href="#"><strong>RULE 1</strong></a>
-      <p class="mb-0" style="color: white;"><strong>Description:</strong> While brief instructions may suit some
-        learners like Tim, who are
-        comfortable with
-        tinkering and exploring independently, the inclusion of subinstructions supports learners like Abi, who
-        prefer a step-by-step learning approach.
-      </p>
-      {% elif rule_num == "2" %}
-      <a class="navbar-brand" href="#"><strong>RULE 2</strong></a>
-      <p class="mb-0" style="color: white;">
-        <strong>Description:</strong> Abi, who prioritizes tasks aligned with their interests and relies on
-        technologies, may be disproportionately affected by tasks lacking clear purposes. Explicit purpose
-        behind tasks enables learners like Abi to assess the task's relevance and decide on its usefulness.
-      </p>
-      {% elif rule_num == "3" %}
-      <a class="navbar-brand" href="#"><strong>RULE 3</strong></a>
-      <p class="mb-0" style="color: white;">
-        <strong>Description:</strong> Linking tasks to prior knowledge empowers Abi by providing a structured
-        approach to complete the task, utilizing familiar step-by-step processes from tutorials, how-to videos,
-        and wizards.
-      </p>
-      {% else %}
-      <a class="navbar-brand" href="#"><strong>RULE 4</strong></a>
-      <p class="mb-0" style="color: white;">
-        <strong>Description:</strong> Users like Abi click on a link only after gathering enough information and
-        planning their next
-        step. Labeled and descriptive links provide Abi with information about the webpage they are
-        supposed to visit.
-      </p>
-      {% endif %}
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <a class="nav-link" href="/results/{{course_name}}" style="color: white;">All Violations</a>
+        {% if rule_num == "1" %}
+        <a href="" class="nav-link" style=" color: white;"><strong>Rule: Supporting learning by process using
+            sub-instructions</strong></a>
+        {% elif rule_num == "2" %}
+        <a href="" class="nav-link" style=" color: white;"><strong>Rule: Clear purpose behind tasks</strong></a>
+        {% elif rule_num == "3" %}
+        <a href="" class="nav-link" style=" color: white;"><strong>Rule: Drawing on prior knowledge for task
+            guidance</strong>
+        </a>
+        {% else %}
+        <a href="" class="nav-link" style=" color: white;"><strong>Rule: Information link navigation</strong></a>
+        {% endif %}
+      </div>
     </div>
   </nav>
   {% for result in results %}
@@ -73,32 +52,71 @@
       <div class="col-sm-3">
         <div class="card" style="width: 18rem;">
           <div class="card-header">
-            <h3>RESULTS</h3>
+            <h3>WARNINGS</h3>
           </div>
           <ul class="list-group list-group-flush">
             {% if rule_num == "1" %}
             <li class="list-group-item">
-              <p class="success"><strong>Rule 1(<span style="color: yellow">■</span>):</strong> Violated : Count = {{
-                result.rule_1_violations_count }}</p>
+              {% if result.rule_1_violations_count == 1 %}
+              <p class="success"><strong>Rule (Supporting learning by process using sub-instructions <button
+                    type="button" class="btn btn-primary btn-sm" data-bs-toggle="popover" title="Popover title"
+                    data-bs-content="While brief instructions may suit some learners like Tim, who are comfortable with tinkering
+                and exploring independently, the inclusion of subinstructions supports learners like Abi, who
+                prefer a step-by-step learning approach.">?</button>):</strong> {{
+                result.rule_1_violations_count }} Violation
+              </p>
+              <p>Highlighted on the rendered page in yellow(<span style="color: yellow">■</span>)</p>
+              {% else %}
+              <p class="success"><strong>Rule (Supporting learning by process using sub-instructions <button
+                    type="button" class="btn btn-primary btn-sm" data-bs-toggle="popover" title="Popover title"
+                    data-bs-content="While brief instructions may suit some learners like Tim, who are comfortable with tinkering
+                and exploring independently, the inclusion of subinstructions supports learners like Abi, who
+                prefer a step-by-step learning approach.">?</button>):</strong> {{
+                result.rule_1_violations_count }} Violations
+              </p>
+              <p>Highlighted on the rendered page in yellow(<span style="color: yellow">■</span>)</p>
+              {% endif %}
             </li>
             {% endif %}
 
             {% if rule_num == "2" %}
             <li class="list-group-item">
-              <p class="success"><strong>Rule 2:</strong> Violated</p>
+              <p class="success"><strong>Rule (Clear purpose behind tasks <button type="button"
+                    class="btn btn-primary btn-sm" data-bs-toggle="popover" title="Popover title" data-bs-content="Abi, who prioritizes tasks aligned with their interests and relies on
+            technologies, may be disproportionately affected by tasks lacking clear purposes. Explicit
+            purpose
+            behind tasks enables learners like Abi to assess the task's relevance and decide on its
+            usefulness.">?</button>):</strong> Violated</p>
             </li>
             {% endif %}
 
             {% if rule_num == "3" %}
             <li class="list-group-item">
-              <p class="success"><strong>Rule 3:</strong> Violated</p>
+              <p class="success"><strong>Rule (Drawing on prior knowledge for task guidance <button type="button"
+                    class="btn btn-primary btn-sm" data-bs-toggle="popover" title="Popover title" data-bs-content="Linking tasks to prior knowledge empowers Abi by providing a structured
+            approach to complete the task, utilizing familiar step-by-step processes from tutorials, how-to
+            videos,
+            and wizards.">?</button>):</strong> Violated</p>
             </li>
             {% endif %}
 
             {% if rule_num == "4" %}
             <li class="list-group-item">
-              <p class="success"><strong>Rule 4(<span style="color: aqua">■</span>):</strong> Violated : Count = {{
-                result.rule_4_violations_count }}</p>
+              {% if result.rule_4_violations_count == 1 %}
+              <p class="success"><strong>Rule (Information link navigation <button type="button"
+                    class="btn btn-primary btn-sm" data-bs-toggle="popover" title="Popover title" data-bs-content="Users like Abi click on a link only after gathering enough information and planning their next
+            step. Labeled and descriptive links provide Abi with information about the webpage they are
+            supposed to visit.">?</button>):</strong> {{
+                result.rule_4_violations_count }} Violation</p>
+              <p>Highlighted on the rendered page in yellow(<span style="color: aqua">■</span>)</p>
+              {% else %}
+              <p class="success"><strong>Rule (Information link navigation <button type="button"
+                    class="btn btn-primary btn-sm" data-bs-toggle="popover" title="Popover title" data-bs-content="Users like Abi click on a link only after gathering enough information and planning their next
+            step. Labeled and descriptive links provide Abi with information about the webpage they are
+            supposed to visit.">?</button>):</strong> {{
+                result.rule_4_violations_count }} Violations</p>
+              <p>Highlighted on the rendered page in yellow(<span style="color: aqua">■</span>)</p>
+              {% endif %}
             </li>
             {% endif %}
           </ul>
@@ -119,6 +137,12 @@
       // Reload the page
       location.reload(true);
     });
+  </script>
+  <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
   </script>
 </body>
 
