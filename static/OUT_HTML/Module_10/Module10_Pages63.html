@@ -430,7 +430,7 @@
 <p>When a method receives an object as a parameter, the parameter is a reference to the original object and using the parameter, you can access all the data members and call the methods of the object that was passed..</p>
 <pre>def method_of_object1(self, object2):<span style="font-family: helvetica;">     <br/>      object2.method_of_object2() </span></pre>
 <p>Note that any changes you make to the object inside the method will persist outside the method as well..</p>
-<p>Another important thing to note is that although you can access data members of an object passed as a parameter, you should not access private data members (i.e. those with an underscore as a prefix) of a passed object. Instead call the corresponding get_ method like how we called get_name above to access the private data member _name, in the above code examples..</p>
+<p>Another important thing to note is that although you can access data members of an object passed as a parameter, you should not access private data members (i.e. those with an underscore as a prefix) of a passed object. Instead call the corresponding <em>get_</em> method like how we called <em>get_name </em>above to access the private data member _<em>name, </em>in the above code examples.</p>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 0px; margin-bottom: 18px; margin-right: 85px;">Why pass the whole object?</h2>
 <p>You might remember that information hiding is an important part of OOP (object-oriented programming). If the code that is calling the function doesn't itself need access to the object's data members, then it shouldn't get them from the object just in order to pass them to a function. That code should instead just pass the object and let the function ask the object for whatever it needs from it. This doesn't require any additional memory because you're not making a copy of the object for the function - you're just sharing with the function the location in memory where the object is stored (which is how all argument passing in Python works).</p>
 <p> </p>
@@ -441,12 +441,12 @@
 <p><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="400px" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" src="https://replit.com/@coeCS161/passingobjectsasparametersexercise1?lite=true" width="100%"></iframe></p>
 <pre></pre>
 <p> </p>
-<p>2.<span style="background-color:yellow;">  Replace the word BLANK with the right character/word and make this code work</span>.</p>
+<p>2.  Replace the word BLANK with the right character/word and make this code work.</p>
 <p><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="400px" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" src="https://replit.com/@coeCS161/passingobjectsasparametersexercise2?lite=true" width="100%"></iframe></p>
 <p> </p>
 <p>3.<span style="background-color:yellow;">  Implement the following from scratch</span></p>
-<p>Write code for a CookingBot and a Recipe class that should work as follows..</p>
-<p>The CookingBot class has one data member: currently_cooking which should be initialized to an empty dictionary inside the __init__ method.<span style="background-color:yellow;"> It would later on contain data which looks like {recipe_id: Recipe_object}</span></p>
+<p>Write code for a CookingBot and a Recipe class that should work as follows.</p>
+<p>The CookingBot class has one data member: <em>currently_cooking </em>which should be initialized to an empty dictionary inside the <em>__init__ </em>method. It would later on contain data which looks like <code>{recipe_id: Recipe_object}</code></p>
 <p>The CookingBot class has a method called set_current_cooking which accepts a Recipe object as a parameter and adds it to the currently_cooking dictionary such that the key is the recipe_id and the value is the Recipe object and it prints a message which looks like this:</p>
 <p>"Currently cooking &lt;recipe_name&gt;"</p>
 <p>The Recipe class has 2 data members: recipe_id which is an integer and recipe_name which is a string.<span style="background-color:yellow;">  When creating a Recipe object, the initializer should accept 2 parameters and initialize all the data members</span> The Recipe class should also have corresponding get_name and get_id methods..</p>

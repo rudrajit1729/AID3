@@ -398,24 +398,24 @@
 <iframe allowfullscreen="allowfullscreen" height="400px" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" src="https://repl.it/@coeCS161/Comments-Arithmetic-and-String-Concatenation-1?lite=true" width="100%"></iframe>
 <p>The floor division operation is done with the // symbol, and gives you the rounded <strong>down</strong> result of division.</p>
 <pre>&gt; floor_1 = 7 // 2 # 3<br/>&gt; floor_2 = -7 // 2 # -4</pre>
-<p>Normal division results in a float value, even if the result is an integer.  For example 8 / 4 would give you 2.0.<span style="background-color:yellow;">  If you need an integer remainder, use floor division</span>.</p>
-<p><span style="background-color:yellow;">The mod operation is done with the % symbol, and gives you the remainder of division</span>.</p>
+<p><strong>Normal division results in a float value, even if the result is an integer.  For example 8 / 4 would give you 2.0.  If you need an integer remainder, use floor division.</strong></p>
+<p>The mod operation is done with the % symbol, and gives you the <strong>remainder</strong> of division.</p>
 <pre>&gt; remainder_1 = 14 % 3 # 2<br/>&gt; remainder_2 = 3 % 5 # 3</pre>
 <p>Exponentiation is done with the ** symbol.</p>
 <pre>&gt; power_1 = 3 ** 4 # 81<br/>&gt; power_2 = 2 ** -3 # 0.125</pre>
 <p>The order of operations is exponentiation, followed by multiplication, division, floor, and mod, followed by addition and subtraction.<span style="background-color:yellow;"> However parentheses can be used to give whatever order is needed, since operations in parentheses happen first</span>.</p>
 <pre>&gt; result_1 = 3 * 5 + 1 # 16, multiplication happens first<br/>&gt; result_2 = 3 * (5 + 1) # 18, addition happens first</pre>
-<p>The += operator is a slightly shorter way to express that you want to add something to an existing value. The following statements do exactly the same thing:</p>
+<p>The += operator is a slightly shorter way to express that you want to add something to an existing value.<span style="background-color:yellow;"> The following statements do exactly the same thing:</span></p>
 <pre>&gt; my_sum = my_sum + 8<br/>&gt; my_sum += 8</pre>
-<p>You can combine = with each of the operators above to get the following shortcut operators.<span style="background-color:yellow;"> See for yourself by typing in the following examples and then checking the value of 'num'</span>.</p>
+<p>You can combine = with each of the operators above to get the following shortcut operators. See for yourself by typing in the following examples and then checking the value of 'num'.</p>
 <iframe allowfullscreen="allowfullscreen" height="400px" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" src="https://repl.it/@coeCS161/Comments-Arithmetic-and-String-Concatenation-3?lite=true" width="100%"></iframe>
 <pre>&gt; num += 3 # same as num = num + 3<br/>&gt; num -= 3 # same as num = num - 3<br/>&gt; num *= 3 # same as num = num * 3<br/>&gt; num /= 3 # same as num = num / 3<br/>&gt; num //= 3 # same as num = num // 3<br/>&gt; num %= 3 # same as num = num % 3<br/>&gt; num **= 3 # same as num = num ** 3</pre>
 <p>The += operator is the most commonly used of these, since it's handy for accumulating totals.</p>
 <p>You can get the absolute value of a number like this:</p>
 <pre>answer = abs(-12)</pre>
-<p>In the above line, the variable <em>answer</em> is assigned the value 12.</p>
+<p><span style="background-color:yellow;">In the above line, the variable answer is assigned the value 12</span>.</p>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 18px; margin-bottom: 18px;">Concatenation</h2>
-<p><span style="background-color:yellow;">The + operator can also be used with strings to concatenate them together</span>.</p>
+<p>The + operator can also be used with strings to concatenate them together.</p>
 <iframe allowfullscreen="allowfullscreen" height="400px" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" src="https://repl.it/@coeCS161/Comments-Arithmetic-and-String-Concatenation-2?lite=true" width="100%"></iframe>
 <h2 style="border-bottom: 2px solid #dc4405; font-size: 18pt; margin-top: 18px; margin-bottom: 18px;">Exercises</h2>
 <p><span>(See the module overview for a link to example solutions.)</span></p>
@@ -423,11 +423,11 @@
 <pre>Sample input: NA<br/>Expected Output: 1</pre>
 <p>2. Write a statement that prints out 2 to the 4th power.</p>
 <pre>Sample input: NA<br/>Expected Output: 16</pre>
-<p>3. Write a statement that finds the result of 9 divided by 5 and assigns it to a variable named <em>conversion_ratio</em>.</p>
+<p>3.<span style="background-color:yellow;"> Write a statement that finds the result of 9 divided by 5 and assigns it to a variable named conversion_ratio</span>.</p>
 <pre>Sample input: NA<br/>Expected Output: 1.8</pre>
 <p>4. Write code that first assigns 9 to a variable called <em>num_planets</em>, then subtracts 1 from it, so that <em>num_planets</em> will now equal 8.</p>
 <pre>Sample input: NA<br/>Expected Output: NA</pre>
-<p>5. Write code that assigns "Doctor" to a variable named <em>title</em>, assigns "Pierce" to a variable called <em>last_name</em>, and then uses string concatenation to print out "Doctor Pierce".</p>
+<p>5.<span style="background-color:yellow;"> Write code that assigns "Doctor" to a variable named title, assigns "Pierce" to a variable called last_name, and then uses string concatenation to print out "Doctor Pierce"</span>.</p>
 <pre>Sample input: NA<br/>Expected Output: "Doctor Pierce"</pre>
 </div>
 </div>
