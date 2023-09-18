@@ -159,12 +159,7 @@ class rules:
                     li_violation_idx = self.make_classifications(result_page_name, li_lines, links, list_type_idx)
                     if li_violation_idx != -1:
                         violations.append({"type": "li", "list_idx":list_type_idx, "line_num":li_violation_idx})
-                    #     if list_type_idx in links.keys():
-                    #         if 0 in links[list_type_idx]:
-                    #             islink = True
-                    #     if islink == False: 
-                    # violations.append({"type": "li", "list_idx":list_type_idx, "line_num":li_violation_idx})
-        
+                   
         return violations
     
     def analyze_modules(self, page_path, page_list):
@@ -609,8 +604,6 @@ class rules:
         for link in links:
             if "title" not in list(link.attrs.keys()):
                 if 'span' not in [i.name for i in link.findChildren()]:
-                    # span_text = link.find('span').text
-                    # if len(span_text) == 0:
                     link['style'] = "background-color: aqua;"
                     print(f"{name} ==> Rule 4 violated")
                     self.RESULTS[name]['rule4'] = True
@@ -644,10 +637,6 @@ class rules:
                 "Pages": all_page_violations,
                 "Assignments": all_asg_violations
             }
-        
-        # base_dir = Path(__file__).parents[2]
-        # json.dump(all_module_violations, 
-        #           open(os.path.join(base_dir, "static", self.course_name, "violations.json"), "w"))
         
         HTML_gen_dir = os.path.join(self.base_dir, "static", "OUT_HTML")
         isExist = os.path.exists(HTML_gen_dir)

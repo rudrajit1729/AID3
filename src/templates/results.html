@@ -71,7 +71,7 @@
             <li class="list-group-item">
               {% if result.rule_1_violations_count == 1 %}
               <p class="success"><strong>Rule (Supporting learning by process using sub-instructions <button
-                    type="button" class="btn btn-primary btn-sm" data-bs-toggle="popover" title="Popover title"
+                    type="button" class="btn btn-primary btn-sm" data-bs-toggle="popover" title="Description"
                     data-bs-content="While brief instructions may suit some learners like Tim, who are comfortable with tinkering
                     and exploring independently, the inclusion of subinstructions supports learners like Abi, who
                     prefer a step-by-step learning approach.">?</button>):</strong>
@@ -81,7 +81,7 @@
               <p>Highlighted on the rendered page in yellow(<span style="color: yellow">■</span>)</p>
               {% else %}
               <p class="success"><strong>Rule (Supporting learning by process using sub-instructions <button
-                    type="button" class="btn btn-primary btn-sm" data-bs-toggle="popover" title="Popover title"
+                    type="button" class="btn btn-primary btn-sm" data-bs-toggle="popover" title="Description"
                     data-bs-content="While brief instructions may suit some learners like Tim, who are comfortable with tinkering
                     and exploring independently, the inclusion of subinstructions supports learners like Abi, who
                     prefer a step-by-step learning approach.">?</button>):</strong>
@@ -96,7 +96,7 @@
             {% if result.rule2 == True %}
             <li class="list-group-item">
               <p class="success"><strong>Rule (Clear purpose behind tasks <button type="button"
-                    class="btn btn-primary btn-sm" data-bs-toggle="popover" title="Popover title" data-bs-content="Abi, who prioritizes tasks aligned with their interests and relies on
+                    class="btn btn-primary btn-sm" data-bs-toggle="popover" title="Description" data-bs-content="Abi, who prioritizes tasks aligned with their interests and relies on
                 technologies, may be disproportionately affected by tasks lacking clear purposes. Explicit
                 purpose
                 behind tasks enables learners like Abi to assess the task's relevance and decide on its
@@ -107,7 +107,7 @@
             {% if result.rule3 == True %}
             <li class="list-group-item">
               <p class="success"><strong>Rule (Drawing on prior knowledge for task guidance <button type="button"
-                    class="btn btn-primary btn-sm" data-bs-toggle="popover" title="Popover title" data-bs-content="Linking tasks to prior knowledge empowers Abi by providing a structured
+                    class="btn btn-primary btn-sm" data-bs-toggle="popover" title="Description" data-bs-content="Linking tasks to prior knowledge empowers Abi by providing a structured
                 approach to complete the task, utilizing familiar step-by-step processes from tutorials, how-to
                 videos,
                 and wizards.">?</button>):</strong> Violated</p>
@@ -118,14 +118,14 @@
             <li class="list-group-item">
               {% if result.rule_4_violations_count == 1 %}
               <p class="success"><strong>Rule (Information link navigation <button type="button"
-                    class="btn btn-primary btn-sm" data-bs-toggle="popover" title="Popover title" data-bs-content="Users like Abi click on a link only after gathering enough information and planning their next
+                    class="btn btn-primary btn-sm" data-bs-toggle="popover" title="Description" data-bs-content="Users like Abi click on a link only after gathering enough information and planning their next
                 step. Labeled and descriptive links provide Abi with information about the webpage they are
                 supposed to visit.">?</button>):</strong> {{
                 result.rule_4_violations_count }} Violation</p>
               <p>Highlighted on the rendered page in yellow(<span style="color: aqua">■</span>)</p>
               {% else %}
               <p class="success"><strong>Rule (Information link navigation <button type="button"
-                    class="btn btn-primary btn-sm" data-bs-toggle="popover" title="Popover title" data-bs-content="Users like Abi click on a link only after gathering enough information and planning their next
+                    class="btn btn-primary btn-sm" data-bs-toggle="popover" title="Description" data-bs-content="Users like Abi click on a link only after gathering enough information and planning their next
             step. Labeled and descriptive links provide Abi with information about the webpage they are
             supposed to visit.">?</button>):</strong> {{
                 result.rule_4_violations_count }} Violations</p>

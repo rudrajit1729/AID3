@@ -112,7 +112,7 @@ def results():
     
     else:
         return redirect(f"/results/{course_name}")
-    
+
 
 @app.route("/results/<course_name>", methods=['GET', 'POST'])
 def course_results(course_name):
