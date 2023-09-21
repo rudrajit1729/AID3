@@ -32,7 +32,7 @@ def get_all_links_and_results(results, course_name):
         module_num = re.sub('[^0-9]+', ' ', module_name).strip()
         page_type = page_name.split("_")[1].replace(".html.json", "")
         page_type = re.sub('[^A-Za-z]+', ' ', page_type).strip().split(" ")[0]
-        if results[page_name]['rule1'] == False and results[page_name]['rule2'] == False and results[page_name]['rule3'] == False:
+        if results[page_name]['rule1'] == False and results[page_name]['rule2'] == False and results[page_name]['rule3'] == False and results[page_name]['rule4'] == False:
             continue
         if results[page_name]['rule1'] == False:
             if page_type == "Pages":
