@@ -602,13 +602,25 @@ class rules:
 
         links = body_html.findAll('a')
         for link in links:
-            if "title" not in list(link.attrs.keys()):
-                if 'span' not in [i.name for i in link.findChildren()]:
-                    link['style'] = "background-color: aqua;"
-                    print(f"{name} ==> Rule 4 violated")
-                    self.RESULTS[name]['rule4'] = True
-                    violation_count = violation_count + 1
+            if 'span' in [i.name for i in link.findChildren()]:
+                link_span = link.find("span")
+                # print(link_span)
+                link_text = link_span.get_text()
+            else:
+                link_text = link.get_text()
+            if re.search(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\), ]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', link_text):
+                link['style'] = "background-color: aqua;"
+                print(f"{name} ==> Rule 4 violated")
+                self.RESULTS[name]['rule4'] = True
+                violation_count = violation_count + 1
 
+            # temp = str(link)
+            # if not re.search(r'(?:(?:(https?|ftp|file):\/\/|www\.|ftp\.)|([\w\-_]+(?:\.|\s*\[dot\]\s*[A-Z\-_]+)+))([A-Z\-\.,@?^=%&amp;:\/~\+#]*[A-Z\-\@?^=%&amp;\/~\+#]){2,6}?', temp):
+            #     link['style'] = "background-color: aqua;"
+            #     print(f"{name} ==> Rule 4 violated")
+            #     self.RESULTS[name]['rule4'] = True
+            #     violation_count = violation_count + 1
+        
         with open(os.path.join(out_dir, "static", "HTML_DATA", self.course_name, module_name, page_type, f"{name}"), "w", encoding="utf-8") as file:
             file.write(str(soup))
         
