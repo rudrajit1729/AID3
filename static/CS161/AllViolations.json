@@ -1,1 +1,146 @@
-{"Module0_Pages1.html": {"rule1": true, "rule2": false, "rule3": false, "rule4": false, "rule4_violation_count": 0, "rule1_violation_count": 5}, "Module0_Pages2.html": {"rule1": false, "rule2": false, "rule3": false, "rule4": true, "rule4_violation_count": 2, "rule1_violation_count": 0}, "Module0_Pages3.html": {"rule1": false, "rule2": false, "rule3": false, "rule4": false, "rule4_violation_count": 1, "rule1_violation_count": 0}, "Module0_Pages4.html": {"rule1": false, "rule2": false, "rule3": false, "rule4": false, "rule4_violation_count": 0, "rule1_violation_count": 0}, "Module0_Pages6.html": {"rule1": true, "rule2": false, "rule3": false, "rule4": false, "rule4_violation_count": 0, "rule1_violation_count": 1}, "Module10_Pages1.html": {"rule1": true, "rule2": false, "rule3": false, "rule4": false, "rule4_violation_count": 0, "rule1_violation_count": 4}, "Module10_Pages2.html": {"rule1": false, "rule2": true, "rule3": false, "rule4": false, "rule4_violation_count": 0, "rule1_violation_count": 0}, "Module10_Pages3.html": {"rule1": true, "rule2": false, "rule3": false, "rule4": false, "rule4_violation_count": 0, "rule1_violation_count": 1}, "Module10_Pages4.html": {"rule1": true, "rule2": false, "rule3": false, "rule4": false, "rule4_violation_count": 0, "rule1_violation_count": 4}, "Module10_Pages5.html": {"rule1": true, "rule2": true, "rule3": false, "rule4": false, "rule4_violation_count": 0, "rule1_violation_count": 6}, "Module10_Pages6.html": {"rule1": true, "rule2": true, "rule3": false, "rule4": false, "rule4_violation_count": 0, "rule1_violation_count": 3}, "Module10_Pages7.html": {"rule1": false, "rule2": true, "rule3": false, "rule4": false, "rule4_violation_count": 0, "rule1_violation_count": 0}, "Module10_Pages8.html": {"rule1": true, "rule2": true, "rule3": false, "rule4": false, "rule4_violation_count": 0, "rule1_violation_count": 2}}
+{
+  "Module0_Pages1.html": {
+    "rule1": true,
+    "rule2": false,
+    "rule3": false,
+    "rule4": false,
+    "rule4_violation_count": 0,
+    "rule1_violation_count": 5
+  },
+  "Module0_Pages2.html": {
+    "rule1": false,
+    "rule2": false,
+    "rule3": false,
+    "rule4": true,
+    "rule4_violation_count": 1,
+    "rule1_violation_count": 0
+  },
+  "Module0_Pages3.html": {
+    "rule1": false,
+    "rule2": false,
+    "rule3": false,
+    "rule4": false,
+    "rule4_violation_count": 1,
+    "rule1_violation_count": 0
+  },
+  "Module0_Pages4.html": {
+    "rule1": false,
+    "rule2": false,
+    "rule3": false,
+    "rule4": false,
+    "rule4_violation_count": 0,
+    "rule1_violation_count": 0
+  },
+  "Module0_Pages6.html": {
+    "rule1": true,
+    "rule2": false,
+    "rule3": false,
+    "rule4": false,
+    "rule4_violation_count": 0,
+    "rule1_violation_count": 1
+  },
+  "Module10_Pages1.html": {
+    "rule1": true,
+    "rule2": false,
+    "rule3": false,
+    "rule4": false,
+    "rule4_violation_count": 0,
+    "rule1_violation_count": 4
+  },
+  "Module10_Pages2.html": {
+    "rule1": false,
+    "rule2": true,
+    "rule3": false,
+    "rule4": false,
+    "rule4_violation_count": 0,
+    "rule1_violation_count": 0
+  },
+  "Module10_Pages3.html": {
+    "rule1": true,
+    "rule2": false,
+    "rule3": false,
+    "rule4": false,
+    "rule4_violation_count": 0,
+    "rule1_violation_count": 1
+  },
+  "Module10_Pages4.html": {
+    "rule1": true,
+    "rule2": false,
+    "rule3": false,
+    "rule4": false,
+    "rule4_violation_count": 0,
+    "rule1_violation_count": 4
+  },
+  "Module10_Pages5.html": {
+    "rule1": true,
+    "rule2": true,
+    "rule3": false,
+    "rule4": false,
+    "rule4_violation_count": 0,
+    "rule1_violation_count": 6
+  },
+  "Module10_Pages6.html": {
+    "rule1": true,
+    "rule2": true,
+    "rule3": false,
+    "rule4": false,
+    "rule4_violation_count": 0,
+    "rule1_violation_count": 3
+  },
+  "Module10_Pages7.html": {
+    "rule1": false,
+    "rule2": true,
+    "rule3": false,
+    "rule4": false,
+    "rule4_violation_count": 0,
+    "rule1_violation_count": 0
+  },
+  "Module10_Pages8.html": {
+    "rule1": true,
+    "rule2": true,
+    "rule3": false,
+    "rule4": false,
+    "rule4_violation_count": 0,
+    "rule1_violation_count": 2
+  },
+  "Module10_Pages12.html": {
+    "rule1": true,
+    "rule2": false,
+    "rule3": false,
+    "rule4": false,
+    "rule4_violation_count": 0,
+    "rule1_violation_count": 6
+  },
+  "Module10_Pages13.html": {
+    "rule1": true,
+    "rule2": false,
+    "rule3": false,
+    "rule4": false,
+    "rule4_violation_count": 0,
+    "rule1_violation_count": 6
+  },
+  "Module10_Pages14.html": {
+    "rule1": true,
+    "rule2": false,
+    "rule3": false,
+    "rule4": false,
+    "rule4_violation_count": 0,
+    "rule1_violation_count": 1
+  },
+  "Module10_Pages15.html": {
+    "rule1": false,
+    "rule2": true,
+    "rule3": false,
+    "rule4": false,
+    "rule4_violation_count": 0,
+    "rule1_violation_count": 0
+  },
+  "Module10_Pages18.html": {
+    "rule1": true,
+    "rule2": false,
+    "rule3": false,
+    "rule4": false,
+    "rule4_violation_count": 0,
+    "rule1_violation_count": 4
+  }
+}
